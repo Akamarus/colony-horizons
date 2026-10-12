@@ -1,0 +1,7 @@
+Arcology Horizons
+Original Arcology: BlockyUniverseProductions
+https://www.planetminecraft.com/mod/arcology-5819547/
+Unofficial compatibility adaptation and extensions: Akamarus / Colony Horizons.
+Published with permission of the original author, including future updates.
+Arcology assets retain their original ownership; the addon GPLv3 license does not cover this pack.
+This download does not grant a general open-source asset license.

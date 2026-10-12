@@ -1,0 +1,122 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.146'
+}
+version = mod_version
+group = 'dev.colonyhorizons'
+base { archivesName = 'colony-horizons' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+repositories {
+    mavenCentral()
+    maven { url = 'https://ldtteam.jfrog.io/artifactory/modding/'
+        content { includeGroup 'com.ldtteam' }
+    }
+}
+neoForge {
+    version = neo_version
+    runs {
+        client {
+            client()
+            if(project.hasProperty('smoke')) {
+                gameDirectory = project.file('runs/smoke')
+                systemProperty 'colonyhorizons.smoke', 'true'
+            }
+        }
+        outpostFoundation {
+            type = 'gameTestServer'
+            gameDirectory = project.file(project.findProperty('foundationRunDir') ?: 'runs/outpost-foundation')
+            programArguments.addAll '--world', project.findProperty('probeWorld') ?: 'foundation-' + java.util.UUID.randomUUID().toString()
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'colonyhorizons'
+            systemProperty 'colonyhorizons.foundation', 'true'
+            systemProperty 'colonyhorizons.foundationSuite', project.findProperty('foundationSuite') ?: 'Arcology'
+            systemProperty 'colonyhorizons.probePhase', project.findProperty('probePhase') ?: 'seed'
+            systemProperty 'colonyhorizons.probeOutput', project.findProperty('probeOutput') ?: project.file('build/reports/foundation').absolutePath
+            systemProperty 'colonyhorizons.arcologyPath', project.findProperty('arcologyPath') ?: project.file('blueprints/arcology').absolutePath
+        }
+        outpostProbe {
+            type = 'gameTestServer'
+            gameDirectory = project.file('runs/outpost-probe')
+            programArguments.addAll '--world', project.findProperty('probeWorld') ?: 'probe-' + java.util.UUID.randomUUID().toString()
+            systemProperty 'colonyhorizons.probePhase', project.findProperty('probePhase') ?: 'seed'
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'colonyhorizons'
+            systemProperty 'colonyhorizons.outpostProbe', 'true'
+            systemProperty 'colonyhorizons.outpostSuite', project.findProperty('outpostSuite') ?: 'Native'
+            systemProperty 'colonyhorizons.probeOutput', project.findProperty('probeOutput') ?: project.file('build/reports/outpost-probe').absolutePath
+        }
+        server { server(); programArgument '--nogui' }
+        gameTestServer {
+            type = 'gameTestServer'
+            gameDirectory = project.file('runs/resource-audit')
+            programArguments.addAll '--world', 'audit-' + java.util.UUID.randomUUID().toString()
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'colonyhorizons'
+            systemProperty 'colonyhorizons.audit', 'true'
+            systemProperty 'colonyhorizons.auditOutput', project.file('build/reports/resource-audit').absolutePath
+        }
+    }
+    mods { colonyhorizons { sourceSet(sourceSets.main) } }
+}
+dependencies {
+    // Opt-in integration fixture only; never a required dependency of the released addon.
+    if (project.hasProperty('amendmentsTestMods')) {
+        runtimeOnly fileTree(dir: project.property('amendmentsTestMods'), include: ['*.jar'])
+    }
+    implementation("com.ldtteam:minecolonies:${minecolonies_version}") { transitive = false }
+    implementation('com.ldtteam:structurize:1.0.832-1.21.1-snapshot') { transitive = false }
+    implementation('com.ldtteam:blockui:1.0.199-1.21.1-snapshot') { transitive = false }
+    implementation('com.ldtteam:domum-ornamentum:1.0.223-snapshot') { transitive = false }
+    runtimeOnly('com.ldtteam:multipiston:1.2.51-1.21.1-snapshot') { transitive = false }
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('META-INF/neoforge.mods.toml') { expand version: project.version }
+}
+
+// Code-only public artifacts use isolated outputs and never compile QA sources.
+def publicVersion = '0.1.0-alpha.1'
+def publicClasses = layout.buildDirectory.dir('public-classes')
+def publicResources = layout.buildDirectory.dir('public-resources')
+tasks.register('compilePublicJava', JavaCompile) {
+    source fileTree('src/main/java') {
+        exclude 'dev/colonyhorizons/qa/**'
+        exclude 'dev/colonyhorizons/ColonyHorizons.java'
+        exclude '**/FoundationTestSaveMixin.java'
+    }, fileTree('src/release/java')
+    classpath = sourceSets.main.compileClasspath
+    javaCompiler = javaToolchains.compilerFor { languageVersion = JavaLanguageVersion.of(21) }
+    destinationDirectory = publicClasses
+}
+tasks.register('publicResources', Sync) {
+    from('src/main/resources') { exclude 'qa/**', 'data/**', 'colonyhorizons.mixins.json' }
+    from('src/release/resources')
+    into publicResources
+    inputs.property 'version', publicVersion
+    filesMatching('META-INF/neoforge.mods.toml') { expand version: publicVersion }
+}
+tasks.register('publicJar', Jar) {
+    dependsOn 'compilePublicJava', 'publicResources'
+    archiveBaseName = 'colony-horizons'
+    archiveVersion = publicVersion
+    destinationDirectory = layout.buildDirectory.dir('public-libs')
+    from publicClasses
+    from publicResources
+    from('LICENSE', 'NOTICE', 'TEMPLATE_LICENSE.txt')
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}
+tasks.register('publicSourceZip', Zip) {
+    archiveFileName = "colony-horizons-${publicVersion}-source.zip"
+    destinationDirectory = layout.buildDirectory.dir('public-libs')
+    from('.') {
+        include 'build.gradle', 'settings.gradle', 'gradle.properties', 'gradlew', 'gradlew.bat'
+        include 'gradle/wrapper/**', 'LICENSE', 'NOTICE', 'TEMPLATE_LICENSE.txt', 'GRADLE-LICENSE.txt'
+        include 'src/main/java/**', 'src/main/resources/**', 'src/release/**'
+        include 'docs/release/PUBLIC-BUILD.md', 'tools/Test-PublicRelease.py'
+        exclude 'src/main/java/dev/colonyhorizons/qa/**'
+        exclude 'src/main/java/dev/colonyhorizons/ColonyHorizons.java'
+        exclude '**/FoundationTestSaveMixin.java'
+        exclude 'src/main/resources/qa/**', 'src/main/resources/data/**'
+    }
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}

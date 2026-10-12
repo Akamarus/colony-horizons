@@ -1,0 +1,33 @@
+Colony Horizons
+Copyright (C) 2026 Akamarus and contributors
+SPDX-License-Identifier: GPL-3.0-only
+
+The addon code is licensed under version 3 of the GNU General Public License.
+See LICENSE for the full terms. It is provided WITHOUT ANY WARRANTY, including
+merchantability or fitness for a particular purpose.
+
+MineColonies and Structurize integration/adaptations:
+Copyright their respective authors and contributors (LDTTeam).
+https://github.com/ldtteam/minecolonies
+https://github.com/ldtteam/structurize
+Code licensed under GPLv3. Compatibility modifications by Akamarus / Colony Horizons,
+2026-10-11: quarry stage/access handling, stored-enchantment book component use,
+worker resume/tool handling, lantern removal order and animal-home reload fixes.
+In particular ArcologyQuarryLadderMixin adapts EntityAIQuarrier.goToNextStage;
+EnchanterStoredEnchantmentsMixin adapts the book-level calculation.
+Original dependency projects remain separate downloads; this is unofficial.
+
+NeoForged MDK template portions retain the MIT terms in TEMPLATE_LICENSE.txt.
+The Gradle wrapper is a build tool supplied by the Gradle project under Apache-2.0;
+see GRADLE-LICENSE.txt in the source distribution. No dependency binaries are
+bundled in the addon jar.
+
+This license grant does not cover third-party Arcology blueprints, its icon,
+MineColonies assets, Minecraft assets, or other separately licensed works.
+Arcology by BlockyUniverseProductions is not included in this public artifact.
+The modified pack is distributed separately with author permission; its assets
+are not covered by this code license.
+
+When distributing the binary, provide equivalent access to its matching source
+archive and applicable notices. The source archive includes build instructions.
+Do not substitute the private development bundle for this code-only release.

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "pack-format": 1,
+  "desc": "Unofficial Arcology adaptation, published with permission. Original by BlockyUniverseProductions; repairs and extensions by Akamarus.",
+  "authors": [
+    "BlockyUniverseProductions (original Arcology)",
+    "Akamarus / Colony Horizons (compatibility and extensions)"
+  ],
+  "mods": [
+    "structurize",
+    "minecolonies",
+    "domum_ornamentum",
+    "colonyhorizons"
+  ],
+  "name": "Arcology Horizons",
+  "icon": "icon.png"
+}

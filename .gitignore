@@ -1,0 +1,11 @@
+.gradle/
+.gradle-local/
+.setup/
+build/
+run/
+runs/
+.idea/
+.vscode/
+*.iml
+__pycache__/
+*.pyc

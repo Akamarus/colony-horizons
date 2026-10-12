@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="GPL-3.0-only"
+[[mods]]
+modId="colonyhorizons"
+version="${version}"
+displayName="Colony Horizons"
+authors="Akamarus"
+description="An independent MineColonies addon foundation. Expansion features are in development."
+[[dependencies.colonyhorizons]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.colonyhorizons]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.250,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.colonyhorizons]]
+modId="minecolonies"
+type="required"
+versionRange="[1.1.1403-1.21.1]"
+ordering="AFTER"
+side="BOTH"
+
+[[mixins]]
+config="colonyhorizons.mixins.json"

@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.colonyhorizons.compat.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "NetherWorkerResumeMixin",
+    "EnchanterStoredEnchantmentsMixin",
+    "QuarryFootprintMixin",
+    "PlanterSeagrassToolsMixin",
+    "SeagrassRecipeToolMixin",
+    "ArcologyConstructionCoralMixin",
+    "BuilderLanternSafetyMixin",
+    "AnimalHomeLoadOrderMixin",
+    "ArcologyQuarryLadderMixin",
+    "ArcologyQuarryWorkPositionMixin",
+    "ArcologyQuarryDecorationMixin",
+    "ArcologyQuarryAccessMiningMixin",
+    "ArcologyQuarryFluidSupplyMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

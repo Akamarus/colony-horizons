@@ -1,0 +1,4 @@
+Requires Colony Horizons 0.1.0-alpha.1 and its pinned Minecraft 1.21.1 / NeoForge dependencies.
+Extract arcology-horizons into the game directory blueprints folder.
+The result must be blueprints/arcology-horizons/pack.json. Select Arcology Horizons in the build tool.
+This is a blueprint pack, not a resource pack or datapack. Existing placed buildings are not migrated automatically.
