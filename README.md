@@ -4,7 +4,11 @@
 
 An unofficial **MineColonies compatibility addon** for Minecraft Java **1.21.1 / NeoForge 21.1.250**, with the separately installed **Arcology Horizons** blueprint pack.
 
-[Download alpha 0.1.0]( https://github.com/Akamarus/colony-horizons/releases/tag/v0.1.0-alpha.1 ) · [Installation](docs/release/INSTALLATION.md) · [Report an issue](https://github.com/Akamarus/colony-horizons/issues) · [Roadmap](ROADMAP.md)
+[Download alpha.2]( https://github.com/Akamarus/colony-horizons/releases/tag/v0.1.0-alpha.2 ) · [Installation](docs/release/INSTALLATION.md) · [Report an issue](https://github.com/Akamarus/colony-horizons/issues) · [Roadmap](ROADMAP.md)
+
+## Alpha.2 update
+
+Repairs Arcology Mine shaft fluid sealing, supply-raft waterline metadata, and Builder's Hut recall pockets. Install both the addon JAR and matching blueprint ZIP. Existing huts require repair/rebuild to receive blueprint changes. See [alpha.2 notes](docs/release/ALPHA2.md).
 
 ## What this alpha does
 
@@ -17,7 +21,7 @@ Use MineColonies' own build tool, builders, assignments, requests and upgrades. 
 
 ## Install
 
-Download the addon JAR and separate blueprint ZIP from [Releases](https://github.com/Akamarus/colony-horizons/releases/tag/v0.1.0-alpha.1). Install the JAR in `mods`. Extract the pack into `blueprints` so `blueprints/arcology-horizons/pack.json` exists. Select **Arcology Horizons** using **Switch Pack** in the build tool. The pack is not a resource pack or datapack.
+Download the addon JAR and separate blueprint ZIP from [Releases](https://github.com/Akamarus/colony-horizons/releases/tag/v0.1.0-alpha.2). Install the JAR in `mods`. Extract the pack into `blueprints` so `blueprints/arcology-horizons/pack.json` exists. Select **Arcology Horizons** using **Switch Pack** in the build tool. The pack is not a resource pack or datapack.
 
 Requires Java 21, Minecraft 1.21.1, NeoForge 21.1.250 and these tested companions:
 
@@ -43,7 +47,7 @@ Use Java 21. Network access is required for the initial Gradle and dependency do
 
 ```powershell
 .\gradlew.bat publicJar
-python tools/Test-PublicRelease.py build/public-libs/colony-horizons-0.1.0-alpha.1.jar
+python tools/Test-PublicRelease.py build/public-libs/colony-horizons-0.1.0-alpha.2.jar
 ```
 
 On Linux/macOS use `sh gradlew publicJar`. Output is under `build/public-libs`. **Use `publicJar`**, which supplies the release entry point and excludes development QA. This repository is the public release source snapshot; internal development test harnesses are not included. The matching source ZIP accompanies the binary in Releases. See [build instructions](docs/release/PUBLIC-BUILD.md).

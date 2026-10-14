@@ -16,7 +16,8 @@
     "ArcologyQuarryWorkPositionMixin",
     "ArcologyQuarryDecorationMixin",
     "ArcologyQuarryAccessMiningMixin",
-    "ArcologyQuarryFluidSupplyMixin"
+    "ArcologyQuarryFluidSupplyMixin",
+    "ArcologyMinerFluidSealMixin"
   ],
   "injectors": {
     "defaultRequire": 1

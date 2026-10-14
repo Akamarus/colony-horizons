@@ -14,3 +14,7 @@ Multiplayer and arbitrary modpack compatibility remain unverified. The native te
 SHA-256 of launcher-tested JAR before attribution correction: `1a22ad38b82bf4f67fd9654760bea3eb067ae6e67edbb3d57d627772e75acb74`.
 
 Attribution update: the current release uses Akamarus. Both public builds pass and are byte-identical. Compared with the launcher-tested JAR, only NOTICE and the authors field in neoforge.mods.toml changed; all compiled classes and other resources are identical. Current JAR SHA-256: `717164e87fc5cd7f3d659c0703caa68026247327f20e6d231178581be9b71bc0`.
+
+## Alpha.2
+
+62 focused native regression cases passed (Mine 6, Quarry 8, ship 8, builder recall 40). Packaged source reproduces the release JAR. Normal-launcher smoke passed on 2026-10-14 with clean exit code 0. User confirmed Mine and Builder fixes in the previous local development build. See ALPHA2.md for scope and limitations.

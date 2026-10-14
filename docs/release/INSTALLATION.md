@@ -21,3 +21,7 @@ Automated outpost founding, Mayor management, protected supply routes, evolution
 ## Licensing and source
 
 Addon code is GPL-3.0-only. Matching source is colony-horizons-0.1.0-alpha.1-source.zip; see PUBLIC-BUILD.md, LICENSE and NOTICE. Dependencies are separate downloads. Arcology assets are distributed with the original author's permission and retain their ownership; the code license does not apply to them and this download grants no general asset reuse license.
+
+## Updating to alpha.2
+
+Back up the world. Replace the previous addon JAR; keep only one version. Replace blueprints/arcology-horizons with the matching alpha.2 pack. Existing Builder huts need repair/rebuild to receive the two safety rails. Previously placed ships are not relocated. Dependencies are unchanged.

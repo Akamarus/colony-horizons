@@ -73,7 +73,7 @@ processResources {
 }
 
 // Code-only public artifacts use isolated outputs and never compile QA sources.
-def publicVersion = '0.1.0-alpha.1'
+def publicVersion = '0.1.0-alpha.2'
 def publicClasses = layout.buildDirectory.dir('public-classes')
 def publicResources = layout.buildDirectory.dir('public-resources')
 tasks.register('compilePublicJava', JavaCompile) {
