@@ -4,13 +4,13 @@
 
 An unofficial **MineColonies compatibility addon** for Minecraft Java **1.21.1 / NeoForge 21.1.250**, with the separately installed **Arcology Horizons** blueprint pack.
 
-[Download alpha.2]( https://github.com/Akamarus/colony-horizons/releases/tag/v0.1.0-alpha.2 ) · [Installation](docs/release/INSTALLATION.md) · [Report an issue](https://github.com/Akamarus/colony-horizons/issues) · [Roadmap](ROADMAP.md)
+[Download beta.1](https://github.com/Akamarus/colony-horizons/releases/tag/v0.1.0-beta.1) · [Installation](docs/release/INSTALLATION.md) · [Report an issue](https://github.com/Akamarus/colony-horizons/issues) · [Roadmap](ROADMAP.md)
 
-## Beta.1 candidate
+## Beta.1
 
 **0.1.0-beta.1** freezes the supported scope around the Exploration Hut, recipe
-catalog, and Arcology compatibility fixes. This is a prepared beta candidate;
-the published alpha.2 remains available until the beta is uploaded.
+catalog, and Arcology compatibility fixes. The beta is published on GitHub;
+CurseForge file 9208979 has been submitted as Beta for automatic publication after approval.
 
 - **Exploration Hut:** discover resources in real biomes, then gather supported wood types,
   saplings, flowers, wheat seeds, vines, kelp and seagrass on protected simulated trips.
