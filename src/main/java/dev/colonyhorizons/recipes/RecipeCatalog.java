@@ -96,7 +96,37 @@ public final class RecipeCatalog {
  }
 
  public static boolean known(AbstractCraftingBuildingModule module,IRecipeStorage storage){
-  var manager=IColonyManager.getInstance().getRecipeManager();return module.getRecipes().stream().map(manager.getRecipes()::get).anyMatch(storage::equals);
+  var manager=IColonyManager.getInstance().getRecipeManager();return module.getRecipes().stream().map(manager.getRecipes()::get).anyMatch(existing->sameProduction(existing,storage));
+ }
+ /** Manual teaching records the open grid size and ingredient order, not recipe identity. */
+ private static boolean sameProduction(IRecipeStorage a,IRecipeStorage b){
+  if(a==null||b==null)return false;
+  if(a.getGridSize()!=b.getGridSize()&&!(a.getGridSize()>=2&&b.getGridSize()>=2))return false;
+  if(!Objects.equals(a.getIntermediate(),b.getIntermediate())||a.getRequiredTool()!=b.getRequiredTool()
+   ||!Objects.equals(a.getRecipeSource(),b.getRecipeSource())||!Objects.equals(a.getLootTable(),b.getLootTable())
+   ||!a.getRecipeType().getId().equals(b.getRecipeType().getId())
+   ||!sameStack(a.getPrimaryOutput(),b.getPrimaryOutput()))return false;
+  var remaining=new ArrayList<>(b.getCleanedInput());
+  for(var input:a.getCleanedInput()){
+   int index=-1;
+   for(int i=0;i<remaining.size();i++){
+    var other=remaining.get(i);
+    if(input.getAmount()==other.getAmount()&&input.matchDefinitionEquals(other)
+     &&ItemStack.isSameItemSameComponents(input.getItemStack(),other.getItemStack())){index=i;break;}
+   }
+   if(index<0)return false;remaining.remove(index);
+  }
+  return remaining.isEmpty()&&sameStacks(a.getSecondaryOutputs(),b.getSecondaryOutputs())
+   &&sameStacks(a.getCraftingTools(),b.getCraftingTools())&&sameStacks(a.getAlternateOutputs(),b.getAlternateOutputs());
+ }
+ private static boolean sameStack(ItemStack a,ItemStack b){
+  return a.getCount()==b.getCount()&&ItemStack.isSameItemSameComponents(a,b);
+ }
+ private static boolean sameStacks(List<ItemStack> a,List<ItemStack> b){
+  var remaining=new ArrayList<>(b);
+  for(var stack:a){int index=-1;for(int i=0;i<remaining.size();i++)if(sameStack(stack,remaining.get(i))){index=i;break;}
+   if(index<0)return false;remaining.remove(index);}
+  return remaining.isEmpty();
  }
  public static void learn(ServerLevel level,AbstractCraftingBuildingModule module,String key,int[] choices){
   if(!RecipeCatalogConfig.ENABLED.get())throw new IllegalArgumentException("Recipe catalog is disabled by the server.");

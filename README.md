@@ -6,66 +6,54 @@ An unofficial **MineColonies compatibility addon** for Minecraft Java **1.21.1 /
 
 [Download alpha.2]( https://github.com/Akamarus/colony-horizons/releases/tag/v0.1.0-alpha.2 ) · [Installation](docs/release/INSTALLATION.md) · [Report an issue](https://github.com/Akamarus/colony-horizons/issues) · [Roadmap](ROADMAP.md)
 
-## Current development: Recipe catalog and Barracks repair
+## Beta.1 candidate
 
-The main branch includes **0.1.0-dev.catalog.1** source and automated tests,
-including the Exploration Hut and its five blueprints. The downloadable alpha.2 release
-remains unchanged. This development snapshot is not a stable release.
+**0.1.0-beta.1** freezes the supported scope around the Exploration Hut, recipe
+catalog, and Arcology compatibility fixes. This is a prepared beta candidate;
+the published alpha.2 remains available until the beta is uploaded.
 
-The new crafting-hut **Recipe catalog** lists supported recipes and lets you
-learn them without carrying ingredients, while keeping native hut limits and
-actual production costs. Arcology Barracks upgrades now preserve completed
-attached guard towers. See [development test results and usage](docs/outposts/CATALOG-AND-BARRACKS-RESULTS.md).
+- **Exploration Hut:** discover resources in real biomes, then gather supported wood types,
+  saplings, flowers, wheat seeds, vines, kelp and seagrass on protected simulated trips.
+  Native couriers collect output. Includes five matching Arcology hut blueprints.
+- **Recipe catalog:** search supported crafting recipes and select ingredients without
+  carrying teaching materials. Native hut capacity, profession restrictions and production
+  costs still apply. Manually taught recipes are recognized to prevent new duplicates.
+- **Arcology repairs:** preserve completed Barracks child towers during upgrades and seal
+  water during Mine shaft construction. Retains prior lantern, worker, quarry, raft and
+  Builder recall fixes.
+- **310 blueprints** in the separate Arcology Horizons pack, including the Exploration Hut.
 
-An Explorer discovers resources in real biomes, then makes protected, simulated
-gathering trips for discovered wood types, saplings, flowers, wheat seeds, vines,
-kelp and seagrass. Native MineColonies workers, hut menus and local couriers remain
-in use. Multi-building outpost and Mayor development is **paused**; its existing
-save handling is retained. See the [player guide and verification record](docs/outposts/EXPLORATION-RESULTS.md)
-and [development build instructions](docs/DEVELOPMENT.md).
+Multi-building outposts, autonomous founding, Mayors and inter-settlement routes are
+**paused and outside the supported beta scope**. Legacy code and save recovery remain.
+Ars integration is deferred.
 
-## Alpha.2 update
+## Installation and limits
 
-Repairs Arcology Mine shaft fluid sealing, supply-raft waterline metadata, and Builder's Hut recall pockets. Install both the addon JAR and matching blueprint ZIP. Existing huts require repair/rebuild to receive blueprint changes. See [alpha.2 notes](docs/release/ALPHA2.md).
+Use Java 21, Minecraft 1.21.1 and NeoForge 21.1.250, with MineColonies
+1.1.1403-1.21.1, Structurize 1.0.832-1.21.1-snapshot, BlockUI
+1.0.199-1.21.1-snapshot, Domum Ornamentum 1.0.223-snapshot and Multi-Piston
+1.2.51-1.21.1-snapshot. Amendments 2.0.5 and Moonlight 2.23.8 are optional tested companions.
 
-## What this alpha does
+Install the addon JAR in `mods`, keeping one version. Extract the matching blueprint
+ZIP so `blueprints/arcology-horizons/pack.json` exists. Select **Arcology Horizons**
+in the normal build tool. The pack is not a resource pack or datapack. Back up worlds
+before updating; existing buildings require repair/rebuild for blueprint changes.
 
-- Collects supported lanterns before builders remove their support blocks, addressing falling lanterns during upgrades with Amendments.
-- Fixes Nether worker resumption, stored-enchantment book handling, plantation shears recognition and animal-home restoration after reload.
-- Adds compatibility fixes for Arcology quarry excavation, shaft access and filling materials near fluids.
-- Provides a separate pack with **305 blueprints**, repaired existing designs, Stable levels 1–5, Gatehouse levels 1–3, quarry components and ten added plantation fields.
-
-Use MineColonies' own build tool, builders, assignments, requests and upgrades. Normal materials, tools, food and research requirements still apply. This alpha does **not** provide automated outpost founding, a Mayor UI or protected delivery routes.
-
-## Install
-
-Download the addon JAR and separate blueprint ZIP from [Releases](https://github.com/Akamarus/colony-horizons/releases/tag/v0.1.0-alpha.2). Install the JAR in `mods`. Extract the pack into `blueprints` so `blueprints/arcology-horizons/pack.json` exists. Select **Arcology Horizons** using **Switch Pack** in the build tool. The pack is not a resource pack or datapack.
-
-Requires Java 21, Minecraft 1.21.1, NeoForge 21.1.250 and these tested companions:
-
-| Mod | Version |
-| --- | --- |
-| MineColonies | 1.1.1403-1.21.1 |
-| Structurize | 1.0.832-1.21.1-snapshot |
-| BlockUI | 1.0.199-1.21.1-snapshot |
-| Domum Ornamentum | 1.0.223-snapshot |
-| Multi-Piston | 1.2.51-1.21.1-snapshot |
-
-Obtain dependencies from their official distributions. Optional integration was tested with Amendments 2.0.5 and Moonlight 2.23.8. Back up worlds and start with a separate test world. Existing structures are not migrated automatically.
-
-## Verification and limitations
-
-The released JAR passed an official Minecraft Launcher smoke test with the pinned mods and Amendments: new world creation, native Arcology pack selection, building preview, save/reload and clean shutdown. The runtime log had no ERROR/FATAL entries. The source archive rebuilds into a byte-identical JAR. All 95 pack contract checks passed; all 305 blueprints match the previously tested candidate.
-
-Earlier candidate checks covered 49 native scenarios and 44 Python checks. The launcher smoke test did not repeat every scenario. Multiplayer and arbitrary modpacks are not certified. Recovery testing covers clean shutdown, not power loss. See [verification](docs/release/VERIFICATION.md).
+See [beta notes](docs/release/BETA1.md), [installation](docs/release/INSTALLATION.md),
+[Exploration guide](docs/outposts/EXPLORATION-RESULTS.md) and
+[verification](docs/outposts/RELEASE-CANDIDATE-TESTING.md).
+Testing covers controlled worker scenarios, copied-colony recovery, clean restart,
+packaged client/server and alpha.2 save compatibility. Multiplayer, arbitrary modpacks,
+power-loss recovery and indefinite endurance are not certified. Existing duplicate
+recipes are not automatically removed.
 
 ## Build from source
 
-For the current development snapshot, use Java 21:
+For the beta candidate, use Java 21:
 
 ```powershell
 .\gradlew.bat supplyDevJar --no-daemon
-python tools/Test-SupplyDevPackage.py build/supply-dev-libs/colony-horizons-0.1.0-dev.catalog.1.jar --version 0.1.0-dev.catalog.1
+python tools/Test-SupplyDevPackage.py build/supply-dev-libs/colony-horizons-0.1.0-beta.1.jar --version 0.1.0-beta.1
 ```
 
 Use `sh gradlew` on Linux/macOS. Initial dependency downloads require network

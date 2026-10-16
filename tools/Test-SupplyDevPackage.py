@@ -3,6 +3,8 @@ import json
 import sys
 import zipfile
 import argparse
+import re
+import tomllib
 parser=argparse.ArgumentParser()
 parser.add_argument("jar")
 parser.add_argument("--version", default="0.1.0-dev.menus.1")
@@ -50,10 +52,12 @@ with zipfile.ZipFile(args.jar) as jar:
     for layout in ("main", "outpost", "route", "founding", "mayor", "upgrade"):
         if "assets/colonyhorizons/gui/supply/"+layout+".xml" not in names:
             failures.append("Missing menu layout: "+layout)
-    metadata = jar.read("META-INF/neoforge.mods.toml").decode()
-    if args.version not in metadata or "-dev." not in args.version:
-        failures.append("Artifact must have a distinct development version")
+    metadata = tomllib.loads(jar.read("META-INF/neoforge.mods.toml").decode())
+    if not re.fullmatch(r"\d+\.\d+\.\d+-(?:dev\.[A-Za-z0-9.]+|beta\.\d+)", args.version):
+        failures.append("Expected an explicit development or beta version")
+    if not any(m.get("modId") == "colonyhorizons" and m.get("version") == args.version for m in metadata.get("mods", [])):
+        failures.append("Artifact mod ID/version does not match requested version")
 if failures:
     print("\n".join("FAIL: " + failure for failure in failures))
     sys.exit(1)
-print("PASS: five courier hooks, production classes and notices; distinct dev version; no QA references/assets")
+print("PASS: courier hooks, production classes and notices; exact version; no QA references/assets")

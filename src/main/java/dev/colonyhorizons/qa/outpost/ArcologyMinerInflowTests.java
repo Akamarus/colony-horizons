@@ -87,9 +87,45 @@ public final class ArcologyMinerInflowTests {
     if(f.level.getBlockState(target).isAir()){
      check(c.getInventory().getStackInSlot(1).getDamageValue()>pickBefore,"Dry stone must be mined with native tool wear");
      pass("dry_mining","Native pickaxe excavation still works after the wet cell is contained");
-     ProbeReport.write(f.output,"ArcologyMinerInflow",rows);f.h.succeed();return;
+     // A broad overhead pool reproduces inflow beyond the original single-cell test.
+     for(int x=-3;x<=3;x++)for(int z=-3;z<=3;z++){
+      var p=target.offset(x,0,z);if(p.getX()==mine.getLadderLocation().getX()&&p.getZ()==mine.getLadderLocation().getZ())continue;
+      f.level.setBlock(p.above(),Blocks.WATER.defaultBlockState(),3);
+      f.level.setBlock(p,Blocks.WATER.defaultBlockState(),3);
+     }
+     c.getInventory().setStackInSlot(2,new ItemStack(Items.DIRT,64));
+     c.getInventory().setStackInSlot(3,new ItemStack(Items.DIRT,64));
+     c.getInventory().setStackInSlot(4,new ItemStack(Items.DIRT,64));
+     phase=3;phaseStart=ticks;schedule();return;
     }
     check(ticks-phaseStart<200,"Dry mining blocked");schedule();return;
+   }
+   if(phase==3){
+    int wet=0,plugs=0;
+    for(int x=-3;x<=3;x++)for(int z=-3;z<=3;z++){
+     var p=target.offset(x,0,z);if(p.getX()==mine.getLadderLocation().getX()&&p.getZ()==mine.getLadderLocation().getZ())continue;
+     if(!f.level.getFluidState(p).isEmpty())wet++;
+     if(f.level.getBlockState(p).is(Blocks.DIRT))plugs++;
+    }
+    if(wet==0&&plugs==0){pass("broad_overhead_inflow","Entire 7x7 excavation plane dry and all temporary dirt plugs removed after "+(ticks-phaseStart)+" actions");
+     target=target.above(4);source=target.above();
+     f.level.setBlock(target.below(),Blocks.STONE.defaultBlockState(),3);
+     for(var d:Direction.Plane.HORIZONTAL){f.level.setBlock(source.relative(d),Blocks.STONE.defaultBlockState(),3);f.level.setBlock(target.relative(d),Blocks.AIR.defaultBlockState(),3);}
+     f.level.setBlock(source.above(),Blocks.STONE.defaultBlockState(),3);
+     f.level.setBlock(source,Blocks.WATER.defaultBlockState(),3);f.level.setBlock(target,Blocks.WATER.defaultBlockState(),3);
+     c.getInventory().setStackInSlot(2,new ItemStack(Items.DIRT,64));
+     var blockField=com.minecolonies.core.entity.ai.workers.AbstractEntityAIStructure.class.getDeclaredField("blockToMine");blockField.setAccessible(true);blockField.set(ai,target);
+     var workField=com.minecolonies.core.entity.ai.workers.AbstractEntityAIStructure.class.getDeclaredField("workFrom");workField.setAccessible(true);workField.set(ai,target.east());
+     c.getEntity().orElseThrow().setPos(target.getX()+1.5,target.getY(),target.getZ()+0.5);
+     action=EntityAIStructureMiner.class.getDeclaredMethod("doMining");action.setAccessible(true);phase=4;phaseStart=ticks;drySince=0;schedule();return;}
+    check(ticks-phaseStart<1600,"Broad pool stalled: wet="+wet+" plugs="+plugs+" "+detail());
+    schedule();return;
+   }
+   if(phase==4){
+    boolean dry=f.level.getBlockState(target).isAir()&&f.level.getFluidState(source).isEmpty();
+    drySince=dry?(drySince==0?ticks:drySince):0;
+    if(drySince>0&&ticks-drySince>=40){pass("shaft_construction_inflow","Native structure doMining contained inflow, mined the plug and stayed dry for 40 ticks");ProbeReport.write(f.output,"ArcologyMinerInflow",rows);f.h.succeed();return;}
+    check(ticks-phaseStart<300,"Shaft construction water stalled: "+detail());schedule();return;
    }
    boolean dirt=f.level.getBlockState(target).is(Blocks.DIRT);
    if(dirt&&!wasDirt)placed++;if(!dirt&&wasDirt)removed++;wasDirt=dirt;

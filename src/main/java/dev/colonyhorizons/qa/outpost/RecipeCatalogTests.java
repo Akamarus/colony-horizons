@@ -40,6 +40,40 @@ public final class RecipeCatalogTests {
       SupplyTests.check(storage.getCleanedInput().stream().anyMatch(i->net.minecraft.world.item.ItemStack.isSameItemSameComponents(i.getItemStack(),options.get(slot).get(1))));
       SupplyTests.check(entries.stream().noneMatch(e->e.recipe().getPrimaryOutput().is(net.minecraft.world.item.Items.DIAMOND_PICKAXE)));
      });
+     SupplyTests.run(rows,"manually_taught_duplicate_rejected",()->{
+      var entry=candidates.stream().filter(e->e.recipe().getGridSize()==2).findFirst().orElseThrow();
+      var catalog=dev.colonyhorizons.recipes.RecipeCatalog.storage(h.getLevel(),entry,new int[0]);
+      var manual=com.minecolonies.api.crafting.RecipeStorage.builder(catalog).withGridSize(3).build();
+      var token=com.minecolonies.api.colony.IColonyManager.getInstance().getRecipeManager().checkOrAddRecipe(manual);
+      SupplyTests.check(module.addRecipe(token));
+      try{
+       int count=module.getRecipes().size();
+       SupplyTests.check(dev.colonyhorizons.recipes.RecipeCatalog.known(module,catalog));
+       reject(()->dev.colonyhorizons.recipes.RecipeCatalog.learn(h.getLevel(),module,entry.key(),new int[0]));
+       SupplyTests.check(module.getRecipes().size()==count);
+       module.toggle(module.getRecipes().indexOf(token));
+       SupplyTests.check(dev.colonyhorizons.recipes.RecipeCatalog.known(module,catalog));
+       reject(()->dev.colonyhorizons.recipes.RecipeCatalog.learn(h.getLevel(),module,entry.key(),new int[0]));
+       var differentYield=com.minecolonies.api.crafting.RecipeStorage.builder(catalog).withPrimaryOutput(catalog.getPrimaryOutput().copyWithCount(catalog.getPrimaryOutput().getCount()+1)).build();
+       SupplyTests.check(!dev.colonyhorizons.recipes.RecipeCatalog.known(module,differentYield));
+       var named=catalog.getPrimaryOutput().copy();named.set(net.minecraft.core.component.DataComponents.CUSTOM_NAME,net.minecraft.network.chat.Component.literal("Distinct"));
+       SupplyTests.check(!dev.colonyhorizons.recipes.RecipeCatalog.known(module,com.minecolonies.api.crafting.RecipeStorage.builder(catalog).withPrimaryOutput(named).build()));
+
+      }finally{module.removeRecipe(token);}
+     });
+     SupplyTests.run(rows,"manual_input_order_and_variants",()->{
+      var entry=candidates.stream().filter(e->dev.colonyhorizons.recipes.RecipeCatalog.storage(h.getLevel(),e,new int[0]).getCleanedInput().size()>1).findFirst().orElseThrow();
+      var catalog=dev.colonyhorizons.recipes.RecipeCatalog.storage(h.getLevel(),entry,new int[0]);
+      var inputs=new ArrayList<>(catalog.getCleanedInput());Collections.reverse(inputs);
+      var manual=com.minecolonies.api.crafting.RecipeStorage.builder(catalog).withInputs(inputs).withGridSize(3).build();
+      var token=com.minecolonies.api.colony.IColonyManager.getInstance().getRecipeManager().checkOrAddRecipe(manual);
+      SupplyTests.check(module.addRecipe(token));
+      try{
+       SupplyTests.check(dev.colonyhorizons.recipes.RecipeCatalog.known(module,catalog));
+       inputs.set(0,new com.minecolonies.api.crafting.ItemStorage(new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.DIAMOND,inputs.getFirst().getAmount())));
+       SupplyTests.check(!dev.colonyhorizons.recipes.RecipeCatalog.known(module,com.minecolonies.api.crafting.RecipeStorage.builder(catalog).withInputs(inputs).build()));
+      }finally{module.removeRecipe(token);}
+     });
      var first=candidates.getFirst();int before=((dev.colonyhorizons.compat.mixin.RecipeCapacityAccess)module).colonyHorizons$used();
      SupplyTests.run(rows,"inputless_native_teaching",()->{SupplyTests.check(setup.owner.getInventory().isEmpty());dev.colonyhorizons.recipes.RecipeCatalog.learn(h.getLevel(),module,first.key(),new int[0]);SupplyTests.check(setup.owner.getInventory().isEmpty());SupplyTests.check(((dev.colonyhorizons.compat.mixin.RecipeCapacityAccess)module).colonyHorizons$used()==before+1);});
      SupplyTests.run(rows,"duplicate_and_forged_rejected",()->{reject(()->dev.colonyhorizons.recipes.RecipeCatalog.learn(h.getLevel(),module,first.key(),new int[0]));reject(()->dev.colonyhorizons.recipes.RecipeCatalog.learn(h.getLevel(),module,"forged:diamond",new int[0]));});

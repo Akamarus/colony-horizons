@@ -23,7 +23,7 @@ repeat behavior and recovery. Fix progression blockers and duplication/loss risk
 Expand dedicated-server and two-player coverage, long-session performance tests and
 compatibility testing. Do not call controlled fixtures universal modpack certification.
 
-## Next public alpha
+## Next public release: beta.1
 
 Freeze a candidate, repeat artifact and migration checks, validate a normal launcher,
 publish matching source/checksums/blueprints and backup/rollback instructions. The
@@ -40,7 +40,7 @@ Stable 1.0 requires reliable documented behavior, not every long-term feature id
 
 Multi-building outposts, autonomous founding, Mayor development and inter-settlement
 supply routes are paused in favor of the simpler Exploration Hut. Their existing code
-and save recovery remain; they are not prerequisites for the next Exploration Hut alpha.
+and save recovery remain; they are not prerequisites for the supported beta.
 Profession progression, building specializations, evolution and magic integrations can
 be reconsidered after the core loop is stable. Ars work remains deferred.
 
@@ -48,5 +48,12 @@ be reconsidered after the core loop is stable. Ars work remains deferred.
 
 - Implemented and tested a searchable crafting-hut recipe catalog with ingredient-free teaching, native capacity/profession restrictions and protected automatic recipes.
 - Implemented and tested Arcology Barracks upgrade preservation for completed child towers.
-- Development snapshot: `0.1.0-dev.catalog.1`; see [test results and limitations](docs/outposts/CATALOG-AND-BARRACKS-RESULTS.md).
-- Next: colony playtesting, live client/server learning-flow checks and additional upgrade/restart coverage before promoting this snapshot to a published alpha. The multi-building outpost system remains paused.
+- Development snapshot: `0.1.0-beta.1`; see [test results and limitations](docs/outposts/CATALOG-AND-BARRACKS-RESULTS.md).
+- Completed: copied flooded-mine recovery, recipe restart/duplicate checks, Barracks upgrades, packaged game checks and alpha.2 save compatibility. Next: publish the versioned beta after package verification, then gather broader colony reports. The multi-building outpost system remains paused.
+
+## Beta scope freeze
+
+Beta.1 supports Exploration, recipe teaching and the documented Arcology repairs.
+No new outpost or Mayor features are required for stable. Stable readiness depends on
+reliability of these supported features, dedicated-server/multiple-player coverage and
+resolution of severe reported issues.
