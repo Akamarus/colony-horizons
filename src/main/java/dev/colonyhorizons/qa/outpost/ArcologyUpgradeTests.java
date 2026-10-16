@@ -30,6 +30,7 @@ public final class ArcologyUpgradeTests {
  }
  static final class Run {
   java.util.function.Consumer<Run> afterSetup;
+  Runnable extraCheck;
   final boolean behaviorOnly;final GameTestHelper h;final ServerLevel level;final Path root=Path.of(System.getProperty("colonyhorizons.arcologyPath"));
   final Path output=Path.of(System.getProperty("colonyhorizons.probeOutput"));
   final List<ProbeResult> rows=new ArrayList<>();
@@ -99,6 +100,7 @@ public final class ArcologyUpgradeTests {
   void schedule(){h.runAfterDelay(20,()->{try{tick();}catch(Throwable e){fail(e);}});}
   void tick()throws Exception{
    ticks+=20;var e=worker.getEntity().orElseThrow();
+   if(extraCheck!=null)extraCheck.run();
    if(stableWorker!=null)checkStableRetention();
    check(e.isAlive() && e.getUUID().equals(workerId) && worker.getWorkBuilding()==builder,"Builder identity/assignment lost");
    check(previous.distanceTo(e.position())<=12,"Builder recovery teleport");previous=e.position();

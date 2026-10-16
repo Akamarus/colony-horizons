@@ -1,6 +1,6 @@
 # Exploration Hut development snapshot
 
-Version: 0.1.0-dev.exploration.1. Java 21, Python 3, Minecraft 1.21.1,
+Version: 0.1.0-dev.catalog.1. Java 21, Python 3, Minecraft 1.21.1,
 NeoForge 21.1.250 and the dependency versions in README are required.
 Run commands from the repository root. Initial Gradle dependency resolution needs network access.
 
@@ -8,8 +8,8 @@ Run commands from the repository root. Initial Gradle dependency resolution need
 
 ```powershell
 .\gradlew.bat supplyDevJar supplyQaJar --no-daemon --console=plain
-python tools/Test-SupplyDevPackage.py build/supply-dev-libs/colony-horizons-0.1.0-dev.exploration.1.jar --version 0.1.0-dev.exploration.1
-python tools/Test-SurveyorArtifact.py build/supply-dev-libs/colony-horizons-0.1.0-dev.exploration.1.jar
+python tools/Test-SupplyDevPackage.py build/supply-dev-libs/colony-horizons-0.1.0-dev.catalog.1.jar --version 0.1.0-dev.catalog.1
+python tools/Test-SurveyorArtifact.py build/supply-dev-libs/colony-horizons-0.1.0-dev.catalog.1.jar
 python tools/Test-SupplyMenuAssets.py
 ```
 

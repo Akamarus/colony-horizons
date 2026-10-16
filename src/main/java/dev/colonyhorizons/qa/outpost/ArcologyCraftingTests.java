@@ -78,7 +78,14 @@ public final class ArcologyCraftingTests {
     check(expected.is(products[i])&&expected.getCount()==yields[i],"Fixture recipe differs from real crafting recipe");
     var recipe=RecipeStorage.builder().withInputs(ingredients).withPrimaryOutput(new ItemStack(products[i],yields[i])).withGridSize(3).withIntermediate(Blocks.AIR).build();
     var token=IColonyManager.getInstance().getRecipeManager().checkOrAddRecipe(recipe);
-    boolean taught=false;for(var craft:b.getModulesByType(ICraftingBuildingModule.class))if(craft.addRecipe(token)){taught=true;break;}
+    boolean taught=false;
+    if(System.getProperty("colonyhorizons.foundationSuite", "").equals("RecipeCatalogCrafting")){
+     for(var craft:b.getModulesByType(com.minecolonies.core.colony.buildings.modules.AbstractCraftingBuildingModule.class)){
+      for(var entry:dev.colonyhorizons.recipes.RecipeCatalog.entries(level,craft))if(entry.teachable()&&entry.recipe().getPrimaryOutput().is(products[i])&&entry.recipe().getPrimaryOutput().getCount()==yields[i]){
+       dev.colonyhorizons.recipes.RecipeCatalog.learn(level,craft,entry.key(),new int[0]);taught=true;break;
+      }if(taught)break;
+     }
+    }else for(var craft:b.getModulesByType(ICraftingBuildingModule.class))if(craft.addRecipe(token)){taught=true;break;}
     check(taught,"Native recipe teaching rejected "+names[i]);
     check(count(i,products[i])==0,"Output must start absent");
     requester.createRequest(new com.minecolonies.api.colony.requestsystem.requestable.Stack(new ItemStack(products[i],yields[i])),false);
@@ -108,7 +115,7 @@ public final class ArcologyCraftingTests {
     if(!done[i]&&count(i,products[i])>=yields[i]){
      for(var item:inputs[i])check(count(i,item)==0,"Output without full ingredient consumption "+names[i]);
      check(huts.get(i).getModule(BuildingModules.STATS_MODULE).getBuildingStatisticsManager().getStatTotal("items_crafted_detail;"+new ItemStack(products[i]).getHoverName().getString())>=yields[i],"Missing native craft statistic "+names[i]);
-     done[i]=true;rows.add(new ProbeResult(names[i]+"_craft",ProbeResult.Outcome.PASS,"Native requested recipe produced "+yields[i]+" "+products[i]+" and consumed exact supplied ingredients; prebuilt level5 hut, taught recipe and food supplied. Product observed in worker/hut; courier delivery is checked separately."));ProbeReport.write(output,"ArcologyCrafting",rows);
+     done[i]=true;rows.add(new ProbeResult(names[i]+"_craft",ProbeResult.Outcome.PASS,"Native requested recipe produced "+yields[i]+" "+products[i]+" and consumed exact supplied ingredients; prebuilt level5 hut, taught recipe and food supplied. Product observed in worker/hut; courier delivery is checked separately."));ProbeReport.write(output,System.getProperty("colonyhorizons.foundationSuite","ArcologyCrafting"),rows);
     }
    }
    if(ticks%200==0){var s=new StringBuilder("tick="+ticks+" active="+fixture.colony().isActive()+"\n");for(int i=0;i<3;i++){var c=workers.get(i);s.append(names[i]).append(" pos=").append(c.getEntity().orElseThrow().position()).append(" AI=").append(c.getJob().getWorkerAI()==null?"none":c.getJob().getWorkerAI().getState()).append(" output=").append(count(i,products[i])).append(" stats=").append(huts.get(i).getModule(BuildingModules.STATS_MODULE).getBuildingStatisticsManager().getStatTotal("items_crafted_detail;"+new ItemStack(products[i]).getHoverName().getString())).append("\n");for(var r:((com.minecolonies.core.colony.buildings.AbstractBuilding)huts.get(i)).getOpenRequestsOfCitizenOrBuilding(c.getId(),r->true))s.append(r.getLongDisplayString().getString()).append(" ").append(r.getState()).append("\n");}Files.writeString(output.resolve("crafting-diagnostics.txt"),s,StandardOpenOption.CREATE,StandardOpenOption.APPEND);}
@@ -122,11 +129,11 @@ public final class ArcologyCraftingTests {
      if(received==yields[i])check(count(i,products[i])==0&&ArcologyOperationsFixture.count(courier.getInventory(),new ItemStack(products[i]))==0&&ArcologyOperationsFixture.count(warehouse.getItemHandlerCap((Direction)null),new ItemStack(products[i]))==0,"Duplicate delivered output");
     }
     if(ticks%200==0)Files.writeString(output.resolve("crafting-diagnostics.txt"),"courier pos="+entity.position()+" AI="+courier.getJob().getWorkerAI().getState()+" carried="+Arrays.toString(carried)+" delivered="+delivered+"\n",StandardOpenOption.APPEND);
-    if(delivered){rows.add(new ProbeResult("courier_delivery",ProbeResult.Outcome.PASS,"Same native courier carried all three newly crafted products from workplaces to requesting Town Hall, exact quantities arrived with none left in source workers/huts or courier; native warehouse link, recovery disabled. Prepared ground-level layout and food supplied; warehouse rack throughput, upgrades and restart not certified."));ProbeReport.write(output,"ArcologyCrafting",rows);h.succeed();return;}
+    if(delivered){rows.add(new ProbeResult("courier_delivery",ProbeResult.Outcome.PASS,"Same native courier carried all three newly crafted products from workplaces to requesting Town Hall, exact quantities arrived with none left in source workers/huts or courier; native warehouse link, recovery disabled. Prepared ground-level layout and food supplied; warehouse rack throughput, upgrades and restart not certified."));ProbeReport.write(output,System.getProperty("colonyhorizons.foundationSuite","ArcologyCrafting"),rows);h.succeed();return;}
    }
    check(ticks<60000,"Crafting/delivery timeout; see diagnostics");schedule();
   }
   void check(boolean ok,String msg){if(!ok)throw new IllegalStateException(msg);}
-  void fail(Throwable e){try{rows.add(new ProbeResult("craft_failure",ProbeResult.Outcome.FAIL,e.toString()));ProbeReport.write(output,"ArcologyCrafting",rows);}catch(Exception x){e.addSuppressed(x);}h.fail(e.toString());}
+  void fail(Throwable e){try{rows.add(new ProbeResult("craft_failure",ProbeResult.Outcome.FAIL,e.toString()));ProbeReport.write(output,System.getProperty("colonyhorizons.foundationSuite","ArcologyCrafting"),rows);}catch(Exception x){e.addSuppressed(x);}h.fail(e.toString());}
  }
 }

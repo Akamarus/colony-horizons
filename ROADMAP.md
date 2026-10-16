@@ -43,3 +43,10 @@ supply routes are paused in favor of the simpler Exploration Hut. Their existing
 and save recovery remain; they are not prerequisites for the next Exploration Hut alpha.
 Profession progression, building specializations, evolution and magic integrations can
 be reconsidered after the core loop is stable. Ars work remains deferred.
+
+## Development update: 2026-10-16
+
+- Implemented and tested a searchable crafting-hut recipe catalog with ingredient-free teaching, native capacity/profession restrictions and protected automatic recipes.
+- Implemented and tested Arcology Barracks upgrade preservation for completed child towers.
+- Development snapshot: `0.1.0-dev.catalog.1`; see [test results and limitations](docs/outposts/CATALOG-AND-BARRACKS-RESULTS.md).
+- Next: colony playtesting, live client/server learning-flow checks and additional upgrade/restart coverage before promoting this snapshot to a published alpha. The multi-building outpost system remains paused.

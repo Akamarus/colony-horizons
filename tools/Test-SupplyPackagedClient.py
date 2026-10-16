@@ -4,10 +4,14 @@ from pathlib import Path
 parser=argparse.ArgumentParser()
 parser.add_argument('--jar',type=Path,required=True)
 parser.add_argument('--version',default='0.1.0-dev.remote.1')
+parser.add_argument('--catalog',action='store_true')
+parser.add_argument('--catalog-world',type=Path)
 parser.add_argument('--navigation',action='store_true')
 parser.add_argument('--interactive-world',type=Path)
 parser.add_argument('--player-uuid',default='00000000000000000000000000000001')
 args=parser.parse_args()
+args_catalog=args.catalog
+catalog_world=args.catalog_world
 args_navigation=args.navigation
 interactive=args.interactive_world
 player_uuid=uuid.UUID(args.player_uuid).hex
@@ -30,11 +34,16 @@ else:
 pack=root/'build/surveyor-pack'
 assert (pack/'pack.json').is_file()
 shutil.copytree(pack,GAME/'blueprints/arcology')
+if args_catalog:
+    assert catalog_world and catalog_world.resolve().is_relative_to(root/'runs/foundation-sessions')
+    shutil.copytree(catalog_world,GAME/'saves/Catalog QA')
 print('Packaged client report:',ROOT,flush=True)
 (ROOT.parent/'latest.json').write_text(json.dumps({'report':str(ROOT)}))
 extra=[] if interactive else ['-Dcolonyhorizons.menuPreview=true']+(['-Dcolonyhorizons.menuRegression=true'] if args.navigation else [])
+if args_catalog: extra=['-Dcolonyhorizons.catalogPreview=true']
 marker='MENU_NAVIGATION_RESULT failures=0 cases=13' if args.navigation else 'MENU_PREVIEW_COMPLETE'
 
+if args_catalog: marker='CATALOG_PREVIEW_COMPLETE'
 BASE=Path(os.environ['COLONY_HORIZONS_TEST_LAUNCHER'])
 vanilla=json.loads((BASE/'versions/1.21.1/1.21.1.json').read_text())
 neo=json.loads((BASE/'versions/neoforge-21.1.250/neoforge-21.1.250.json').read_text())
@@ -70,6 +79,7 @@ def expand(items):
     return result
 args=['C:/Program Files/Java/jdk-21/bin/javaw.exe','-Xms1G','-Xmx4G']+extra+expand(vanilla['arguments']['jvm']+neo['arguments']['jvm'])+[neo['mainClass']]+expand(vanilla['arguments']['game']+neo['arguments']['game'])+['--width','1920','--height','1080']
 if interactive: args+=['--quickPlaySingleplayer','Exploration QA']
+if args_catalog: args+=['--quickPlaySingleplayer','Catalog QA']
 log=open(ROOT/'smoke-console.log','w')
 process=subprocess.Popen(args,cwd=GAME,stdout=log,stderr=subprocess.STDOUT,creationflags=subprocess.CREATE_NO_WINDOW)
 if interactive:

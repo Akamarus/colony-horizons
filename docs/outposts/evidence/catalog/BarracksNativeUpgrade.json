@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "upgrade:military/barracks2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 1; matching structural blocks\u003d282; same hut/colony/worker; recovery disabled; ticks\u003d2900. Support builder level5 and required research/materials provided as fixtures."
+  }
+]

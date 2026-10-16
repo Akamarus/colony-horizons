@@ -1,0 +1,28 @@
+<window size="400 250" lightbox="true">
+ <image source="minecolonies:textures/gui/townhall_book.png" pos="0 0" size="400 250"/>
+ <text pos="22 18" size="160 12" color="black" label="Recipe catalog"/>
+ <text id="capacity" pos="212 18" size="166 12" color="black"/>
+ <input id="query" pos="22 36" size="115 16"/>
+ <button id="search" label="Search" pos="140 36" size="48 18"/>
+ <list id="entries" pos="22 58" size="166 114"><view size="156 18"><itemicon id="icon" pos="0 0" size="16 16"/><button id="row" pos="18 0" size="138 18"/></view></list>
+ <button id="prev" label="&lt;" pos="22 176" size="28 18"/>
+ <text id="page" pos="60 181" size="88 12" color="black"/>
+ <button id="next" label="&gt;" pos="160 176" size="28 18"/>
+ <itemicon id="output" pos="212 36" size="16 16"/>
+ <text id="name" pos="234 36" size="144 24" color="black" wrap="true"/>
+ <text pos="212 62" size="166 12" color="black" label="Ingredients (click + to change)"/>
+ <itemicon id="i0" pos="214 78" size="16 16"/><button id="v0" label="+" pos="232 78" size="18 16"/>
+ <itemicon id="i1" pos="268 78" size="16 16"/><button id="v1" label="+" pos="286 78" size="18 16"/>
+ <itemicon id="i2" pos="322 78" size="16 16"/><button id="v2" label="+" pos="340 78" size="18 16"/>
+ <itemicon id="i3" pos="214 100" size="16 16"/><button id="v3" label="+" pos="232 100" size="18 16"/>
+ <itemicon id="i4" pos="268 100" size="16 16"/><button id="v4" label="+" pos="286 100" size="18 16"/>
+ <itemicon id="i5" pos="322 100" size="16 16"/><button id="v5" label="+" pos="340 100" size="18 16"/>
+ <itemicon id="i6" pos="214 122" size="16 16"/><button id="v6" label="+" pos="232 122" size="18 16"/>
+ <itemicon id="i7" pos="268 122" size="16 16"/><button id="v7" label="+" pos="286 122" size="18 16"/>
+ <itemicon id="i8" pos="322 122" size="16 16"/><button id="v8" label="+" pos="340 122" size="18 16"/>
+ <text id="note" pos="212 144" size="166 42" color="black" wrap="true"/>
+ <button id="learn" label="Learn recipe" pos="212 188" size="166 18"/>
+ <text id="message" pos="22 196" size="166 20" color="black" wrap="true"/>
+ <button id="manual" label="Manual teaching" pos="22 218" size="166 18"/>
+ <button id="back" label="Back" pos="302 218" size="76 18"/>
+</window>

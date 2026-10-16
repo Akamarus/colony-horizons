@@ -1,0 +1,52 @@
+[
+  {
+    "caseId": "locked_discover_only",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "unlocked_costs_and_yield",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "discovery_only_fruit",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "native_tabs_preserved",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "foreign_hut_denied",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "outpost_entry_removed",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "forged_yield_ignored",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "replayed_start_no_charge",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "stale_recall_rejected",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "destroyed_hut_denied",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  }
+]

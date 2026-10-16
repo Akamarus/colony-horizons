@@ -1,0 +1,62 @@
+[
+  {
+    "caseId": "canonical_result_and_remainders",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "ingredient_variant_and_profession",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "inputless_native_teaching",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "duplicate_and_forged_rejected",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "invalid_ingredient_rejected",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "native_capacity_enforced",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "automatic_recipes_read_only",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "recipe_save_round_trip",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "config_disabled",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "bounded_protocol_and_throttle",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "permission_and_distance",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "native_recipe_catalog",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  }
+]

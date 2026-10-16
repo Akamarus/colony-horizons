@@ -11,6 +11,7 @@ public final class PackagedMenuPreview {
     @SubscribeEvent
     public static void tick(ClientTickEvent.Post event) throws Exception {
         if(Boolean.getBoolean("colonyhorizons.copyFounding")){var mc=net.minecraft.client.Minecraft.getInstance();if(mc.screen instanceof net.minecraft.client.gui.screens.AccessibilityOnboardingScreen)mc.setScreen(new net.minecraft.client.gui.screens.TitleScreen());if(CopyFoundingProbe.done){mc.disconnect(new net.minecraft.client.gui.screens.TitleScreen());mc.stop();}return;}
+        if(Boolean.getBoolean("colonyhorizons.catalogPreview")){RecipeCatalogPreviewClient.tick();return;}
         MenuPreviewClient.tick(event);
     }
 }

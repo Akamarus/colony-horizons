@@ -21,6 +21,11 @@ public final class FoundationGameTests {
    case "ExplorationRestart" -> event.register(ExplorationRestartTests.class);
    case "ExplorationLifecycle" -> event.register(ExplorationLifecycleTests.class);
    case "ExplorationGathering" -> event.register(ExplorationGatheringTests.class);
+   case "BarracksNativeUpgrade" -> event.register(BarracksNativeUpgradeTests.class);
+   case "BarracksUpgrade" -> event.register(BarracksUpgradeTests.class);
+   case "RecipeCatalogSmelting" -> event.register(ArcologySmeltingTests.class);
+   case "RecipeCatalogCrafting" -> event.register(ArcologyCraftingTests.class);
+   case "RecipeCatalog" -> event.register(RecipeCatalogTests.class);
    case "ExplorationRecords" -> event.register(ExplorationRecordsTests.class);
    case "ExplorationSupplies" -> event.register(ExplorationSuppliesTests.class);
    case "ExplorationDiscovery" -> event.register(ExplorationDiscoveryTests.class);

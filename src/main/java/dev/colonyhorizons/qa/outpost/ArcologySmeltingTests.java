@@ -80,7 +80,14 @@ public final class ArcologySmeltingTests {
     check(ItemHandlerHelper.insertItemStacked(b.getItemHandlerCap((Direction)null),new ItemStack(Items.COAL,8),false).isEmpty(),"Fuel insertion");
     var recipe=RecipeStorage.builder().withInputs(ingredients).withPrimaryOutput(new ItemStack(products[i])).withGridSize(1).withIntermediate(Blocks.FURNACE).build();
     var token=IColonyManager.getInstance().getRecipeManager().checkOrAddRecipe(recipe);
-    boolean taught=false;for(var craft:b.getModulesByType(ICraftingBuildingModule.class))if(craft.addRecipe(token)){taught=true;break;}
+    boolean taught=false;
+    if(System.getProperty("colonyhorizons.foundationSuite", "").equals("RecipeCatalogSmelting")){
+     for(var craft:b.getModulesByType(com.minecolonies.core.colony.buildings.modules.AbstractCraftingBuildingModule.class)){
+      for(var entry:dev.colonyhorizons.recipes.RecipeCatalog.entries(level,craft))if(entry.teachable()&&entry.recipe().getPrimaryOutput().is(products[i])){
+       dev.colonyhorizons.recipes.RecipeCatalog.learn(level,craft,entry.key(),new int[0]);taught=true;break;
+      }if(taught)break;
+     }
+    }else for(var craft:b.getModulesByType(ICraftingBuildingModule.class))if(craft.addRecipe(token)){taught=true;break;}
     check(taught,"Native recipe teaching rejected "+names[i]);
     check(count(i,products[i])==0,"Output must start absent");
     requester.createRequest(new com.minecolonies.api.colony.requestsystem.requestable.Stack(new ItemStack(products[i],yields[i])),false);
@@ -106,7 +113,7 @@ public final class ArcologySmeltingTests {
     if(!done[i]&&count(i,products[i])==yields[i]){
      for(var item:inputs[i])check(count(i,item)==0,"Output without full ingredient consumption "+names[i]);
      check(furnaceInputs==0&&furnaceOutput==0&&lit[i]&&count(i,Items.COAL)+furnaceFuel<8,"Missing actual furnace/input/fuel consumption "+names[i]);
-     done[i]=true;c.setPaused(true);rows.add(new ProbeResult(names[i]+"_smelt",ProbeResult.Outcome.PASS,"Native worker fetched hut ingredients/fuel, lit a registered blueprint furnace, consumed four inputs and coal, and collected four "+products[i]+" into worker/hut. Loaded vanilla recipe validated; prebuilt level5 hut, taught recipe and food supplied; recovery disabled. Courier delivery, other recipes/levels and restart not certified."));ProbeReport.write(output,"ArcologySmelting",rows);
+     done[i]=true;c.setPaused(true);rows.add(new ProbeResult(names[i]+"_smelt",ProbeResult.Outcome.PASS,"Native worker fetched hut ingredients/fuel, lit a registered blueprint furnace, consumed four inputs and coal, and collected four "+products[i]+" into worker/hut. Loaded vanilla recipe validated; prebuilt level5 hut, taught recipe and food supplied; recovery disabled. Courier delivery, other recipes/levels and restart not certified."));ProbeReport.write(output,System.getProperty("colonyhorizons.foundationSuite","ArcologySmelting"),rows);
     }
    }
    if(ticks%200==0){var s=new StringBuilder("tick="+ticks+" active="+fixture.colony().isActive()+"\n");for(int i=0;i<2;i++){var c=workers.get(i);s.append(names[i]).append(" pos=").append(c.getEntity().orElseThrow().position()).append(" AI=").append(c.getJob().getWorkerAI()==null?"none":c.getJob().getWorkerAI().getState()).append(" output=").append(count(i,products[i])).append(" stats=").append(huts.get(i).getModule(BuildingModules.STATS_MODULE).getBuildingStatisticsManager().getStatTotal("items_crafted_detail;"+new ItemStack(products[i]).getHoverName().getString())).append("\n");for(var r:((com.minecolonies.core.colony.buildings.AbstractBuilding)huts.get(i)).getOpenRequestsOfCitizenOrBuilding(c.getId(),r->true))s.append(r.getLongDisplayString().getString()).append(" ").append(r.getState()).append("\n");}Files.writeString(output.resolve("smelting-diagnostics.txt"),s,StandardOpenOption.CREATE,StandardOpenOption.APPEND);}
@@ -114,6 +121,6 @@ public final class ArcologySmeltingTests {
    check(ticks<60000,"Smelting timeout; see diagnostics");schedule();
   }
   void check(boolean ok,String msg){if(!ok)throw new IllegalStateException(msg);}
-  void fail(Throwable e){try{rows.add(new ProbeResult("smelt_failure",ProbeResult.Outcome.FAIL,e.toString()));ProbeReport.write(output,"ArcologySmelting",rows);}catch(Exception x){e.addSuppressed(x);}h.fail(e.toString());}
+  void fail(Throwable e){try{rows.add(new ProbeResult("smelt_failure",ProbeResult.Outcome.FAIL,e.toString()));ProbeReport.write(output,System.getProperty("colonyhorizons.foundationSuite","ArcologySmelting"),rows);}catch(Exception x){e.addSuppressed(x);}h.fail(e.toString());}
  }
 }

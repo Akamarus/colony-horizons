@@ -6,11 +6,16 @@ An unofficial **MineColonies compatibility addon** for Minecraft Java **1.21.1 /
 
 [Download alpha.2]( https://github.com/Akamarus/colony-horizons/releases/tag/v0.1.0-alpha.2 ) · [Installation](docs/release/INSTALLATION.md) · [Report an issue](https://github.com/Akamarus/colony-horizons/issues) · [Roadmap](ROADMAP.md)
 
-## Current development: Exploration Hut
+## Current development: Recipe catalog and Barracks repair
 
-The main branch now includes **0.1.0-dev.exploration.1** source, automated test
-harnesses and five Exploration Hut blueprints. The downloadable alpha.2 release
+The main branch includes **0.1.0-dev.catalog.1** source and automated tests,
+including the Exploration Hut and its five blueprints. The downloadable alpha.2 release
 remains unchanged. This development snapshot is not a stable release.
+
+The new crafting-hut **Recipe catalog** lists supported recipes and lets you
+learn them without carrying ingredients, while keeping native hut limits and
+actual production costs. Arcology Barracks upgrades now preserve completed
+attached guard towers. See [development test results and usage](docs/outposts/CATALOG-AND-BARRACKS-RESULTS.md).
 
 An Explorer discovers resources in real biomes, then makes protected, simulated
 gathering trips for discovered wood types, saplings, flowers, wheat seeds, vines,
@@ -56,11 +61,11 @@ Earlier candidate checks covered 49 native scenarios and 44 Python checks. The l
 
 ## Build from source
 
-For the current Exploration Hut snapshot, use Java 21:
+For the current development snapshot, use Java 21:
 
 ```powershell
 .\gradlew.bat supplyDevJar --no-daemon
-python tools/Test-SupplyDevPackage.py build/supply-dev-libs/colony-horizons-0.1.0-dev.exploration.1.jar --version 0.1.0-dev.exploration.1
+python tools/Test-SupplyDevPackage.py build/supply-dev-libs/colony-horizons-0.1.0-dev.catalog.1.jar --version 0.1.0-dev.catalog.1
 ```
 
 Use `sh gradlew` on Linux/macOS. Initial dependency downloads require network

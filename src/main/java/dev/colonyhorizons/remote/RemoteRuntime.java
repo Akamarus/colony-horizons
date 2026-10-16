@@ -15,6 +15,8 @@ public final class RemoteRuntime {
         });
         dev.colonyhorizons.mayor.MayorJobRegistration.initialize(bus);
         container.registerConfig(ModConfig.Type.SERVER,RemoteLimits.SPEC);
+        container.registerConfig(ModConfig.Type.SERVER,dev.colonyhorizons.recipes.RecipeCatalogConfig.SPEC,"colony-horizons-recipes-server.toml");
+        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.OnDatapackSyncEvent event)->dev.colonyhorizons.recipes.RecipeCatalog.clear());
         bus.addListener((net.neoforged.neoforge.common.world.chunk.RegisterTicketControllersEvent event)->event.register(RemoteTickets.CONTROLLER));
         net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(RemoteRuntime::tick);
         net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.entity.EntityJoinLevelEvent event)->{

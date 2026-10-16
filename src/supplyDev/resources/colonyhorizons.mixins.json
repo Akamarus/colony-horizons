@@ -32,12 +32,14 @@
     "ArcologyQuarryAccessMiningMixin",
     "ArcologyQuarryFluidSupplyMixin",
     "ArcologyMinerFluidSealMixin",
-    "RemoteIllnessMixin"
+    "RemoteIllnessMixin",
+    "RecipeCapacityAccess",
+    "BarracksUpgradePreservationMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "client": [
-    
+    "CraftingCatalogWindowMixin"
   ]
 }
