@@ -1,0 +1,17 @@
+[
+  {
+    "caseId": "pack_metadata",
+    "outcome": "PASS",
+    "evidence": "Native server automatically discovered the isolated Arcology Horizons pack, enabled once with its installed dependencies, original author credit and icon. No manual pack registration."
+  },
+  {
+    "caseId": "all_blueprints_browsable",
+    "outcome": "PASS",
+    "evidence": "Native recursive category/blueprint enumeration reached all305 distinct on-disk blueprints across 30 categories; no omitted or duplicate assets. Server backend enumeration only, not client grouping, previews or placement clicks."
+  },
+  {
+    "caseId": "extensions_browsable",
+    "outcome": "PASS",
+    "evidence": "New stable, gatehouse, quarry and aquatic field entries are discoverable through native pack categories. Blueprint work behavior is covered by separate suites."
+  }
+]

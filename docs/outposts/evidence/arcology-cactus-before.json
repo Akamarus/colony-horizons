@@ -1,0 +1,79 @@
+[
+  {
+    "case": "mine_1",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_1",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_2",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_2",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_3",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_3",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_4",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_4",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_5",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_5",
+    "status": "PASS"
+  },
+  {
+    "case": "marker_bounds_all_blueprints",
+    "status": "PASS"
+  },
+  {
+    "case": "survival_materials",
+    "status": "PASS"
+  },
+  {
+    "case": "preserve_existing_crop_capacity",
+    "status": "FAIL",
+    "detail": "Changed Plantation L4 capacity or undocumented crop positions"
+  },
+  {
+    "case": "source_hashes_nbt_types_untouched_bytes",
+    "status": "PASS"
+  }
+]

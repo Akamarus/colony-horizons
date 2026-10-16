@@ -1,0 +1,22 @@
+[
+  {
+    "caseId": "blacksmith_craft",
+    "outcome": "PASS",
+    "evidence": "Native requested recipe produced 1 minecraft:iron_pickaxe and consumed exact supplied ingredients; prebuilt level5 hut, taught recipe and food supplied. Product observed in worker/hut; courier delivery is checked separately."
+  },
+  {
+    "caseId": "mechanic_craft",
+    "outcome": "PASS",
+    "evidence": "Native requested recipe produced 1 minecraft:minecart and consumed exact supplied ingredients; prebuilt level5 hut, taught recipe and food supplied. Product observed in worker/hut; courier delivery is checked separately."
+  },
+  {
+    "caseId": "dyer_craft",
+    "outcome": "PASS",
+    "evidence": "Native requested recipe produced 1 minecraft:red_wool and consumed exact supplied ingredients; prebuilt level5 hut, taught recipe and food supplied. Product observed in worker/hut; courier delivery is checked separately."
+  },
+  {
+    "caseId": "courier_delivery",
+    "outcome": "PASS",
+    "evidence": "Same native courier carried all three newly crafted products from workplaces to requesting Town Hall, exact quantities arrived with none left in source workers/huts or courier; native warehouse link, recovery disabled. Prepared ground-level layout and food supplied; warehouse rack throughput, upgrades and restart not certified."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "caseId": "mysticalsite_happiness",
+    "outcome": "PASS",
+    "evidence": "Native happiness calculation increased from 1.0 to 2.5 after placing Arcology level5 mystical site. Prebuilt fixture; resurrection and lower levels not tested."
+  },
+  {
+    "caseId": "library_learning",
+    "outcome": "PASS",
+    "evidence": "Native student fetched supplied paper and gained intelligence XP; native study statistic observed. Level5 prebuilt library, low starting skills, food and paper supplied; recovery disabled."
+  },
+  {
+    "caseId": "hospital_treatment",
+    "outcome": "PASS",
+    "evidence": "Native healer registered and treated fixture disease minecolonies:measles, native treatment statistic incremented and patient recovered. Cure resources supplied only to hospital; native free cure may occur. No patient-state, cure, healing or AI-state injection."
+  },
+  {
+    "caseId": "school_teaching",
+    "outcome": "PASS",
+    "evidence": "Native teacher taught a naturally seated child and pupil intelligence XP increased. Child population, low initial skills and hut paper supplied; no sitting/AI/XP injection after start."
+  },
+  {
+    "caseId": "university_research",
+    "outcome": "PASS",
+    "evidence": "Native university colony ticks advanced loaded minecolonies:civilian/stamina from zero to 5 with assigned researcher. Research start supplied via native startResearch (requirements/cost bypass); no progress injection. Completion and researcher mana bonus not certified."
+  },
+  {
+    "caseId": "tavern_visitor",
+    "outcome": "PASS",
+    "evidence": "Native timed tavern logic spawned a living visitor assigned to Arcology tavern and incremented new_visitors. No spawnVisitor call or cooldown injection; recruitment and music not tested."
+  }
+]

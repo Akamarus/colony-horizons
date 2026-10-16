@@ -1,0 +1,12 @@
+[
+  {
+    "caseId": "simplequarry_water_pool",
+    "outcome": "PASS",
+    "evidence": "Nine connected source blocks in a3x3 pool with initial open headspace were each observed as native cobblestone fill, seal ticks\u003d[26870, 28185, 28460, 26955, 28080, 28565, 27040, 27975, 28670]; same native quarrier then cleared 12 interior cells two layers below it. Native coal statistic\u003d23. Same worker and Mine/quarry assignment, recovery disabled, no fire/lava contact observed. Requested materials/tools and food supplied; no post-start terrain edits or health restoration. Bounded fixture; not an unbounded aquifer, lava lake or shortage test. ticks\u003d39705"
+  },
+  {
+    "caseId": "mediumquarry_lava_pool",
+    "outcome": "PASS",
+    "evidence": "Nine connected source blocks in a3x3 pool with initial open headspace were each observed as native cobblestone fill, seal ticks\u003d[64345, 67295, 67550, 64425, 67200, 67645, 64505, 67045, 67740]; same native quarrier then cleared 12 interior cells two layers below it. Native coal statistic\u003d23. Same worker and Mine/quarry assignment, recovery disabled, no fire/lava contact observed. Requested materials/tools and food supplied; no post-start terrain edits or health restoration. Bounded fixture; not an unbounded aquifer, lava lake or shortage test. ticks\u003d122440"
+  }
+]

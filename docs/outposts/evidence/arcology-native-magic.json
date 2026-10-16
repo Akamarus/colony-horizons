@@ -1,0 +1,12 @@
+[
+  {
+    "caseId": "alchemist_brew_swiftness",
+    "outcome": "PASS",
+    "evidence": "Native alchemist fetched three supplied awkward potions, sugar and blaze powder; used a registered blueprint brewing stand; active native brewing observed; ingredient/fuel consumed; three swiftness potions collected and native brewing statistic recorded. Loaded potion recipe validated, recipe taught as configuration; prebuilt level5 hut, food and inputs supplied. Recovery disabled. Other potions, harvesting, other levels, delivery and restart excluded."
+  },
+  {
+    "caseId": "enchanter_station_visit",
+    "outcome": "PASS",
+    "evidence": "Native enchanter fetched supplied book, navigated to configured alchemist station, consumed book and gained Mana with native citizens_visited statistic. Prebuilt level5 huts, target worker, station selection, book and food supplied; no Mana or AI-state injection; identity/movement checked with recovery disabled. This verifies native visit/Mana acquisition, not donor XP transfer, enchanted-book production, other levels or restart."
+  }
+]

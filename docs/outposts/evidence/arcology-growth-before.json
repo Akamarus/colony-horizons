@@ -1,0 +1,135 @@
+[
+  {
+    "case": "archery_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_1",
+    "status": "FAIL",
+    "detail": "bamboo cannot reach native harvest height 6: obstruction at (2, 5, 4)"
+  },
+  {
+    "case": "archery_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_2",
+    "status": "FAIL",
+    "detail": "cactus cannot reach native harvest height 3: obstruction at (12, 4, 2)"
+  },
+  {
+    "case": "archery_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_3",
+    "status": "FAIL",
+    "detail": "bamboo cannot reach native harvest height 6: obstruction at (6, 5, 8)"
+  },
+  {
+    "case": "archery_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_4",
+    "status": "FAIL",
+    "detail": "bamboo cannot reach native harvest height 6: obstruction at (6, 5, 8)"
+  },
+  {
+    "case": "archery_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_5",
+    "status": "FAIL",
+    "detail": "cactus cannot reach native harvest height 3: obstruction at (12, 4, 2)"
+  },
+  {
+    "case": "mine_1",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_1",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_2",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_2",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_3",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_3",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_4",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_4",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_5",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_5",
+    "status": "PASS"
+  },
+  {
+    "case": "marker_bounds_all_blueprints",
+    "status": "PASS"
+  },
+  {
+    "case": "survival_materials",
+    "status": "PASS"
+  }
+]

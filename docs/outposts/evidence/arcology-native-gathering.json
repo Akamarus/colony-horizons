@@ -1,0 +1,22 @@
+[
+  {
+    "caseId": "beekeeper_cycle",
+    "outcome": "PASS",
+    "evidence": "Native beekeeper fetched flowers and bred the two supplied adult bees in an accessible glass enclosure; new baby UUID, consumed flowers and native breeding-attempt statistics observed. Honey/honeycomb harvesting is not certified. Prebuilt level5 Arcology hut, terrain, inputs, tools and food supplied. Natural day/night enabled for native field scheduling. Same worker and assignment; recovery disabled. Other levels, delivery, restart and other modes not certified."
+  },
+  {
+    "caseId": "fisherman_cycle",
+    "outcome": "PASS",
+    "evidence": "Native fisherman discovered supplied open water, cast a native bobber and collected 1 fish into worker/hut inventory. No pond/job/bobber/loot state injection. Prebuilt level5 Arcology hut, terrain, inputs, tools and food supplied. Natural day/night enabled for native field scheduling. Same worker and assignment; recovery disabled. Other levels, delivery, restart and other modes not certified."
+  },
+  {
+    "caseId": "florist_cycle",
+    "outcome": "PASS",
+    "evidence": "Native florist fetched and consumed compost on registered blueprint beds, waited for native flower growth, and harvested poppies with native flowers-picked statistics. No flower/timer injection. Prebuilt level5 Arcology hut, terrain, inputs, tools and food supplied. Natural day/night enabled for native field scheduling. Same worker and assignment; recovery disabled. Other levels, delivery, restart and other modes not certified."
+  },
+  {
+    "caseId": "farmer_cycle",
+    "outcome": "PASS",
+    "evidence": "Native farmer tilled and planted supplied seeds, then harvested wheat with native item-obtained statistics. QA matured only crops observed after native planting; crop growth time is not certified. Prebuilt level5 Arcology hut, terrain, inputs, tools and food supplied. Natural day/night enabled for native field scheduling. Same worker and assignment; recovery disabled. Other levels, delivery, restart and other modes not certified."
+  }
+]

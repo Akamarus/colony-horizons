@@ -14,15 +14,18 @@ public final class OutpostSavedData extends SavedData {
  private static final String KEY="colonyhorizons_outposts";
  private final ResourceKey<Level> dimension;
  private final Map<UUID,OutpostRecord> records=new LinkedHashMap<>();
+ private ServerLevel runtimeLevel;
  public OutpostSavedData(ResourceKey<Level> dimension){this.dimension=Objects.requireNonNull(dimension);}
  public static OutpostSavedData get(ServerLevel level){
-  return level.getDataStorage().computeIfAbsent(new Factory<>(()->{
+  var data=level.getDataStorage().computeIfAbsent(new Factory<>(()->{
    var file=net.minecraft.world.level.dimension.DimensionType.getStorageFolder(level.dimension(),level.getServer().getWorldPath(net.minecraft.world.level.storage.LevelResource.ROOT)).resolve("data/"+KEY+".dat");
    // Vanilla swallows deserializer errors. An existing file must never become a fresh writable index.
    if(java.nio.file.Files.exists(file))throw new IllegalStateException("Outpost data exists but could not be loaded; preserve it for recovery: "+file);
    return new OutpostSavedData(level.dimension());
   },
    (tag,registries)->load(tag,registries,level.dimension())),KEY);
+  data.runtimeLevel=level;
+  return data;
  }
  public Optional<OutpostRecord> find(UUID id){return Optional.ofNullable(records.get(id));}
  public List<OutpostRecord> all(){return List.copyOf(records.values());}
@@ -36,10 +39,16 @@ public final class OutpostSavedData extends SavedData {
    if(other.colonyId()==record.colonyId() && !Collections.disjoint(other.residentIds(),record.residentIds()))
     throw new IllegalArgumentException("Citizen already belongs to another district");
   }
+  if(runtimeLevel!=null){
+   var colony=com.minecolonies.api.colony.IColonyManager.getInstance().getColonyByDimension(record.colonyId(),dimension);
+   if(!(colony instanceof dev.colonyhorizons.supply.ManagedCourierColony marker))
+    throw new IllegalStateException("Native colony or courier marker hook unavailable");
+   marker.colonyHorizons$markManagedCouriers();
+  }
   records.put(record.id(),record);setDirty();
  }
  @Override public CompoundTag save(CompoundTag tag,HolderLookup.Provider registries){
-  tag.putInt("schema",1);tag.putString("dimension",dimension.location().toString());
+  tag.putInt("schema",2);tag.putString("dimension",dimension.location().toString());
   var list=new ListTag();
   for(var r:records.values()){
    var t=new CompoundTag();t.putUUID("id",r.id());t.putInt("colony",r.colonyId());t.putString("name",r.name());
@@ -56,7 +65,7 @@ public final class OutpostSavedData extends SavedData {
  }
  public static OutpostSavedData load(CompoundTag tag,HolderLookup.Provider registries,ResourceKey<Level> dimension){
   require(tag,"schema",Tag.TAG_INT);require(tag,"dimension",Tag.TAG_STRING);requireList(tag,"outposts",Tag.TAG_COMPOUND);
-  if(tag.getInt("schema")!=1)throw new IllegalArgumentException("Unsupported outpost schema");
+  if(tag.getInt("schema")!=1 && tag.getInt("schema")!=2)throw new IllegalArgumentException("Unsupported outpost schema");
   if(!tag.getString("dimension").equals(dimension.location().toString()))throw new IllegalArgumentException("Stored dimension mismatch");
   var data=new OutpostSavedData(dimension);
   for(var element:tag.getList("outposts",Tag.TAG_COMPOUND)){
@@ -65,6 +74,7 @@ public final class OutpostSavedData extends SavedData {
    require(t,"colony",Tag.TAG_INT);require(t,"name",Tag.TAG_STRING);require(t,"chunks",Tag.TAG_LONG_ARRAY);
    for(String key:List.of("development","forestry","residents","workers"))require(t,key,Tag.TAG_INT_ARRAY);
    require(t,"state",Tag.TAG_STRING);requireList(t,"buildings",Tag.TAG_COMPOUND);requireList(t,"blockers",Tag.TAG_STRING);
+   if(tag.getInt("schema")==1 && t.getString("state").equals("ACTIVE"))throw new IllegalArgumentException("Legacy outposts cannot be active");
    if(t.contains("terminal"))require(t,"terminal",Tag.TAG_LONG);
    UUID id=t.getUUID("id");
    if(data.records.containsKey(id))throw new IllegalArgumentException("Duplicate outpost ID");

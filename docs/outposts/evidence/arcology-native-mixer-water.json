@@ -1,0 +1,27 @@
+[
+  {
+    "caseId": "mixer_water_1",
+    "outcome": "PASS",
+    "evidence": "Actual Arcology level 1 registered one work cell. Native fluid ticks retained amounts 7,6,5 after 300 ticks, then replenished amount5 after ordinary stone placement/removal and another 300 ticks. No water correction or fake registration. Prebuilt fixture; worker crafting and survival construction not certified."
+  },
+  {
+    "caseId": "mixer_water_2",
+    "outcome": "PASS",
+    "evidence": "Actual Arcology level 2 registered one work cell. Native fluid ticks retained amounts 7,6,5 after 300 ticks, then replenished amount5 after ordinary stone placement/removal and another 300 ticks. No water correction or fake registration. Prebuilt fixture; worker crafting and survival construction not certified."
+  },
+  {
+    "caseId": "mixer_water_3",
+    "outcome": "PASS",
+    "evidence": "Actual Arcology level 3 registered one work cell. Native fluid ticks retained amounts 7,6,5 after 300 ticks, then replenished amount5 after ordinary stone placement/removal and another 300 ticks. No water correction or fake registration. Prebuilt fixture; worker crafting and survival construction not certified."
+  },
+  {
+    "caseId": "mixer_water_4",
+    "outcome": "PASS",
+    "evidence": "Actual Arcology level 4 registered one work cell. Native fluid ticks retained amounts 7,6,5 after 300 ticks, then replenished amount5 after ordinary stone placement/removal and another 300 ticks. No water correction or fake registration. Prebuilt fixture; worker crafting and survival construction not certified."
+  },
+  {
+    "caseId": "mixer_water_5",
+    "outcome": "PASS",
+    "evidence": "Actual Arcology level 5 registered one work cell. Native fluid ticks retained amounts 7,6,5 after 300 ticks, then replenished amount5 after ordinary stone placement/removal and another 300 ticks. No water correction or fake registration. Prebuilt fixture; worker crafting and survival construction not certified."
+  }
+]

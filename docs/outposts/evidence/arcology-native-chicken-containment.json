@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "chicken_containment",
+    "outcome": "PASS",
+    "evidence": "Generated level5 chickenherder blueprint observed for 24000 ticks with two supplied ordinary adult chickens and native offspring, breeding and egg collection. Tracked chickens remained loaded with at least two living adults; only explicitly observed worker-attributed deaths inside the pen were exempted as native slaughter. None stayed outside native hut bounds for more than 200 ticks. Per-20-tick trajectories, actual gate-plane crossings, native hut-boundary transitions, barrier and crossing-top states and worker held items recorded. No runtime-added barriers, animal/worker AI changes, movement correction or egg-timer edits; worker recovery disabled. This bounded soak does not establish permanent containment or certify other levels."
+  }
+]

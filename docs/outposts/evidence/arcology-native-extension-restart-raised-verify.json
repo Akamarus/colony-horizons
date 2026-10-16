@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "extensions_verify",
+    "outcome": "PASS",
+    "evidence": "Real second server process restored original colony/owner, population, Stable5/Gatehouse3/quarry surfaces, all ten field types/tags/positions and first-three field ownership. Exact marker, bed, stall and terminal signature retained; same two paused worker IDs/entity UUIDs, workplaces and home. No rebuilding, reassignment, respawn or field registration in verify. Readiness wait\u003d0 ticks. Does not certify active production, mid-action saves or crash recovery."
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "caseId": "upgrade:fundamentals/simplequarry1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed construction; matching structural blocks\u003d233; same hut/colony/worker; recovery disabled; ticks\u003d17920. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:fundamentals/mediumquarry1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed construction; matching structural blocks\u003d413; same hut/colony/worker; recovery disabled; ticks\u003d38280. Support builder level5 and required research/materials provided as fixtures."
+  }
+]

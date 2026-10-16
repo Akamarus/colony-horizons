@@ -1,0 +1,195 @@
+[
+  {
+    "case": "archery_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_1",
+    "status": "PASS"
+  },
+  {
+    "case": "archery_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_2",
+    "status": "PASS"
+  },
+  {
+    "case": "archery_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_3",
+    "status": "PASS"
+  },
+  {
+    "case": "archery_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_4",
+    "status": "PASS"
+  },
+  {
+    "case": "archery_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_5",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_1",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_1",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_2",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_2",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_3",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_3",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_4",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_4",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_5",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_5",
+    "status": "PASS"
+  },
+  {
+    "case": "marker_bounds_all_blueprints",
+    "status": "PASS"
+  },
+  {
+    "case": "survival_materials",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_exit_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_hut_side_exit_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_surface_1",
+    "status": "FAIL",
+    "detail": "Irrigation needs continuous upper walking surface"
+  },
+  {
+    "case": "plantation_irrigation_exit_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_hut_side_exit_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_surface_2",
+    "status": "FAIL",
+    "detail": "Irrigation needs continuous upper walking surface"
+  },
+  {
+    "case": "plantation_irrigation_exit_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_hut_side_exit_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_surface_3",
+    "status": "FAIL",
+    "detail": "Irrigation needs continuous upper walking surface"
+  },
+  {
+    "case": "plantation_irrigation_exit_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_hut_side_exit_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_surface_4",
+    "status": "FAIL",
+    "detail": "Irrigation needs continuous upper walking surface"
+  },
+  {
+    "case": "plantation_irrigation_exit_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_hut_side_exit_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_surface_5",
+    "status": "FAIL",
+    "detail": "Irrigation needs continuous upper walking surface"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "caseId": "upgrade:military/stable1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed construction; matching structural blocks\u003d671; same hut/colony/worker; recovery disabled; ticks\u003d35800. Support builder level5 and required research/materials provided as fixtures. Stablemaster assigned after L1 and paused through upgrades; same UUID and hut/module membership retained. Exactly 17 matching sentinel shards conserved across worker and own stable/racks; native pause may deposit them into storage. Native deposit observed\u003dfalse. This does not certify worker-carried inventory or stablemaster operation during construction."
+  },
+  {
+    "caseId": "upgrade:military/stable2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 1; matching structural blocks\u003d671; same hut/colony/worker; recovery disabled; ticks\u003d4720. Support builder level5 and required research/materials provided as fixtures. Stablemaster assigned after L1 and paused through upgrades; same UUID and hut/module membership retained. Exactly 17 matching sentinel shards conserved across worker and own stable/racks; native pause may deposit them into storage. Native deposit observed\u003dtrue. This does not certify worker-carried inventory or stablemaster operation during construction."
+  },
+  {
+    "caseId": "upgrade:military/stable3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 2; matching structural blocks\u003d671; same hut/colony/worker; recovery disabled; ticks\u003d25320. Support builder level5 and required research/materials provided as fixtures. Stablemaster assigned after L1 and paused through upgrades; same UUID and hut/module membership retained. Exactly 17 matching sentinel shards conserved across worker and own stable/racks; native pause may deposit them into storage. Native deposit observed\u003dtrue. This does not certify worker-carried inventory or stablemaster operation during construction."
+  },
+  {
+    "caseId": "upgrade:military/stable4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 3; matching structural blocks\u003d671; same hut/colony/worker; recovery disabled; ticks\u003d1600. Support builder level5 and required research/materials provided as fixtures. Stablemaster assigned after L1 and paused through upgrades; same UUID and hut/module membership retained. Exactly 17 matching sentinel shards conserved across worker and own stable/racks; native pause may deposit them into storage. Native deposit observed\u003dtrue. This does not certify worker-carried inventory or stablemaster operation during construction."
+  },
+  {
+    "caseId": "upgrade:military/stable5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 4; matching structural blocks\u003d506; same hut/colony/worker; recovery disabled; ticks\u003d23120. Support builder level5 and required research/materials provided as fixtures. Stablemaster assigned after L1 and paused through upgrades; same UUID and hut/module membership retained. Exactly 17 matching sentinel shards conserved across worker and own stable/racks; native pause may deposit them into storage. Native deposit observed\u003dtrue. This does not certify worker-carried inventory or stablemaster operation during construction."
+  }
+]

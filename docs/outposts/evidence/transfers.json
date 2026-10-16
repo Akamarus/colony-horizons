@@ -1,0 +1,47 @@
+[
+  {
+    "caseId": "load_moves_real_items_once",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "partial_delivery_retains_remainder",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "components_and_tools_survive_transfer",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "slot_restrictions_are_respected",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "endpoint_permission_or_identity_change_blocks_transfer",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "shipment_roundtrip_preserves_components_and_policy",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "interrupted_transfer_requires_recovery",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "interrupted_extraction_preserves_pending_evidence",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "interrupted_insertion_preserves_pending_evidence",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "caseId": "cocoa_construction",
+    "outcome": "PASS",
+    "evidence": "Native WorkOrderPlantationField completed from bare terrain using the same real builder, recovery disabled; 335 non-air blueprint blocks match after240 settling ticks and exactly one valid native field registered. Support L5 builder, research, tools and requested supplies provided; no target paste or registration call. ticks\u003d11480"
+  },
+  {
+    "caseId": "vine_construction",
+    "outcome": "PASS",
+    "evidence": "Native WorkOrderPlantationField completed from bare terrain using the same real builder, recovery disabled; 348 non-air blueprint blocks match after240 settling ticks and exactly one valid native field registered. Support L5 builder, research, tools and requested supplies provided; no target paste or registration call. ticks\u003d12100"
+  },
+  {
+    "caseId": "kelp_construction",
+    "outcome": "PASS",
+    "evidence": "Native WorkOrderPlantationField completed from bare terrain using the same real builder, recovery disabled; 463 non-air blueprint blocks match after240 settling ticks and exactly one valid native field registered. Support L5 builder, research, tools and requested supplies provided; no target paste or registration call. ticks\u003d14060"
+  },
+  {
+    "caseId": "seagrass_construction",
+    "outcome": "PASS",
+    "evidence": "Native WorkOrderPlantationField completed from bare terrain using the same real builder, recovery disabled; 463 non-air blueprint blocks match after240 settling ticks and exactly one valid native field registered. Support L5 builder, research, tools and requested supplies provided; no target paste or registration call. ticks\u003d14740"
+  },
+  {
+    "caseId": "seapickle_construction",
+    "outcome": "PASS",
+    "evidence": "Native WorkOrderPlantationField completed from bare terrain using the same real builder, recovery disabled; 463 non-air blueprint blocks match after240 settling ticks and exactly one valid native field registered. Support L5 builder, research, tools and requested supplies provided; no target paste or registration call. ticks\u003d15080"
+  },
+  {
+    "caseId": "glowberry_construction",
+    "outcome": "PASS",
+    "evidence": "Native WorkOrderPlantationField completed from bare terrain using the same real builder, recovery disabled; 337 non-air blueprint blocks match after240 settling ticks and exactly one valid native field registered. Support L5 builder, research, tools and requested supplies provided; no target paste or registration call. ticks\u003d12420"
+  },
+  {
+    "caseId": "weepingvine_construction",
+    "outcome": "PASS",
+    "evidence": "Native WorkOrderPlantationField completed from bare terrain using the same real builder, recovery disabled; 337 non-air blueprint blocks match after240 settling ticks and exactly one valid native field registered. Support L5 builder, research, tools and requested supplies provided; no target paste or registration call. ticks\u003d12360"
+  },
+  {
+    "caseId": "twistingvine_construction",
+    "outcome": "PASS",
+    "evidence": "Native WorkOrderPlantationField completed from bare terrain using the same real builder, recovery disabled; 333 non-air blueprint blocks match after240 settling ticks and exactly one valid native field registered. Support L5 builder, research, tools and requested supplies provided; no target paste or registration call. ticks\u003d12920"
+  },
+  {
+    "caseId": "crimson_construction",
+    "outcome": "PASS",
+    "evidence": "Native WorkOrderPlantationField completed from bare terrain using the same real builder, recovery disabled; 333 non-air blueprint blocks match after240 settling ticks and exactly one valid native field registered. Support L5 builder, research, tools and requested supplies provided; no target paste or registration call. ticks\u003d13180"
+  },
+  {
+    "caseId": "warped_construction",
+    "outcome": "PASS",
+    "evidence": "Native WorkOrderPlantationField completed from bare terrain using the same real builder, recovery disabled; 333 non-air blueprint blocks match after240 settling ticks and exactly one valid native field registered. Support L5 builder, research, tools and requested supplies provided; no target paste or registration call. ticks\u003d14060"
+  }
+]

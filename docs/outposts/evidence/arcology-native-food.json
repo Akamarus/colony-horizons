@@ -1,0 +1,12 @@
+[
+  {
+    "caseId": "kitchen_smelt",
+    "outcome": "PASS",
+    "evidence": "Native worker fetched hut ingredients/fuel, lit a registered blueprint furnace, consumed four inputs and coal, and collected four minecraft:cooked_beef into worker/hut. Loaded game recipe validated; bakery uses its native automatic recipe; prebuilt level5 hut, kitchen recipe and worker food supplied; recovery disabled. Courier delivery, other recipes/levels and restart not certified."
+  },
+  {
+    "caseId": "baker_smelt",
+    "outcome": "PASS",
+    "evidence": "Native worker fetched hut ingredients/fuel, lit a registered blueprint furnace, consumed four inputs and coal, and collected four minecraft:bread into worker/hut. Loaded game recipe validated; bakery uses its native automatic recipe; prebuilt level5 hut, kitchen recipe and worker food supplied; recovery disabled. Courier delivery, other recipes/levels and restart not certified."
+  }
+]

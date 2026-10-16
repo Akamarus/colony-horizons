@@ -1,0 +1,28 @@
+{
+  "run_id": "06ff9090252945f9955ad1f49b8c7456",
+  "runner_exit": 0,
+  "scope": "Six native huts, three workers, ownership, claims, housing, inventory and pause-state clean-shutdown persistence; not full worker-production recovery",
+  "phases": {
+    "seed": [
+      {
+        "caseId": "foundation_seed",
+        "outcome": "PASS",
+        "evidence": "Six native Arcology huts, two foresters, one builder, local housing, claims and inventories preserved"
+      }
+    ],
+    "verify": [
+      {
+        "caseId": "foundation_verify",
+        "outcome": "PASS",
+        "evidence": "Six native Arcology huts, two foresters, one builder, local housing, claims and inventories preserved"
+      }
+    ],
+    "verify_paused": [
+      {
+        "caseId": "foundation_verify_paused",
+        "outcome": "PASS",
+        "evidence": "Six native Arcology huts, two foresters, one builder, local housing, claims and inventories preserved"
+      }
+    ]
+  }
+}

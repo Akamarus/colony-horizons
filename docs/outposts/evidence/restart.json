@@ -1,0 +1,22 @@
+[
+  {
+    "caseId": "restart_seed",
+    "outcome": "PASS",
+    "evidence": "Actual world chests and saved custody verified"
+  },
+  {
+    "caseId": "restart_verify_loaded",
+    "outcome": "PASS",
+    "evidence": "Actual world chests and saved custody verified"
+  },
+  {
+    "caseId": "restart_verify_partial",
+    "outcome": "PASS",
+    "evidence": "Actual world chests and saved custody verified"
+  },
+  {
+    "caseId": "restart_verify_arrived",
+    "outcome": "PASS",
+    "evidence": "Actual world chests and saved custody verified"
+  }
+]

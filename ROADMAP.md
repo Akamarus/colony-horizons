@@ -1,40 +1,45 @@
 # Roadmap toward stable 1.0
 
-Updated 2026-10-14. These milestones describe planned work, not current functionality or promised dates.
+Updated 2026-10-16. No promised release dates.
 
-## Available: compatibility foundation (alpha.2)
+## Published: alpha.2
 
-MineColonies compatibility fixes and the separate 305-blueprint Arcology Horizons pack, including Stable, Gatehouse, quarry and plantation modules. Alpha.2 adds Mine shaft fluid sealing, supply-raft waterline metadata and Builder's Hut recall safety rails. It does not expose automated outpost founding, a Mayor UI or protected deliveries.
+Arcology compatibility, lantern-upgrade protection, Mine fluid sealing, supply-raft
+placement metadata and Builder recall fixes. Published files and tag are unchanged.
 
-## 1. Stabilize the foundation
+## Implemented in development: Exploration Hut
 
-Collect reproducible alpha reports; maintain upgrade and regression tests. Add dedicated-server/two-player coverage for building, recall, mining, upgrades and reload. Test install/update/rollback instructions. Exit: no unresolved critical data-loss, duplication or progression-blocking bugs in supported scenarios.
+Real biome/resource discovery, 36 simulated gathering outputs, protected Explorer
+travel, native local courier pickup, minimum-stock integration, opt-in repeat trips,
+simple native hut menus and five hut blueprints. Persistent payment/delivery custody,
+restart recovery, full-inventory handling and legacy discovery compatibility are covered
+by automated checks. Packaged client controls and copied-world migration were tested.
+See [verification and limitations](docs/outposts/EXPLORATION-RESULTS.md).
 
-## 2. Safe supply routes — next feature milestone
+## Next: playtest and stabilize the gathering loop
 
-Connect the internal route design to native inventories and requests. Support main colony/outpost links, import/export targets, local reserves, priorities, capacity and delivery status. Keep cargo and couriers safe during long-distance or unloaded travel; define visible departure/arrival behavior without requiring dangerous continuous pathfinding. Prevent loss/duplication across full inventories, cancellation, unload, restart and interrupted handoffs. Exit: a real two-settlement route delivers requested goods repeatedly and survives those failure cases.
+Collect real-colony reports on discovery reach, bread/tool demand, courier pickup,
+repeat behavior and recovery. Fix progression blockers and duplication/loss risks.
+Expand dedicated-server and two-player coverage, long-session performance tests and
+compatibility testing. Do not call controlled fixtures universal modpack certification.
 
-## 3. Useful multi-building outposts
+## Next public alpha
 
-Use existing MineColonies huts, workers and building upgrades. Establish coherent small settlements with housing, production and supplies. Support both player-selected sites and assisted suitable-site selection. Integrate Arcology layouts with terrain and entrances; reject floating or inaccessible placements. Exit: an outpost produces a biome-specific resource and supplies the main colony without repeated manual hauling.
+Freeze a candidate, repeat artifact and migration checks, validate a normal launcher,
+publish matching source/checksums/blueprints and backup/rollback instructions. The
+current development snapshot does not replace the published alpha.2 artifacts.
 
-## 4. Mayor-assisted development
+## Beta and stable gate
 
-Give each settlement a dedicated manager. Let the player specify resource goals, budgets, reserves and construction priorities; explain shortages and planned actions. Allow approvals, pause and manual override. Found, build and expand outposts through native builders and requests. Exit: a Mayor can carry out a bounded development plan without starving the colony or repeatedly scheduling blocked work. Conversational AI is optional later, not a stable-release requirement.
+Validate supported resource coverage end to end, document exceptions, improve clear
+needs/status messages, and resolve critical/high-severity issues. Test dedicated-server
+permissions, multiple colonies, interrupted sessions and supported dependency combinations.
+Stable 1.0 requires reliable documented behavior, not every long-term feature idea.
 
-## 5. Beta: complete the cross-biome loop
+## Paused and future work
 
-Validate resource acquisition, crafting and transport end to end. Reconcile the vanilla resource coverage map with actual supported production; document exceptions rather than promise every item. Improve onboarding and a shared needs/delivery dashboard. Test multiple colonies, route cycles, prolonged sessions, server restarts and sensible performance limits. Exit: players can establish and maintain a working cross-biome network with understandable controls.
-
-## 6. Stable 1.0 release gate
-
-Freeze features. Run regression, dedicated-server, migration and normal-launcher checks on the exact release artifacts. Resolve critical/high-severity issues, document known limitations and pin supported dependencies. Publish reproducible source, checksums, installation/backup/rollback instructions and a compatibility matrix. Stable means this defined core works reliably; it does not mean every long-term idea is complete.
-
-## After the core is stable
-
-- Deeper progression using native building levels, worker unlocks/efficiency and optional level-five specializations.
-- Colonist ambitions, varied appearances and possible evolution, subject to MineColonies integration feasibility.
-- Rescue/recovery, more transport choices and settlement personality.
-- Ars and other magic integrations only after the main addon is ready.
-
-Keep experimental features separate from bug-fix releases. Prioritize by player impact and milestone exit criteria, not elapsed time or number of tests.
+Multi-building outposts, autonomous founding, Mayor development and inter-settlement
+supply routes are paused in favor of the simpler Exploration Hut. Their existing code
+and save recovery remain; they are not prerequisites for the next Exploration Hut alpha.
+Profession progression, building specializations, evolution and magic integrations can
+be reconsidered after the core loop is stable. Ars work remains deferred.

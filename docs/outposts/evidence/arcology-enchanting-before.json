@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "enchanter_ancient_tome",
+    "outcome": "FAIL",
+    "evidence": "java.lang.IllegalStateException: Native enchanted book produced but Mana cost incorrect: Native tome consumed; book\u003dQuick Charge III stored\u003dItemEnchantments{enchantments\u003d{Reference{ResourceKey[minecraft:enchantment / minecraft:quick_charge]\u003dEnchantment Quick Charge}\u003d\u003e3}, showInTooltip\u003dtrue} direct\u003dItemEnchantments{enchantments\u003d{}, showInTooltip\u003dtrue} initialMana\u003d60 finalMana\u003d60 requiredCost\u003d3"
+  }
+]

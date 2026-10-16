@@ -1,0 +1,17 @@
+[
+  {
+    "caseId": "barracks_tower_links",
+    "outcome": "PASS",
+    "evidence": "Four embedded Arcology tower anchors registered through native BarracksTowerHandler and native barracks block-registration callback, with exact forward/reverse links. Prebuilt level5 barracks fixture explicitly invokes construction hooks; no addBarracks or link-map injection. Full builder construction not certified."
+  },
+  {
+    "caseId": "barrackstower_housing",
+    "outcome": "PASS",
+    "evidence": "Native knight assignment set both work and home to the actual level5 tower; five blueprint beds and native capacity5 verified. One guard supplied, no setHomeBuilding call. Bed use, full occupancy and other levels not certified."
+  },
+  {
+    "caseId": "barrackstower_duty",
+    "outcome": "PASS",
+    "evidence": "Same housed knight naturally reached two configured guard duty points over10 blocks apart with native no-target guard AI and observed continuous movement. User-facing guard task/positions, equipment and food supplied; no navigation or AI-state injection; recovery disabled. Combat, sleep and restart not certified."
+  }
+]

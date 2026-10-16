@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "crop_production_failure",
+    "outcome": "FAIL",
+    "evidence": "java.lang.IllegalStateException: Crop production timeout: cocoa; see diagnostics"
+  }
+]

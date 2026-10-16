@@ -1,0 +1,32 @@
+[
+  {
+    "caseId": "required_files_present",
+    "outcome": "PASS",
+    "evidence": "25 actual files"
+  },
+  {
+    "caseId": "native_blueprint_decode",
+    "outcome": "PASS",
+    "evidence": "Native loader and original palette registry validation"
+  },
+  {
+    "caseId": "required_hut_anchors",
+    "outcome": "PASS",
+    "evidence": "Native hut at primary anchor"
+  },
+  {
+    "caseId": "missing_pack_reported",
+    "outcome": "PASS",
+    "evidence": "No fallback pack"
+  },
+  {
+    "caseId": "invalid_blueprint_reported",
+    "outcome": "PASS",
+    "evidence": "Malformed content reported"
+  },
+  {
+    "caseId": "missing_gatehouse_reported",
+    "outcome": "PASS",
+    "evidence": "Missing terminal; not route-ready"
+  }
+]

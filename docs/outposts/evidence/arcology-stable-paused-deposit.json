@@ -1,0 +1,59 @@
+{
+  "runId": "9f250b825c90476ab123b96f8519994d",
+  "region": "runs/foundation-sessions/9f250b825c90476ab123b96f8519994d/foundation-9f250b825c90476ab123b96f8519994d/region/r.1.0.mca",
+  "regionSha256": "4729286186a4c61144375e8018b520220c9a336ec2d044bc490ac232e6fe561c",
+  "chunk": {
+    "x": 32,
+    "z": 0
+  },
+  "blockEntity": {
+    "tagSIze": 0,
+    "inWarehouse": 0,
+    "pos": {
+      "x": 512,
+      "y": 16,
+      "z": 0
+    },
+    "keepPacked": 0,
+    "x": 513,
+    "y": 16,
+    "z": 0,
+    "id": "minecolonies:rack",
+    "inventory": [
+      {
+        "count": 17,
+        "id": "minecraft:amethyst_shard"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "version": 2
+  },
+  "workerEvidence": "build/reports/foundation/9f250b825c90476ab123b96f8519994d/seed/stable-retention-inventory.txt",
+  "finding": "All worker slots empty; own stable rack contains exactly the 17 supplied sentinel shards. Native pause initiates INVENTORY_FULL and deposits into the building capability before PAUSED. This demonstrates storage transfer, not item loss.",
+  "source": "AbstractEntityAIBasic.java:257 isStartingPaused -> INVENTORY_FULL; dumpOneMoreSlot transfers extracted worker stack into getBuildingToDump().getItemHandlerCap()."
+}

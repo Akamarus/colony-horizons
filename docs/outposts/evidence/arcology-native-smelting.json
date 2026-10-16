@@ -1,0 +1,12 @@
+[
+  {
+    "caseId": "glassblower_smelt",
+    "outcome": "PASS",
+    "evidence": "Native worker fetched hut ingredients/fuel, lit a registered blueprint furnace, consumed four inputs and coal, and collected four minecraft:glass into worker/hut. Loaded vanilla recipe validated; prebuilt level5 hut, taught recipe and food supplied; recovery disabled. Courier delivery, other recipes/levels and restart not certified."
+  },
+  {
+    "caseId": "stonesmeltery_smelt",
+    "outcome": "PASS",
+    "evidence": "Native worker fetched hut ingredients/fuel, lit a registered blueprint furnace, consumed four inputs and coal, and collected four minecraft:stone into worker/hut. Loaded vanilla recipe validated; prebuilt level5 hut, taught recipe and food supplied; recovery disabled. Courier delivery, other recipes/levels and restart not certified."
+  }
+]

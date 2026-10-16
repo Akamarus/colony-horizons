@@ -1,0 +1,12 @@
+[
+  {
+    "caseId": "simplequarry_shaft_access",
+    "outcome": "PASS",
+    "evidence": "Native citizen traversed prebuilt full-depth shaft from exterior to lowest ladder landing and returned to exterior with recovery disabled. Exact target range, no intermediate repositioning. Does not prove excavation sequence or hauling. ticks\u003d720"
+  },
+  {
+    "caseId": "mediumquarry_shaft_access",
+    "outcome": "PASS",
+    "evidence": "Native citizen traversed prebuilt full-depth shaft from exterior to lowest ladder landing and returned to exterior with recovery disabled. Exact target range, no intermediate repositioning. Does not prove excavation sequence or hauling. ticks\u003d1280"
+  }
+]

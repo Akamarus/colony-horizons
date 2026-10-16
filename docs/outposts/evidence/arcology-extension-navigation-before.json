@@ -1,0 +1,102 @@
+[
+  {
+    "caseId": "navigation:infrastructure/plantationfields/cocoa1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d220"
+  },
+  {
+    "caseId": "navigation:infrastructure/plantationfields/crimson1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d220"
+  },
+  {
+    "caseId": "navigation:infrastructure/plantationfields/glowberry1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d200"
+  },
+  {
+    "caseId": "navigation:infrastructure/plantationfields/kelp1.blueprint",
+    "outcome": "FAIL",
+    "evidence": "Could not reach leg\u003d1 target\u003dBlockPos{x\u003d29, y\u003d-40, z\u003d5} actual\u003d(38.86377489236065, -40.0, 3.4978640961684624); native path job\u003dcom.minecolonies.core.entity.pathfinding.pathresults.PathResult@3b9fb902"
+  },
+  {
+    "caseId": "navigation:infrastructure/plantationfields/seagrass1.blueprint",
+    "outcome": "FAIL",
+    "evidence": "Could not reach leg\u003d1 target\u003dBlockPos{x\u003d29, y\u003d-40, z\u003d5} actual\u003d(40.524249010308644, -40.0, 4.434401113817469); native path job\u003dcom.minecolonies.core.entity.pathfinding.pathresults.PathResult@16c2e8d9"
+  },
+  {
+    "caseId": "navigation:infrastructure/plantationfields/seapickle1.blueprint",
+    "outcome": "FAIL",
+    "evidence": "Could not reach leg\u003d1 target\u003dBlockPos{x\u003d29, y\u003d-40, z\u003d5} actual\u003d(39.46813586517345, -40.0, 4.033105313415754); native path job\u003dcom.minecolonies.core.entity.pathfinding.pathresults.PathResult@71b8d9c3"
+  },
+  {
+    "caseId": "navigation:infrastructure/plantationfields/twistingvine1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d310"
+  },
+  {
+    "caseId": "navigation:infrastructure/plantationfields/vine1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d200"
+  },
+  {
+    "caseId": "navigation:infrastructure/plantationfields/warped1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d200"
+  },
+  {
+    "caseId": "navigation:infrastructure/plantationfields/weepingvine1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d200"
+  },
+  {
+    "caseId": "navigation:fundamentals/mediumquarry1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d210"
+  },
+  {
+    "caseId": "navigation:fundamentals/simplequarry1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d170"
+  },
+  {
+    "caseId": "navigation:military/gatehouse1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d260"
+  },
+  {
+    "caseId": "navigation:military/gatehouse2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d280"
+  },
+  {
+    "caseId": "navigation:military/gatehouse3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d250"
+  },
+  {
+    "caseId": "navigation:military/stable1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d260"
+  },
+  {
+    "caseId": "navigation:military/stable2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d280"
+  },
+  {
+    "caseId": "navigation:military/stable3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d240"
+  },
+  {
+    "caseId": "navigation:military/stable4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d280"
+  },
+  {
+    "caseId": "navigation:military/stable5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native citizen walked outside -\u003e native building interaction range (4 blocks, center-biased approach) -\u003e outside; hut aligned to exterior ground, native walk-command AI event, recovery teleport/block breaking disabled; ticks\u003d280"
+  }
+]

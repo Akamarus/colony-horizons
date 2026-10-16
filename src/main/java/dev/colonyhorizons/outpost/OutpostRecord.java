@@ -11,7 +11,7 @@ public record OutpostRecord(UUID id, int colonyId, ResourceKey<Level> dimension,
  Set<ChunkPos> approvedChunks, BoundingBox development, BoundingBox forestry,
  Map<BlockPos,BuildingRef> buildings, Set<Integer> residentIds, Set<Integer> workerIds,
  Optional<BlockPos> terminal, State state, List<String> blockers) {
- public enum State { PLANNED, PAUSED, RECOVERY_NEEDED }
+ public enum State { PLANNED, PAUSED, RECOVERY_NEEDED, ACTIVE }
  public record BuildingRef(BlockPos anchor, ResourceLocation type, String packName,
    String blueprintPath, BoundingBox reservedVolume) {
   public BuildingRef {

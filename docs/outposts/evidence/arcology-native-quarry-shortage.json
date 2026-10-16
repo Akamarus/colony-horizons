@@ -1,0 +1,12 @@
+[
+  {
+    "caseId": "simplequarry_fill_shortage",
+    "outcome": "PASS",
+    "evidence": "Focused native doMining calls: zero or one fill block waits with ore barrier intact and a native request; two supplied blocks seal both adjacent water/lava cells and consume exactly two. Paused worker and explicit native workorder/target fixture; not natural courier restocking or end-to-end AI resumption."
+  },
+  {
+    "caseId": "mediumquarry_fill_shortage",
+    "outcome": "PASS",
+    "evidence": "Focused native doMining calls: zero or one fill block waits with ore barrier intact and a native request; two supplied blocks seal both adjacent water/lava cells and consume exactly two. Paused worker and explicit native workorder/target fixture; not natural courier restocking or end-to-end AI resumption."
+  }
+]

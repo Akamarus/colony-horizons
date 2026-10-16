@@ -1,0 +1,17 @@
+[
+  {
+    "caseId": "crusher_production",
+    "outcome": "PASS",
+    "evidence": "Native crusher consumed hut-supplied inputs and produced 4 minecraft:gravel. Native recipe initialization/request retained for crusher/concrete; concrete pickaxe wear and smelter cold-start/fuel/collection asserted. Prebuilt level5, tools/food/materials supplied; other recipes/levels, delivery and restart untested."
+  },
+  {
+    "caseId": "smeltery_production",
+    "outcome": "PASS",
+    "evidence": "Native smeltery consumed hut-supplied inputs and produced 4 minecraft:iron_ingot. Native recipe initialization/request retained for crusher/concrete; concrete pickaxe wear and smelter cold-start/fuel/collection asserted. Prebuilt level5, tools/food/materials supplied; other recipes/levels, delivery and restart untested."
+  },
+  {
+    "caseId": "concretemixer_production",
+    "outcome": "PASS",
+    "evidence": "Native concretemixer consumed hut-supplied inputs and produced 4 minecraft:white_concrete. Native recipe initialization/request retained for crusher/concrete; concrete pickaxe wear and smelter cold-start/fuel/collection asserted. Prebuilt level5, tools/food/materials supplied; other recipes/levels, delivery and restart untested."
+  }
+]

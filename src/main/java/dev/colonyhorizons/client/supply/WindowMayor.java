@@ -1,0 +1,14 @@
+package dev.colonyhorizons.client.supply;
+import com.ldtteam.blockui.controls.Button;
+import dev.colonyhorizons.network.SupplyMenuPayloads.*;
+import net.minecraft.nbt.*;
+import java.util.*;
+public final class WindowMayor extends WindowSupplyBase {
+ private final UUID id;private boolean budget,upgrades,expansions;
+ public WindowMayor(UUID id){super("mayor");this.id=id;}
+ String rowText(CompoundTag row){return row.getString("text");}
+ void select(CompoundTag row){if(expansions){if(!row.getString("role").isEmpty()){var form=new CompoundTag();form.putString("role",row.getString("role"));SupplyMenuClient.remote(Action.REVIEW_EXPANSION,form,id);}else text("message",row.getString("text"));return;}if(upgrades){var form=new CompoundTag();form.putUUID("building",row.getUUID("building"));SupplyMenuClient.remote(Action.REVIEW_UPGRADE,form,id);return;}text("message",row.getString("text"));}
+ void render(){var m=SupplyMenuClient.data.getCompound("mayor");boolean current=m.hasUUID("id")&&m.getUUID("id").equals(id);text("title",current?m.getString("name"):"Mayor");if(!current){text("details","Loading outpost...");enable("pause",false);return;}text("details",m.getString("mayor")+"\n"+m.getString("phase").replace('_',' ')+" | Buildings "+m.getInt("completed")+"/"+m.getInt("total")+"\n"+m.getInt("arrivedPeople")+"/"+m.getInt("plannedPeople")+" settlers arrived | "+(m.getBoolean("courierReady")?"Local courier ready":"Waiting for local logistics")+"\n"+m.getString("mode")+" | Level cap "+m.getInt("cap"));showRows(m.getList(expansions?"expansions":upgrades?"upgrades":budget?"budget":"needs",10));label("view",expansions?"Show Needs":upgrades?"New Buildings":budget?"Upgrades":"Supply Allowance");label("pause",m.getString("phase").equals("PAUSED")?"Resume":"Pause");enable("pause",Set.of("STAGING","BUILDING","OPERATING","PAUSED").contains(m.getString("phase")));enable("refresh",true);enable("view",true);}
+ @Override public void reply(MenuReply reply){if(reply.ok()&&(reply.message().equals("Review upgrade")||reply.message().equals("Review expansion"))){SupplyMenuClient.show(new WindowUpgradeReview());return;}super.reply(reply);}
+ @Override public void onButtonClicked(Button b){if(b.getID().equals("back")){if(SupplyMenuClient.pending)SupplyMenuClient.finish();else SupplyMenuClient.show(new WindowOutpostsSupplies());return;}if(SupplyMenuClient.pending)return;switch(b.getID()){case "refresh"->SupplyMenuClient.send(Action.VIEW_MAYOR,id);case "view"->{if(expansions){expansions=false;budget=false;upgrades=false;}else if(upgrades){upgrades=false;expansions=true;}else if(budget){budget=false;upgrades=true;}else budget=true;render();}case "pause"->SupplyMenuClient.send(SupplyMenuClient.data.getCompound("mayor").getString("phase").equals("PAUSED")?Action.RESUME_REMOTE:Action.PAUSE_REMOTE,id);default->{}}render();}
+}

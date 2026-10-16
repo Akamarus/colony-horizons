@@ -1,0 +1,52 @@
+[
+  {
+    "caseId": "cocoa_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 3 and worker-plus-own-hut item count increased for documented outputs [minecraft:cocoa_beans] without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; each field has a28-day upper window for native daily actions/probabilistic harvest; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d19360"
+  },
+  {
+    "caseId": "vine_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 1 and worker-plus-own-hut item count increased for documented outputs [minecraft:vine] without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; each field has a28-day upper window for native daily actions/probabilistic harvest; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d24280"
+  },
+  {
+    "caseId": "kelp_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 1 and worker-plus-own-hut item count increased for documented outputs [minecraft:kelp] without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; each field has a28-day upper window for native daily actions/probabilistic harvest; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d119720"
+  },
+  {
+    "caseId": "seagrass_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 1 and worker-plus-own-hut item count increased for documented outputs [minecraft:seagrass] without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; each field has a28-day upper window for native daily actions/probabilistic harvest; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d72720"
+  },
+  {
+    "caseId": "seapickle_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 4 and worker-plus-own-hut item count increased for documented outputs [minecraft:sea_pickle] without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; each field has a28-day upper window for native daily actions/probabilistic harvest; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d287580"
+  },
+  {
+    "caseId": "glowberry_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 1 and worker-plus-own-hut item count increased for documented outputs [minecraft:glow_berries] without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; each field has a28-day upper window for native daily actions/probabilistic harvest; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d71820"
+  },
+  {
+    "caseId": "weepingvine_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 1 and worker-plus-own-hut item count increased for documented outputs [minecraft:weeping_vines] without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; each field has a28-day upper window for native daily actions/probabilistic harvest; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d143500"
+  },
+  {
+    "caseId": "twistingvine_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 1 and worker-plus-own-hut item count increased for documented outputs [minecraft:twisting_vines] without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; each field has a28-day upper window for native daily actions/probabilistic harvest; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d192160"
+  },
+  {
+    "caseId": "crimson_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 1 and worker-plus-own-hut item count increased for documented outputs [minecraft:crimson_fungus, minecraft:crimson_roots] without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; each field has a28-day upper window for native daily actions/probabilistic harvest; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d120300"
+  },
+  {
+    "caseId": "warped_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 1 and worker-plus-own-hut item count increased for documented outputs [minecraft:warped_fungus, minecraft:warped_roots, minecraft:nether_sprouts] without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; each field has a28-day upper window for native daily actions/probabilistic harvest; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d120560"
+  }
+]

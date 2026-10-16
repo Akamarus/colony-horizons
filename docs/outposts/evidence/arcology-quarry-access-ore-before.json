@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "quarry_rules_failure",
+    "outcome": "FAIL",
+    "evidence": "java.lang.IllegalStateException: Access decoration must mine existing ore before placing a ladder: MISSING_ITEMS"
+  }
+]

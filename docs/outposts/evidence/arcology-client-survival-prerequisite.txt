@@ -1,0 +1,5 @@
+[11Oct2026 19:32:44.175] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[11Oct2026 19:32:44.175] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[11Oct2026 19:33:40.826] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: The difficulty has been set to Peaceful]
+[11Oct2026 19:33:40.836] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] The difficulty has been set to Peaceful
+[11Oct2026 19:35:17.406] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] This building requires a Builder's Hut of level 1 or higher to be upgraded, repaired, or deconstructed!

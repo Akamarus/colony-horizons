@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "graveyard_recovery",
+    "outcome": "PASS",
+    "evidence": "Native fixture citizen died after spaced damage hits (native damage cap respected), creating a grave verified to contain seven emeralds. Undertaker naturally emptied grave, recovered all seven emeralds and completed native digging or resurrection with corresponding statistics; original grave removed. Level5 hut, shovel, worker food and victim inventory supplied; no grave/AI state injection. Named burial placement, resurrection probability and restart not certified."
+  }
+]

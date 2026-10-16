@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "seagrass_tool_contract",
+    "outcome": "PASS",
+    "evidence": "Vanilla loot yields zero seagrass barehanded and positive output with shears. Native planter tool selection requires shears for both short/tall seagrass; displayed recipe tool matches. Water remains tool-free."
+  }
+]

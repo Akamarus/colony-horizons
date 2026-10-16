@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "chicken_containment",
+    "outcome": "FAIL",
+    "evidence": "java.lang.IllegalStateException: Chicken outside native hut bounds for 220 ticks: 5b7f7431-2271-47c1-89ef-b140731c3766 at (523.186239708411, 16.0, 2.8890051764331353)"
+  }
+]

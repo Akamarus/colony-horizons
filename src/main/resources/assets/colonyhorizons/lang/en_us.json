@@ -1,0 +1,10 @@
+{
+  "block.colonyhorizons.blockhutsurveyor": "Exploration Hut",
+  "block.minecolonies.blockhutsurveyor": "Exploration Hut",
+  "com.colonyhorizons.building.surveyor": "Exploration Hut",
+  "com.colonyhorizons.job.surveyor": "Explorer",
+  "colonyhorizons:surveyor.skills.desc": "Explorers use Intelligence and Adaptability. Gathering time and yields are currently fixed.",
+  "com.colonyhorizons.job.mayor": "Mayor",
+  "colonyhorizons.menu.title": "Outposts & Supplies",
+  "colonyhorizons.menu.stop_confirm": "Stop future shipments and return cargo already in transit."
+}

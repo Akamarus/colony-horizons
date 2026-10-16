@@ -1,0 +1,27 @@
+[
+  {
+    "caseId": "home_workplace_native_placement",
+    "outcome": "PASS",
+    "evidence": "Normal build-tool path inside home colony; logger anchor is a temporary Lodge proxy"
+  },
+  {
+    "caseId": "native_custom_job_assignment",
+    "outcome": "PASS",
+    "evidence": "Registered addon job assigned through native worker module"
+  },
+  {
+    "caseId": "remote_walk_and_harvest",
+    "outcome": "PASS",
+    "evidence": "Native scheduled addon AI walked 352 blocks, harvested one real log and walked home"
+  },
+  {
+    "caseId": "identity_preserved_on_return",
+    "outcome": "PASS",
+    "evidence": "Same entity UUID, citizen ID, colony and home workplace; one live/registered citizen"
+  },
+  {
+    "caseId": "native_unassignment",
+    "outcome": "PASS",
+    "evidence": "Native module released expedition worker"
+  }
+]

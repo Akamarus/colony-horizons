@@ -1,0 +1,82 @@
+[
+  {
+    "caseId": "two_way_delivery",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "full_destination",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "unavailable_endpoints",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "reserves_and_incoming",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "pause_and_return",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "components_and_copies",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "authority_and_bounds",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "snapshot_conservation",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "returning_stock_counts_as_incoming",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "malformed_custody_rejected",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "failed_snapshot_write_preserves_custody",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "invalid_saved_data",
+    "outcome": "PASS",
+    "evidence": "Assertions passed"
+  },
+  {
+    "caseId": "supply_seed",
+    "outcome": "PASS",
+    "evidence": "Actual SavedData process phase; 32 logs and 32 named bread conserved; identities/progress/pause verified"
+  },
+  {
+    "caseId": "supply_verify",
+    "outcome": "PASS",
+    "evidence": "Actual SavedData process phase; 32 logs and 32 named bread conserved; identities/progress/pause verified"
+  },
+  {
+    "caseId": "supply_verify_paused",
+    "outcome": "PASS",
+    "evidence": "Actual SavedData process phase; 32 logs and 32 named bread conserved; identities/progress/pause verified"
+  },
+  {
+    "caseId": "supply_verify_final",
+    "outcome": "PASS",
+    "evidence": "Actual SavedData process phase; 32 logs and 32 named bread conserved; identities/progress/pause verified"
+  }
+]

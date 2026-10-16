@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "quarry_rules_failure",
+    "outcome": "FAIL",
+    "evidence": "java.lang.IllegalStateException: Access ladders must decorate the current completed liner before clearing: layer\u003d31 stage\u003dCLEAR iterator\u003d31"
+  }
+]

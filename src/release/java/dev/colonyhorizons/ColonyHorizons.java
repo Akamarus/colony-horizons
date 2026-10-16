@@ -9,7 +9,8 @@ import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
 @Mod(ColonyHorizons.ID)
 public final class ColonyHorizons {
     public static final String ID = "colonyhorizons";
-    public ColonyHorizons(IEventBus bus) {
+    public ColonyHorizons(IEventBus bus, net.neoforged.fml.ModContainer container) {
+        dev.colonyhorizons.remote.RemoteRuntime.initialize(container, bus);
         bus.addListener((FMLLoadCompleteEvent event) -> event.enqueueWork(MineColoniesBridge::verifyLoaded));
     }
 }

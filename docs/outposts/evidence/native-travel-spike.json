@@ -1,0 +1,57 @@
+[
+  {
+    "caseId": "departure_preserves_worker",
+    "outcome": "PASS",
+    "evidence": "Job and component-bearing inventory retained, no live worker entity during native transit"
+  },
+  {
+    "caseId": "restart_in_transit",
+    "outcome": "PASS",
+    "evidence": "Native colony, job, cargo and travel record loaded from disk; forced respawn check stayed suppressed"
+  },
+  {
+    "caseId": "native_timer_progress",
+    "outcome": "PASS",
+    "evidence": "Native onTick reduced remaining duration by 20; test explicitly invokes timer, not wall-clock simulation"
+  },
+  {
+    "caseId": "remote_arrival",
+    "outcome": "PASS",
+    "evidence": "Safe endpoint reached with one live citizen and unchanged job/cargo; repeated update inert"
+  },
+  {
+    "caseId": "return_departure",
+    "outcome": "PASS",
+    "evidence": "Original logical citizen departed for home; no simultaneous live representation"
+  },
+  {
+    "caseId": "return_after_restart",
+    "outcome": "PASS",
+    "evidence": "Home arrival preserves native citizen ID, job, 20 named logs and damaged named axe"
+  },
+  {
+    "caseId": "completed_return_restart",
+    "outcome": "PASS",
+    "evidence": "Completed journey reloads with one logical/live citizen and exact original inventory"
+  },
+  {
+    "caseId": "blocked_native_arrival",
+    "outcome": "BLOCKED",
+    "evidence": "entity=true collision=true travelRecordRetained=false position=BlockPos{x=352, y=100, z=0}"
+  },
+  {
+    "caseId": "guard_holds_obstructed_arrival",
+    "outcome": "PASS",
+    "evidence": "Preflight kept worker in native transit with exact inventory when body space was blocked"
+  },
+  {
+    "caseId": "guard_retries_after_clearance",
+    "outcome": "PASS",
+    "evidence": "After obstruction removal, same logical worker arrived safely once with exact cargo"
+  },
+  {
+    "caseId": "travel_blocked_arrival",
+    "outcome": "FAIL",
+    "evidence": "net.minecraft.gametest.framework.GameTestAssertException: Native arrival is unsafe or lost its pending record: entity=true collision=true travelRecordRetained=false position=BlockPos{x=352, y=100, z=0}"
+  }
+]

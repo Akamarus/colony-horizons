@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "seagrass_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 1 and worker-plus-own-hut item count increased without output injection. Initial seeds/tools/bonemeal, research, food supplied; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d46400"
+  }
+]

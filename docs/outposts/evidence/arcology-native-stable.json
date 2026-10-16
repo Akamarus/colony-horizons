@@ -1,0 +1,37 @@
+[
+  {
+    "caseId": "stable_layout_1",
+    "outcome": "PASS",
+    "evidence": "Prebuilt generated stable L1 registered exact 2 native stall destinations and 2 complete north-facing bed heads, correct level/style and patrol destination. Stall columns clear. This placement check is not native construction, upgrade, rotation or mounted path acceptance."
+  },
+  {
+    "caseId": "stable_layout_2",
+    "outcome": "PASS",
+    "evidence": "Prebuilt generated stable L2 registered exact 4 native stall destinations and 3 complete north-facing bed heads, correct level/style and patrol destination. Stall columns clear. This placement check is not native construction, upgrade, rotation or mounted path acceptance."
+  },
+  {
+    "caseId": "stable_layout_3",
+    "outcome": "PASS",
+    "evidence": "Prebuilt generated stable L3 registered exact 6 native stall destinations and 4 complete north-facing bed heads, correct level/style and patrol destination. Stall columns clear. This placement check is not native construction, upgrade, rotation or mounted path acceptance."
+  },
+  {
+    "caseId": "stable_layout_4",
+    "outcome": "PASS",
+    "evidence": "Prebuilt generated stable L4 registered exact 8 native stall destinations and 5 complete north-facing bed heads, correct level/style and patrol destination. Stall columns clear. This placement check is not native construction, upgrade, rotation or mounted path acceptance."
+  },
+  {
+    "caseId": "stable_layout_5",
+    "outcome": "PASS",
+    "evidence": "Prebuilt generated stable L5 registered exact 10 native stall destinations and 6 complete north-facing bed heads, correct level/style and patrol destination. Stall columns clear. This placement check is not native construction, upgrade, rotation or mounted path acceptance."
+  },
+  {
+    "caseId": "stablemaster_stall_delivery",
+    "outcome": "PASS",
+    "evidence": "Native worker held the named horse\u0027s leash, horse moved over three blocks from its front-aisle spawn to within 2.5 blocks of an exact registered stall while worker-leashed, and native roundups_completed increased. This establishes one real reachable stall delivery; outdoor collection, every stall, mounted travel and long-term containment are not certified."
+  },
+  {
+    "caseId": "stablemaster_conversion",
+    "outcome": "PASS",
+    "evidence": "Native stablemaster converted the sole supplied ordinary untamed adult vanilla horse; unique name transferred, original removed, distinct cavalry entity registered with this stable as home, horses_trained statistic and worker XP increased. Supplies/food/daytime were fixtures; no conversion, output, worker AI or home injection. Same worker; navigation recovery disabled. Breeding, maintenance, mounted patrol and return are not certified."
+  }
+]

@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shaped","category":"building","pattern":["PPP","CMC","PPP"],"key":{"P":{"tag":"minecraft:planks"},"C":{"item":"minecraft:compass"},"M":{"item":"minecraft:map"}},"result":{"id":"colonyhorizons:blockhutsurveyor","count":1}}

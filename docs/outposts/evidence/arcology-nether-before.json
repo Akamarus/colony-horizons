@@ -1,0 +1,17 @@
+[
+  {
+    "caseId": "plantation_crops",
+    "outcome": "PASS",
+    "evidence": "Native planter planted sugarcane/cactus/bamboo from supplied seeds, then harvested and collected each crop. QA matured one worker-planted stem per crop; natural growth timing not tested."
+  },
+  {
+    "caseId": "miner_shaft",
+    "outcome": "PASS",
+    "evidence": "Native miner reached shaft, removed 20 natural stone blocks below the blueprint and wore pickaxe. Construction inputs supplied; ore-branch production is not certified by this case."
+  },
+  {
+    "caseId": "behavior_failure",
+    "outcome": "FAIL",
+    "evidence": "java.lang.IllegalStateException: Behavior timeout; see behavior-diagnostics.txt"
+  }
+]

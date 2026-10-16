@@ -1,0 +1,42 @@
+[
+  {
+    "caseId": "cowboy_milk",
+    "outcome": "PASS",
+    "evidence": "Configured bucket milking: native worker consumed the supplied empty bucket near an adult cow, produced milk and recorded a native milking attempt. Prebuilt level5 blueprint, two ordinary adult animals, feed, tools, worker food and daytime supplied as fixtures. Worker identity and movement checked; recovery disabled. Other levels, slaughter, courier delivery and restart not certified."
+  },
+  {
+    "caseId": "chickenherder_breed",
+    "outcome": "PASS",
+    "evidence": "Native worker fetched breeding feed, approached parents, consumed feed and produced a new offspring; native breeding and item-use statistics verified. Prebuilt level5 blueprint, two ordinary adult animals, feed, tools, worker food and daytime supplied as fixtures. Worker identity and movement checked; recovery disabled. Other levels, slaughter, courier delivery and restart not certified."
+  },
+  {
+    "caseId": "rabbithutch_breed",
+    "outcome": "PASS",
+    "evidence": "Native worker fetched breeding feed, approached parents, consumed feed and produced a new offspring; native breeding and item-use statistics verified. Prebuilt level5 blueprint, two ordinary adult animals, feed, tools, worker food and daytime supplied as fixtures. Worker identity and movement checked; recovery disabled. Other levels, slaughter, courier delivery and restart not certified."
+  },
+  {
+    "caseId": "swineherder_breed",
+    "outcome": "PASS",
+    "evidence": "Native worker fetched breeding feed, approached parents, consumed feed and produced a new offspring; native breeding and item-use statistics verified. Prebuilt level5 blueprint, two ordinary adult animals, feed, tools, worker food and daytime supplied as fixtures. Worker identity and movement checked; recovery disabled. Other levels, slaughter, courier delivery and restart not certified."
+  },
+  {
+    "caseId": "shepherd_breed",
+    "outcome": "PASS",
+    "evidence": "Native worker fetched breeding feed, approached parents, consumed feed and produced a new offspring; native breeding and item-use statistics verified. Prebuilt level5 blueprint, two ordinary adult animals, feed, tools, worker food and daytime supplied as fixtures. Worker identity and movement checked; recovery disabled. Other levels, slaughter, courier delivery and restart not certified."
+  },
+  {
+    "caseId": "cowboy_breed",
+    "outcome": "PASS",
+    "evidence": "Native worker fetched breeding feed, approached parents, consumed feed and produced a new offspring; native breeding and item-use statistics verified. Prebuilt level5 blueprint, two ordinary adult animals, feed, tools, worker food and daytime supplied as fixtures. Worker identity and movement checked; recovery disabled. Other levels, slaughter, courier delivery and restart not certified."
+  },
+  {
+    "caseId": "shepherd_shear",
+    "outcome": "PASS",
+    "evidence": "Configured shearing with dyeing disabled: native worker fetched shears, approached sheep, changed native sheared state (latched observation), wore supplied shears and collected white wool with native item-obtained statistics. Prebuilt level5 blueprint, two ordinary adult animals, feed, tools, worker food and daytime supplied as fixtures. Worker identity and movement checked; recovery disabled. Other levels, slaughter, courier delivery and restart not certified."
+  },
+  {
+    "caseId": "chickenherder_eggs",
+    "outcome": "PASS",
+    "evidence": "Native worker collected naturally laid eggs into worker/hut inventory; no egg entity/item or laying timer injected. Prebuilt level5 blueprint, two ordinary adult animals, feed, tools, worker food and daytime supplied as fixtures. Worker identity and movement checked; recovery disabled. Other levels, slaughter, courier delivery and restart not certified."
+  }
+]

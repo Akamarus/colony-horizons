@@ -1,0 +1,12 @@
+[
+  {
+    "caseId": "beekeeper_honeycomb_cycle",
+    "outcome": "PASS",
+    "evidence": "Native bees acquired nectar, occupied initially empty blueprint hives and increased honey from zero. Native beekeeper fetched shears from hut, navigated and harvested 3 minecraft:honeycomb; honey reset, native collection statistic and shear wear verified. Prebuilt level5 hut, six ordinary adult bees, native hive assignments, harvest-only mode, worker food and tools supplied. Blueprint flowers retained; no honey/nectar/hive timer/output/AI injection. Identity/movement checked, recovery disabled. Breeding, other levels and restart not certified."
+  },
+  {
+    "caseId": "beekeeper_honey_cycle",
+    "outcome": "PASS",
+    "evidence": "Native bees acquired nectar, occupied initially empty blueprint hives and increased honey from zero. Native beekeeper fetched glass bottles from hut, navigated and harvested 1 minecraft:honey_bottle; honey reset, native collection statistic and bottle consumption verified. Prebuilt level5 hut, six ordinary adult bees, native hive assignments, harvest-only mode, worker food and tools supplied. Blueprint flowers retained; no honey/nectar/hive timer/output/AI injection. Identity/movement checked, recovery disabled. Breeding, other levels and restart not certified."
+  }
+]

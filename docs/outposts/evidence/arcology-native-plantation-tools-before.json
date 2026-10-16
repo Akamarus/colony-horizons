@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "seagrass_tool_failure",
+    "outcome": "FAIL",
+    "evidence": "net.minecraft.gametest.framework.GameTestAssertException: Planter selects no shears for Block{minecraft:tall_seagrass}"
+  }
+]

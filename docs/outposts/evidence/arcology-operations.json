@@ -1,0 +1,27 @@
+[
+  {
+    "caseId": "supported_layout",
+    "outcome": "PASS",
+    "evidence": "Six nonoverlapping level-1 through level-5 envelopes on grounded superflat terrain; ground-level gaps provide access, no inferred vertical connectors"
+  },
+  {
+    "caseId": "native_builder_completion",
+    "outcome": "PASS",
+    "evidence": "Native builder constructed six actual Arcology buildings from level zero; supplies\u003d{1 minecolonies:blockminecoloniesrack\u003d2, 1 minecraft:lantern\u003d12, 1 minecraft:oak_fence\u003d20, 1 minecraft:oak_fence_gate\u003d2, 1 minecraft:oak_planks\u003d160, 1 minecraft:oak_slab\u003d68, 1 minecraft:oak_stairs\u003d10, 1 minecraft:red_bed\u003d3, 1 minecraft:spruce_fence\u003d6, 1 minecraft:spruce_planks\u003d318, 1 minecraft:spruce_stairs\u003d71, 1 minecraft:spruce_trapdoor\u003d6}"
+  },
+  {
+    "caseId": "worker_access",
+    "outcome": "PASS",
+    "evidence": "Each worker navigated workplace-to-own-bed-to-workplace; both foresters also reached their forestry approach and returned. Adjacent open positions required; native recovery teleports/block breaking disabled for access and forestry; identity and sampled movement checks active"
+  },
+  {
+    "caseId": "two_foresters_harvest_replant",
+    "outcome": "PASS",
+    "evidence": "Both native foresters harvested distinct trees, collected real logs, used tools and replanted within restricted areas"
+  },
+  {
+    "caseId": "local_supply_boundary",
+    "outcome": "PASS",
+    "evidence": "Workers stayed within 100 blocks of satellite; max observed\u003d39.1581476257195. Tools collected from local huts; sapling pickups observed\u003d[false, false]; one starter sapling and bread preloaded; autonomous sapling/food restocking is not established. No courier or home route exercised"
+  }
+]

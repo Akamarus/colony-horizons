@@ -1,0 +1,27 @@
+[
+  {
+    "caseId": "cocoa_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 3 and worker-plus-own-hut item count increased without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d19600"
+  },
+  {
+    "caseId": "vine_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 1 and worker-plus-own-hut item count increased without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d24180"
+  },
+  {
+    "caseId": "kelp_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 1 and worker-plus-own-hut item count increased without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d51240"
+  },
+  {
+    "caseId": "seagrass_production",
+    "outcome": "PASS",
+    "evidence": "Same native planter walked into the field with recovery disabled; fresh crop appeared in initially empty field, native harvest statistic increased by 1 and worker-plus-own-hut item count increased without output injection. Initial seeds/tools/bonemeal, research, food and clear weather supplied; normal day/night cycle. Explicit native chunk ticks (64 random samples every20 test ticks) provide playerless-fixture growth; not normal-speed yield or unattended survival. ticks\u003d44600"
+  },
+  {
+    "caseId": "crop_production_failure",
+    "outcome": "FAIL",
+    "evidence": "java.lang.IllegalStateException: Crop production timeout: seapickle; see diagnostics"
+  }
+]

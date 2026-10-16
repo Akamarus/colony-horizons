@@ -1,0 +1,532 @@
+{
+  "scope": "Static installed-pack audit; not a native decode or all-building gameplay test",
+  "pack": "<user-home>\\curseforge\\minecraft\\Instances\\MineColonies Dimensional Adventure\\blueprints\\arcology",
+  "metadata": {
+    "version": 1,
+    "pack-format": 1,
+    "desc": "A grand structure containing an entire community.",
+    "authors": [
+      "BlockyUniverse"
+    ],
+    "mods": [
+      "structurize"
+    ],
+    "name": "Arcology",
+    "icon": "icon.png"
+  },
+  "pack_metadata_sha256": "f6a2dd24316fa03d5b82b76db6bfed4afce72410d1135604a9933d27722271c1",
+  "blueprints": 283,
+  "parse_errors": [],
+  "building_blueprints": 238,
+  "other_blueprints": 45,
+  "registered_building_count": 54,
+  "families": {
+    "alchemist": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "archery": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "baker": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "barracks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "barrackstower": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "beekeeper": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "blacksmith": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "builder": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "chickenherder": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "combatacademy": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "composter": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "concretemixer": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "cook": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "cowboy": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "crusher": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "deliveryman": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "dyer": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "enchanter": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "farmer": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "fisherman": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "fletcher": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "florist": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "glassblower": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "graveyard": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "guardtower": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "hospital": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "kitchen": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "library": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "lumberjack": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "mechanic": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "miner": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "mysticalsite": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "netherworker": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "plantation": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rabbithutch": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "residence": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "sawmill": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "school": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "shepherd": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "sifter": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "smeltery": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "stonemason": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "stonesmeltery": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "swineherder": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "tavern": [
+      1,
+      2,
+      3
+    ],
+    "townhall": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "university": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "warehouse": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "missing_registered": [
+    "stable",
+    "postbox",
+    "stash",
+    "simplequarry",
+    "mediumquarry",
+    "gatehouse"
+  ],
+  "tag_occurrences": {
+    "bamboo": 48,
+    "cactus": 48,
+    "cobble": 2,
+    "ladder": 2,
+    "portal": 5,
+    "sit": 18,
+    "sugar": 48,
+    "vault": 5,
+    "work": 32
+  },
+  "used_block_counts": {
+    "blocksyouneed_luna:steel_bent_pipe": 1,
+    "domum_ornamentum:beige_stone_bricks": 3561,
+    "domum_ornamentum:blockbarreldeco_onside": 87,
+    "domum_ornamentum:blockbarreldeco_standing": 12,
+    "domum_ornamentum:panel": 15,
+    "domum_ornamentum:shingle": 109,
+    "domum_ornamentum:shingle_slab": 15,
+    "domum_ornamentum:vanilla_slab_compat": 2076,
+    "domum_ornamentum:vanilla_stairs_compat": 10,
+    "minecolonies:barrel_block": 15,
+    "minecolonies:blockhutalchemist": 5,
+    "minecolonies:blockhutarchery": 5,
+    "minecolonies:blockhutbaker": 5,
+    "minecolonies:blockhutbarracks": 5,
+    "minecolonies:blockhutbarrackstower": 19,
+    "minecolonies:blockhutbeekeeper": 5,
+    "minecolonies:blockhutblacksmith": 5,
+    "minecolonies:blockhutbuilder": 5,
+    "minecolonies:blockhutchickenherder": 5,
+    "minecolonies:blockhutcitizen": 5,
+    "minecolonies:blockhutcombatacademy": 5,
+    "minecolonies:blockhutcomposter": 5,
+    "minecolonies:blockhutconcretemixer": 5,
+    "minecolonies:blockhutcook": 5,
+    "minecolonies:blockhutcowboy": 5,
+    "minecolonies:blockhutcrusher": 5,
+    "minecolonies:blockhutdeliveryman": 5,
+    "minecolonies:blockhutdyer": 5,
+    "minecolonies:blockhutenchanter": 5,
+    "minecolonies:blockhutfarmer": 5,
+    "minecolonies:blockhutfield": 6,
+    "minecolonies:blockhutfisherman": 5,
+    "minecolonies:blockhutfletcher": 5,
+    "minecolonies:blockhutflorist": 5,
+    "minecolonies:blockhutglassblower": 5,
+    "minecolonies:blockhutgraveyard": 5,
+    "minecolonies:blockhutguardtower": 5,
+    "minecolonies:blockhuthospital": 5,
+    "minecolonies:blockhutkitchen": 5,
+    "minecolonies:blockhutlibrary": 5,
+    "minecolonies:blockhutlumberjack": 5,
+    "minecolonies:blockhutmechanic": 5,
+    "minecolonies:blockhutminer": 5,
+    "minecolonies:blockhutmysticalsite": 5,
+    "minecolonies:blockhutnetherworker": 5,
+    "minecolonies:blockhutplantation": 5,
+    "minecolonies:blockhutrabbithutch": 5,
+    "minecolonies:blockhutsawmill": 5,
+    "minecolonies:blockhutschool": 5,
+    "minecolonies:blockhutshepherd": 5,
+    "minecolonies:blockhutsifter": 5,
+    "minecolonies:blockhutsmeltery": 5,
+    "minecolonies:blockhutstonemason": 5,
+    "minecolonies:blockhutstonesmeltery": 5,
+    "minecolonies:blockhutswineherder": 5,
+    "minecolonies:blockhuttavern": 3,
+    "minecolonies:blockhuttownhall": 5,
+    "minecolonies:blockhutuniversity": 5,
+    "minecolonies:blockhutwarehouse": 5,
+    "minecolonies:blockminecoloniesnamedgrave": 145,
+    "minecolonies:blockminecoloniesrack": 395,
+    "minecolonies:composted_dirt": 60,
+    "minecraft:air": 71434,
+    "minecraft:anvil": 10,
+    "minecraft:barrel": 49,
+    "minecraft:beehive": 15,
+    "minecraft:black_carpet": 14,
+    "minecraft:blast_furnace": 9,
+    "minecraft:blue_wall_banner": 1,
+    "minecraft:bookshelf": 267,
+    "minecraft:brewing_stand": 15,
+    "minecraft:campfire": 3,
+    "minecraft:chain": 188,
+    "minecraft:chest": 8,
+    "minecraft:coarse_dirt": 2,
+    "minecraft:cobblestone": 6508,
+    "minecraft:cobblestone_slab": 3723,
+    "minecraft:cobblestone_stairs": 49,
+    "minecraft:cobblestone_wall": 50,
+    "minecraft:cracked_stone_bricks": 397,
+    "minecraft:dirt": 176,
+    "minecraft:dirt_path": 4,
+    "minecraft:furnace": 85,
+    "minecraft:glass_pane": 24,
+    "minecraft:gold_block": 4,
+    "minecraft:grass_block": 841,
+    "minecraft:gravel": 98,
+    "minecraft:grindstone": 6,
+    "minecraft:hay_block": 34,
+    "minecraft:iron_bars": 122,
+    "minecraft:iron_block": 63,
+    "minecraft:iron_ore": 9,
+    "minecraft:ladder": 17,
+    "minecraft:lantern": 746,
+    "minecraft:lectern": 14,
+    "minecraft:mossy_stone_brick_stairs": 386,
+    "minecraft:mossy_stone_brick_wall": 3,
+    "minecraft:mossy_stone_bricks": 1064,
+    "minecraft:netherite_block": 1,
+    "minecraft:oak_fence": 613,
+    "minecraft:oak_fence_gate": 43,
+    "minecraft:oak_leaves": 20,
+    "minecraft:oak_log": 48,
+    "minecraft:oak_planks": 6530,
+    "minecraft:oak_slab": 3707,
+    "minecraft:oak_stairs": 60,
+    "minecraft:obsidian": 60,
+    "minecraft:orange_wall_banner": 1,
+    "minecraft:petrified_oak_slab": 14,
+    "minecraft:polished_deepslate_stairs": 2,
+    "minecraft:poppy": 15,
+    "minecraft:pumpkin": 15,
+    "minecraft:purple_wall_banner": 1,
+    "minecraft:rail": 25,
+    "minecraft:red_bed": 146,
+    "minecraft:red_carpet": 375,
+    "minecraft:red_sand": 8,
+    "minecraft:sand": 148,
+    "minecraft:smoker": 5,
+    "minecraft:soul_campfire": 1,
+    "minecraft:soul_sand": 20,
+    "minecraft:soul_wall_torch": 2,
+    "minecraft:spruce_button": 16,
+    "minecraft:spruce_door": 70,
+    "minecraft:spruce_fence": 141,
+    "minecraft:spruce_leaves": 10,
+    "minecraft:spruce_log": 24,
+    "minecraft:spruce_planks": 8568,
+    "minecraft:spruce_slab": 72,
+    "minecraft:spruce_stairs": 2445,
+    "minecraft:spruce_trapdoor": 394,
+    "minecraft:stone": 8631,
+    "minecraft:stone_brick_slab": 8,
+    "minecraft:stone_brick_stairs": 657,
+    "minecraft:stone_brick_wall": 19,
+    "minecraft:stone_bricks": 3234,
+    "minecraft:stone_stairs": 1937,
+    "minecraft:stonecutter": 9,
+    "minecraft:wall_torch": 3,
+    "minecraft:water": 15,
+    "minecraft:white_bed": 30,
+    "minecraft:white_carpet": 380,
+    "minecraft:white_wall_banner": 1,
+    "minecraft:white_wool": 16,
+    "structurize:blockfluidsubstitution": 195,
+    "structurize:blocksolidsubstitution": 72,
+    "structurize:blocksubstitution": 40,
+    "structurize:blocktagsubstitution": 16
+  },
+  "source_hashes": {
+    "com\\minecolonies\\api\\colony\\buildings\\ModBuildings.java": "bcb1a658f8445d5b71b2726c21624590bf20b0d908ce220cf876b8f87aedc297",
+    "com\\minecolonies\\apiimp\\initializer\\ModBuildingsInitializer.java": "a8279766ecc31a8dbb0bce7d77ebf35d32564b957d9dab60bf35e57eacf787b3"
+  }
+}

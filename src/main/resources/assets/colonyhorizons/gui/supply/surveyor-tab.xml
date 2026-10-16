@@ -1,0 +1,6 @@
+<window size="190 244">
+ <image source="minecolonies:textures/gui/builderhut/builder_paper.png" size="190 244"/>
+ <text pos="18 24" size="154 62" color="black" wrap="true" label="Discover resources in other biomes, then send your Explorer on gathering trips."/>
+ <button id="surveys" pos="18 100" size="154 20" label="Exploration"/>
+ <text pos="18 134" size="154 72" color="black" wrap="true" label="Assign an Explorer using the Workers tab. Supply bread and tools through this hut's inventory."/>
+</window>

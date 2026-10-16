@@ -1,0 +1,390 @@
+[
+  {
+    "case": "archery_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_1",
+    "status": "PASS"
+  },
+  {
+    "case": "archery_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_2",
+    "status": "PASS"
+  },
+  {
+    "case": "archery_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_3",
+    "status": "PASS"
+  },
+  {
+    "case": "archery_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_4",
+    "status": "PASS"
+  },
+  {
+    "case": "archery_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_crop_clearance_5",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_1",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_1",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_2",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_2",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_3",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_3",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_4",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_4",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_5",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_5",
+    "status": "PASS"
+  },
+  {
+    "case": "marker_bounds_all_blueprints",
+    "status": "PASS"
+  },
+  {
+    "case": "survival_materials",
+    "status": "PASS"
+  },
+  {
+    "case": "preserve_existing_crop_capacity",
+    "status": "PASS"
+  },
+  {
+    "case": "source_hashes_nbt_types_untouched_bytes",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_exit_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_bamboo_aisles_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_hut_side_exit_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_surface_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_exit_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_bamboo_aisles_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_hut_side_exit_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_surface_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_exit_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_bamboo_aisles_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_hut_side_exit_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_surface_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_exit_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_bamboo_aisles_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_hut_side_exit_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_surface_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_exit_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_bamboo_aisles_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_hut_side_exit_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_irrigation_surface_5",
+    "status": "PASS"
+  },
+  {
+    "case": "concretemixer_native_water_1",
+    "status": "PASS"
+  },
+  {
+    "case": "concretemixer_stable_channel_1",
+    "status": "PASS"
+  },
+  {
+    "case": "concretemixer_native_water_2",
+    "status": "PASS"
+  },
+  {
+    "case": "concretemixer_stable_channel_2",
+    "status": "PASS"
+  },
+  {
+    "case": "concretemixer_native_water_3",
+    "status": "PASS"
+  },
+  {
+    "case": "concretemixer_stable_channel_3",
+    "status": "PASS"
+  },
+  {
+    "case": "concretemixer_native_water_4",
+    "status": "PASS"
+  },
+  {
+    "case": "concretemixer_stable_channel_4",
+    "status": "PASS"
+  },
+  {
+    "case": "concretemixer_native_water_5",
+    "status": "PASS"
+  },
+  {
+    "case": "concretemixer_stable_channel_5",
+    "status": "PASS"
+  },
+  {
+    "case": "combatacademy_native_dummy_1",
+    "status": "PASS"
+  },
+  {
+    "case": "combatacademy_native_dummy_2",
+    "status": "PASS"
+  },
+  {
+    "case": "combatacademy_native_dummy_3",
+    "status": "PASS"
+  },
+  {
+    "case": "combatacademy_native_dummy_4",
+    "status": "PASS"
+  },
+  {
+    "case": "combatacademy_native_dummy_5",
+    "status": "PASS"
+  },
+  {
+    "case": "chickenherder_ladder_crossing_1",
+    "status": "PASS"
+  },
+  {
+    "case": "chickenherder_ladder_crossing_2",
+    "status": "PASS"
+  },
+  {
+    "case": "chickenherder_ladder_crossing_3",
+    "status": "PASS"
+  },
+  {
+    "case": "chickenherder_ladder_crossing_4",
+    "status": "PASS"
+  },
+  {
+    "case": "chickenherder_ladder_crossing_5",
+    "status": "PASS"
+  },
+  {
+    "case": "present_military/gatehouse_1",
+    "status": "PASS"
+  },
+  {
+    "case": "present_military/gatehouse_2",
+    "status": "PASS"
+  },
+  {
+    "case": "present_military/gatehouse_3",
+    "status": "PASS"
+  },
+  {
+    "case": "present_military/stable_1",
+    "status": "PASS"
+  },
+  {
+    "case": "present_military/stable_2",
+    "status": "PASS"
+  },
+  {
+    "case": "present_military/stable_3",
+    "status": "PASS"
+  },
+  {
+    "case": "present_military/stable_4",
+    "status": "PASS"
+  },
+  {
+    "case": "present_military/stable_5",
+    "status": "PASS"
+  },
+  {
+    "case": "present_fundamentals/simplequarry_1",
+    "status": "PASS"
+  },
+  {
+    "case": "present_fundamentals/mediumquarry_1",
+    "status": "PASS"
+  },
+  {
+    "case": "crop_cocoa",
+    "status": "PASS"
+  },
+  {
+    "case": "crop_vine",
+    "status": "PASS"
+  },
+  {
+    "case": "crop_kelp",
+    "status": "PASS"
+  },
+  {
+    "case": "crop_seagrass",
+    "status": "PASS"
+  },
+  {
+    "case": "crop_seapickle",
+    "status": "PASS"
+  },
+  {
+    "case": "crop_glowberry",
+    "status": "PASS"
+  },
+  {
+    "case": "crop_weepingvine",
+    "status": "PASS"
+  },
+  {
+    "case": "crop_twistingvine",
+    "status": "PASS"
+  },
+  {
+    "case": "crop_crimson",
+    "status": "PASS"
+  },
+  {
+    "case": "crop_warped",
+    "status": "PASS"
+  },
+  {
+    "case": "shaft_simple",
+    "status": "PASS"
+  },
+  {
+    "case": "shaft_medium",
+    "status": "PASS"
+  },
+  {
+    "case": "complete_manifest",
+    "status": "PASS"
+  }
+]

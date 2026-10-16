@@ -6,6 +6,19 @@ An unofficial **MineColonies compatibility addon** for Minecraft Java **1.21.1 /
 
 [Download alpha.2]( https://github.com/Akamarus/colony-horizons/releases/tag/v0.1.0-alpha.2 ) · [Installation](docs/release/INSTALLATION.md) · [Report an issue](https://github.com/Akamarus/colony-horizons/issues) · [Roadmap](ROADMAP.md)
 
+## Current development: Exploration Hut
+
+The main branch now includes **0.1.0-dev.exploration.1** source, automated test
+harnesses and five Exploration Hut blueprints. The downloadable alpha.2 release
+remains unchanged. This development snapshot is not a stable release.
+
+An Explorer discovers resources in real biomes, then makes protected, simulated
+gathering trips for discovered wood types, saplings, flowers, wheat seeds, vines,
+kelp and seagrass. Native MineColonies workers, hut menus and local couriers remain
+in use. Multi-building outpost and Mayor development is **paused**; its existing
+save handling is retained. See the [player guide and verification record](docs/outposts/EXPLORATION-RESULTS.md)
+and [development build instructions](docs/DEVELOPMENT.md).
+
 ## Alpha.2 update
 
 Repairs Arcology Mine shaft fluid sealing, supply-raft waterline metadata, and Builder's Hut recall pockets. Install both the addon JAR and matching blueprint ZIP. Existing huts require repair/rebuild to receive blueprint changes. See [alpha.2 notes](docs/release/ALPHA2.md).
@@ -41,16 +54,20 @@ The released JAR passed an official Minecraft Launcher smoke test with the pinne
 
 Earlier candidate checks covered 49 native scenarios and 44 Python checks. The launcher smoke test did not repeat every scenario. Multiplayer and arbitrary modpacks are not certified. Recovery testing covers clean shutdown, not power loss. See [verification](docs/release/VERIFICATION.md).
 
-## Build the public addon
+## Build from source
 
-Use Java 21. Network access is required for the initial Gradle and dependency downloads.
+For the current Exploration Hut snapshot, use Java 21:
 
 ```powershell
-.\gradlew.bat publicJar
-python tools/Test-PublicRelease.py build/public-libs/colony-horizons-0.1.0-alpha.2.jar
+.\gradlew.bat supplyDevJar --no-daemon
+python tools/Test-SupplyDevPackage.py build/supply-dev-libs/colony-horizons-0.1.0-dev.exploration.1.jar --version 0.1.0-dev.exploration.1
 ```
 
-On Linux/macOS use `sh gradlew publicJar`. Output is under `build/public-libs`. **Use `publicJar`**, which supplies the release entry point and excludes development QA. This repository is the public release source snapshot; internal development test harnesses are not included. The matching source ZIP accompanies the binary in Releases. See [build instructions](docs/release/PUBLIC-BUILD.md).
+Use `sh gradlew` on Linux/macOS. Initial dependency downloads require network
+access. Use `supplyDevJar`, which excludes QA hooks; do not install the ordinary
+development JAR or isolated QA JAR into your colony. See [development instructions](docs/DEVELOPMENT.md).
+To reproduce published alpha.2, check out tag `v0.1.0-alpha.2` and follow that
+tag's build instructions. The release tag and downloadable artifacts are unchanged.
 
 ## Credits and licensing
 

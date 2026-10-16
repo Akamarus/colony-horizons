@@ -1,0 +1,17 @@
+[
+  {
+    "caseId": "simplequarry_assignment",
+    "outcome": "PASS",
+    "evidence": "Native level1 quarry and separate prebuilt level5 Mine; real Mine-employed JobQuarrier is assigned to the external QuarryModule. Sole origin shaft tag resolves infrastructure/mineshafts/simplequarryshaft1.blueprint. Disclosed dry stone/coal terrain and tools supplied; shaft bottom remains above world minimum. Native isInBuilding hut result\u003dtrue; footprint extension semantics are measured in diagnostics, not certified by this assignment check."
+  },
+  {
+    "caseId": "mediumquarry_assignment",
+    "outcome": "PASS",
+    "evidence": "Native level1 quarry and separate prebuilt level5 Mine; real Mine-employed JobQuarrier is assigned to the external QuarryModule. Sole origin shaft tag resolves infrastructure/mineshafts/mediumquarryshaft1.blueprint. Disclosed dry stone/coal terrain and tools supplied; shaft bottom remains above world minimum. Native isInBuilding hut result\u003dtrue; footprint extension semantics are measured in diagnostics, not certified by this assignment check."
+  },
+  {
+    "caseId": "quarry_failure",
+    "outcome": "FAIL",
+    "evidence": "java.lang.IllegalStateException: Completed without observed excavation/output"
+  }
+]

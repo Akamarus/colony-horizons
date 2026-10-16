@@ -1,0 +1,194 @@
+{
+  "date": "2026-10-12",
+  "developmentVersion": "0.1.0-supply-dev.1",
+  "checks": [
+    {
+      "suite": "SupplyBridge",
+      "phase": "seed",
+      "report": "build/reports/foundation/5308e346196341398e4ea5246c939695/seed/SupplyBridge.json",
+      "cases": [
+        {
+          "caseId": "external_stock_reserve_and_delivery",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "slot_rules_and_changed_inventory",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "durable_handoff_order",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "handoff_failure_quarantined",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        }
+      ]
+    },
+    {
+      "suite": "SupplyNative",
+      "phase": "seed",
+      "report": "build/reports/foundation/70e5a00dfd304411ae6b7751ea322d94/seed/SupplyNative.json",
+      "cases": [
+        {
+          "caseId": "registered_owner_commands",
+          "outcome": "PASS",
+          "evidence": "Native hut assertions passed"
+        },
+        {
+          "caseId": "native_dispatch_reserve",
+          "outcome": "PASS",
+          "evidence": "Native hut assertions passed"
+        },
+        {
+          "caseId": "native_delivery_reload_once",
+          "outcome": "PASS",
+          "evidence": "Native hut assertions passed"
+        },
+        {
+          "caseId": "native_return_cargo",
+          "outcome": "PASS",
+          "evidence": "Native hut assertions passed"
+        },
+        {
+          "caseId": "replaced_hut_retains_cargo",
+          "outcome": "PASS",
+          "evidence": "Native hut assertions passed"
+        },
+        {
+          "caseId": "foreign_owner_rejected",
+          "outcome": "PASS",
+          "evidence": "Native hut assertions passed"
+        },
+        {
+          "caseId": "resolver_does_not_load_chunks",
+          "outcome": "PASS",
+          "evidence": "Native hut assertions passed"
+        },
+        {
+          "caseId": "failed_native_save_quarantined",
+          "outcome": "PASS",
+          "evidence": "Native hut assertions passed"
+        }
+      ]
+    },
+    {
+      "suite": "Supply",
+      "phase": "seed",
+      "report": "build/reports/foundation/92ebc21ba3444c089a917ee0556e79a3/seed/Supply.json",
+      "cases": [
+        {
+          "caseId": "two_way_delivery",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "full_destination",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "unavailable_endpoints",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "reserves_and_incoming",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "pause_and_return",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "components_and_copies",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "authority_and_bounds",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "snapshot_conservation",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "returning_stock_counts_as_incoming",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "malformed_custody_rejected",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "failed_snapshot_write_preserves_custody",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        },
+        {
+          "caseId": "invalid_saved_data",
+          "outcome": "PASS",
+          "evidence": "Assertions passed"
+        }
+      ]
+    },
+    {
+      "suite": "SupplyNativeRestart",
+      "phase": "seed",
+      "report": "build/reports/foundation/f536411f4a654bcebfc3f13b1998fe52/seed/SupplyNativeRestart.json",
+      "cases": [
+        {
+          "caseId": "native_seed",
+          "outcome": "PASS",
+          "evidence": "Two huts 512 blocks apart; conserved 40 logs and 16 bread across process restart"
+        }
+      ]
+    },
+    {
+      "suite": "SupplyNativeRestart",
+      "phase": "verify",
+      "report": "build/reports/foundation/f536411f4a654bcebfc3f13b1998fe52/verify/SupplyNativeRestart.json",
+      "cases": [
+        {
+          "caseId": "native_verify",
+          "outcome": "PASS",
+          "evidence": "Two huts 512 blocks apart; conserved 40 logs and 16 bread across process restart"
+        }
+      ]
+    },
+    {
+      "suite": "SupplyNativeRestart",
+      "phase": "verify_final",
+      "report": "build/reports/foundation/f536411f4a654bcebfc3f13b1998fe52/verify_final/SupplyNativeRestart.json",
+      "cases": [
+        {
+          "caseId": "native_verify_final",
+          "outcome": "PASS",
+          "evidence": "Two huts 512 blocks apart; conserved 40 logs and 16 bread across process restart"
+        }
+      ]
+    }
+  ],
+  "checkCount": 27,
+  "jarSha256": "50b5c23855e64c88a6c1a2e7095b5614b6bda85ae9b142c2374ac6a173a31100",
+  "alphaSha256Unchanged": "717164e87fc5cd7f3d659c0703caa68026247327f20e6d231178581be9b71bc0",
+  "publicHeadAndTagUnchanged": "922081983f4586aa68baafaa2230b7032c0b61c6",
+  "limitations": [
+    "hut inventories only, not warehouse racks",
+    "existing native courier behavior unchanged",
+    "synchronous checkpoint performance not benchmarked",
+    "no launcher smoke test for this development JAR",
+    "pending handoff recovery requires operator reconciliation"
+  ]
+}

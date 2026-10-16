@@ -1,0 +1,14 @@
+<window size="400 250" lightbox="true">
+ <image source="minecolonies:textures/gui/townhall_book.png" pos="0 0" size="400 250"/>
+ <text id="title" pos="22 20" size="356 12" color="black"/>
+ <list id="entries" pos="22 42" size="166 126"><view size="156 24"><itemicon id="icon" pos="0 4" size="16 16"/><button id="row" pos="18 0" size="138 22"/></view></list>
+ <text id="details" pos="212 42" size="166 102" color="black" wrap="true"/>
+ <text id="status" pos="212 146" size="166 42" color="black" wrap="true"/>
+ <button id="start" label="Discover" pos="22 170" size="80 18"/>
+ <button id="cancel" label="Recall" pos="108 170" size="80 18"/>
+ <button id="gather" label="Gather once" pos="22 192" size="80 18"/>
+ <button id="repeat" label="Repeat" pos="108 192" size="80 18"/>
+ <button id="findings" label="Findings" pos="212 192" size="166 18"/>
+ <text id="message" pos="22 212" size="268 18" color="black" wrap="true"/>
+ <button id="back" label="Back" pos="302 212" size="76 18"/>
+</window>

@@ -1,0 +1,17 @@
+[
+  {
+    "caseId": "archery_cycle",
+    "outcome": "PASS",
+    "evidence": "Native archer trained from a registered blueprint shooting stand, fired a worker-owned arrow at a registered target, recorded native arrows-fired/hit statistics and gained XP. No projectile, XP or training-state injection. Prebuilt level5 Arcology hut, equipment, food and claim/research fixtures supplied. Same worker/assignment with navigation recovery disabled. Other levels, restart, promotion and raids not certified."
+  },
+  {
+    "caseId": "guardtower_cycle",
+    "outcome": "PASS",
+    "evidence": "Native knight guard independently acquired and killed one supplied full-health stationary husk, with worker-attributed damage/death and native mob-killed statistics. Husk AI disabled solely to isolate guard targeting; pursuit of moving targets, incoming damage and raid defense not certified. Prebuilt level5 Arcology hut, equipment, food and claim/research fixtures supplied. Same worker/assignment with navigation recovery disabled. Other levels, restart, promotion and raids not certified."
+  },
+  {
+    "caseId": "combatacademy_cycle",
+    "outcome": "PASS",
+    "evidence": "Native academy trainee navigated to a registered blueprint hay/pumpkin dummy, executed dummy training, damaged the supplied sword and gained XP. No XP, partner or training-state injection; partner sparring is not certified. Prebuilt level5 Arcology hut, equipment, food and claim/research fixtures supplied. Same worker/assignment with navigation recovery disabled. Other levels, restart, promotion and raids not certified."
+  }
+]

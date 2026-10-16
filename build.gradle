@@ -17,6 +17,19 @@ neoForge {
     runs {
         client {
             client()
+            if(project.hasProperty('menuLive')) {
+                gameDirectory = project.file('runs/menu-live')
+                systemProperty 'colonyhorizons.menuLive', 'true'
+                if(project.hasProperty('menuLiveDelayMillis')) systemProperty 'colonyhorizons.menuLiveDelayMillis', project.property('menuLiveDelayMillis')
+                programArguments.addAll '--width', '1280', '--height', '720', '--username', 'AkamarusQA'
+                if(project.hasProperty('menuLiveWorld')) programArguments.addAll '--quickPlaySingleplayer', project.property('menuLiveWorld')
+            }
+            if(project.hasProperty('menuPreview')) {
+                gameDirectory = project.file(project.hasProperty('menuPreviewWide') ? 'runs/menu-preview-wide' : 'runs/menu-preview')
+                systemProperty 'colonyhorizons.menuPreview', 'true'
+                if(project.hasProperty('menuRegression')) systemProperty 'colonyhorizons.menuRegression', 'true'
+                programArguments.addAll '--width', project.hasProperty('menuPreviewWide') ? '1920' : '1280', '--height', project.hasProperty('menuPreviewWide') ? '1080' : '720'
+            }
             if(project.hasProperty('smoke')) {
                 gameDirectory = project.file('runs/smoke')
                 systemProperty 'colonyhorizons.smoke', 'true'
@@ -29,6 +42,7 @@ neoForge {
             systemProperty 'neoforge.enabledGameTestNamespaces', 'colonyhorizons'
             systemProperty 'colonyhorizons.foundation', 'true'
             systemProperty 'colonyhorizons.foundationSuite', project.findProperty('foundationSuite') ?: 'Arcology'
+            systemProperty 'colonyhorizons.explorationFault', project.findProperty('explorationFault') ?: 'timer'
             systemProperty 'colonyhorizons.probePhase', project.findProperty('probePhase') ?: 'seed'
             systemProperty 'colonyhorizons.probeOutput', project.findProperty('probeOutput') ?: project.file('build/reports/foundation').absolutePath
             systemProperty 'colonyhorizons.arcologyPath', project.findProperty('arcologyPath') ?: project.file('blueprints/arcology').absolutePath
@@ -73,7 +87,7 @@ processResources {
 }
 
 // Code-only public artifacts use isolated outputs and never compile QA sources.
-def publicVersion = '0.1.0-alpha.2'
+def publicVersion = project.version.toString()
 def publicClasses = layout.buildDirectory.dir('public-classes')
 def publicResources = layout.buildDirectory.dir('public-resources')
 tasks.register('compilePublicJava', JavaCompile) {
@@ -81,13 +95,14 @@ tasks.register('compilePublicJava', JavaCompile) {
         exclude 'dev/colonyhorizons/qa/**'
         exclude 'dev/colonyhorizons/ColonyHorizons.java'
         exclude '**/FoundationTestSaveMixin.java'
+        exclude '**/SupplyCheckpointTimingMixin.java'
     }, fileTree('src/release/java')
     classpath = sourceSets.main.compileClasspath
     javaCompiler = javaToolchains.compilerFor { languageVersion = JavaLanguageVersion.of(21) }
     destinationDirectory = publicClasses
 }
 tasks.register('publicResources', Sync) {
-    from('src/main/resources') { exclude 'qa/**', 'data/**', 'colonyhorizons.mixins.json' }
+    from('src/main/resources') { exclude 'qa/**', 'data/colonyhorizons/structure/**', 'colonyhorizons.mixins.json' }
     from('src/release/resources')
     into publicResources
     inputs.property 'version', publicVersion
@@ -115,8 +130,51 @@ tasks.register('publicSourceZip', Zip) {
         exclude 'src/main/java/dev/colonyhorizons/qa/**'
         exclude 'src/main/java/dev/colonyhorizons/ColonyHorizons.java'
         exclude '**/FoundationTestSaveMixin.java'
-        exclude 'src/main/resources/qa/**', 'src/main/resources/data/**'
+        exclude '**/SupplyCheckpointTimingMixin.java'
+        exclude 'src/main/resources/qa/**', 'src/main/resources/data/colonyhorizons/structure/**'
     }
     preserveFileTimestamps = false
     reproducibleFileOrder = true
+}
+
+// Experimental supply build: distinct version/output; never overwrites the submitted alpha artifact.
+tasks.register('supplyDevResources', Sync) {
+    from('src/main/resources') { exclude 'qa/**', 'data/colonyhorizons/structure/**', 'colonyhorizons.mixins.json' }
+    from('src/release/resources') { exclude 'colonyhorizons.mixins.json' }
+    from('src/supplyDev/resources')
+    into layout.buildDirectory.dir('supply-dev-resources')
+    inputs.property 'version', project.version
+    filesMatching('META-INF/neoforge.mods.toml') { expand version: project.version }
+}
+tasks.register('supplyDevJar', Jar) {
+    dependsOn 'compilePublicJava', 'supplyDevResources'
+    archiveBaseName = 'colony-horizons'
+    archiveVersion = project.version
+    destinationDirectory = layout.buildDirectory.dir('supply-dev-libs')
+    from publicClasses
+    from layout.buildDirectory.dir('supply-dev-resources')
+    from('LICENSE', 'NOTICE', 'TEMPLATE_LICENSE.txt')
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}
+
+// Disposable normal-server test harness, never bundled with supplyDevJar/publicJar.
+tasks.register('compileSupplyQaJava', JavaCompile) {
+    dependsOn 'classes'
+    source fileTree('src/supplyQa/java')
+    classpath = sourceSets.main.compileClasspath + sourceSets.main.output
+    javaCompiler = javaToolchains.compilerFor { languageVersion = JavaLanguageVersion.of(21) }
+    destinationDirectory = layout.buildDirectory.dir('supply-qa-classes')
+}
+tasks.register('supplyQaJar', Jar) {
+    dependsOn 'compileSupplyQaJava'
+    archiveFileName = 'colony-horizons-isolated-qa.jar'
+    destinationDirectory = layout.buildDirectory.dir('supply-qa-libs')
+    from(sourceSets.main.output.classesDirs) { include 'dev/colonyhorizons/qa/**' }
+    from layout.buildDirectory.dir('supply-qa-classes')
+    from('src/main/resources') { include 'data/colonyhorizons/structure/**' }
+    inputs.property 'version', project.version
+    from('src/supplyQa/resources') {
+        filesMatching('META-INF/neoforge.mods.toml') { expand version: project.version }
+    }
 }

@@ -1,0 +1,22 @@
+[
+  {
+    "caseId": "sawmill_craft",
+    "outcome": "PASS",
+    "evidence": "Native requested recipe produced 6 minecraft:oak_slab and consumed exact supplied ingredients; prebuilt level5 hut, taught recipe and food supplied. Product observed in worker/hut; courier delivery is checked separately."
+  },
+  {
+    "caseId": "stonemason_craft",
+    "outcome": "PASS",
+    "evidence": "Native requested recipe produced 4 minecraft:stone_bricks and consumed exact supplied ingredients; prebuilt level5 hut, taught recipe and food supplied. Product observed in worker/hut; courier delivery is checked separately."
+  },
+  {
+    "caseId": "fletcher_craft",
+    "outcome": "PASS",
+    "evidence": "Native requested recipe produced 4 minecraft:arrow and consumed exact supplied ingredients; prebuilt level5 hut, taught recipe and food supplied. Product observed in worker/hut; courier delivery is checked separately."
+  },
+  {
+    "caseId": "courier_delivery",
+    "outcome": "PASS",
+    "evidence": "Same native courier carried all three newly crafted products from workplaces to requesting Town Hall, exact quantities arrived with none left in source workers/huts or courier; native warehouse link, recovery disabled. Prepared ground-level layout and food supplied; warehouse rack throughput, upgrades and restart not certified."
+  }
+]

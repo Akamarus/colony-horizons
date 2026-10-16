@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "composter_cycle",
+    "outcome": "PASS",
+    "evidence": "Native worker collected allowed wheat from hut, filled registered blueprint barrel, waited for native processing and harvested 6 compost. No timer/content injection; identity and movement checked with recovery disabled. Prebuilt level5 hut, wheat, allowed-input configuration and food supplied; dirt mode, other levels, delivery and restart not tested."
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "caseId": "cocoa_extension_contract",
+    "outcome": "PASS",
+    "evidence": "Prebuilt candidate loaded; real BlockPlantationField.setPlacedBy registered plantation_cocoa_beans with exact field/work tags and 8 derived positions. 240 native ticks and scheduled neighbor/fluid updates preserved required substrate, source water and growth space. Prospective crop states passed native canSurvive without placing plants. Native L5 assignExtension/freeExtension succeeded sequentially; three distinct fields accepted and fourth rejected. Established research and prebuilt L5 Plantation are disclosed fixtures. NO worker planting, growth, harvest/output, navigation, builder completion, rotation or restart certified."
+  },
+  {
+    "caseId": "vine_extension_contract",
+    "outcome": "PASS",
+    "evidence": "Prebuilt candidate loaded; real BlockPlantationField.setPlacedBy registered plantation_vines with exact field/work tags and 10 derived positions. 240 native ticks and scheduled neighbor/fluid updates preserved required substrate, source water and growth space. Prospective crop states passed native canSurvive without placing plants. Native L5 assignExtension/freeExtension succeeded sequentially; three distinct fields accepted and fourth rejected. Established research and prebuilt L5 Plantation are disclosed fixtures. NO worker planting, growth, harvest/output, navigation, builder completion, rotation or restart certified."
+  },
+  {
+    "caseId": "kelp_extension_contract",
+    "outcome": "PASS",
+    "evidence": "Prebuilt candidate loaded; real BlockPlantationField.setPlacedBy registered plantation_kelp with exact field/work tags and 6 derived positions. 240 native ticks and scheduled neighbor/fluid updates preserved required substrate, source water and growth space. Prospective crop states passed native canSurvive without placing plants. Native L5 assignExtension/freeExtension succeeded sequentially; three distinct fields accepted and fourth rejected. Established research and prebuilt L5 Plantation are disclosed fixtures. NO worker planting, growth, harvest/output, navigation, builder completion, rotation or restart certified."
+  },
+  {
+    "caseId": "seagrass_extension_contract",
+    "outcome": "PASS",
+    "evidence": "Prebuilt candidate loaded; real BlockPlantationField.setPlacedBy registered plantation_seagrass with exact field/work tags and 12 derived positions. 240 native ticks and scheduled neighbor/fluid updates preserved required substrate, source water and growth space. Prospective crop states passed native canSurvive without placing plants. Native L5 assignExtension/freeExtension succeeded sequentially; three distinct fields accepted and fourth rejected. Established research and prebuilt L5 Plantation are disclosed fixtures. NO worker planting, growth, harvest/output, navigation, builder completion, rotation or restart certified."
+  },
+  {
+    "caseId": "seapickle_extension_contract",
+    "outcome": "PASS",
+    "evidence": "Prebuilt candidate loaded; real BlockPlantationField.setPlacedBy registered plantation_sea_pickles with exact field/work tags and 8 derived positions. 240 native ticks and scheduled neighbor/fluid updates preserved required substrate, source water and growth space. Prospective crop states passed native canSurvive without placing plants. Native L5 assignExtension/freeExtension succeeded sequentially; three distinct fields accepted and fourth rejected. Established research and prebuilt L5 Plantation are disclosed fixtures. NO worker planting, growth, harvest/output, navigation, builder completion, rotation or restart certified."
+  },
+  {
+    "caseId": "glowberry_extension_contract",
+    "outcome": "PASS",
+    "evidence": "Prebuilt candidate loaded; real BlockPlantationField.setPlacedBy registered plantation_glowberries with exact field/work tags and 4 derived positions. 240 native ticks and scheduled neighbor/fluid updates preserved required substrate, source water and growth space. Prospective crop states passed native canSurvive without placing plants. Native L5 assignExtension/freeExtension succeeded sequentially; three distinct fields accepted and fourth rejected. Established research and prebuilt L5 Plantation are disclosed fixtures. NO worker planting, growth, harvest/output, navigation, builder completion, rotation or restart certified."
+  },
+  {
+    "caseId": "weepingvine_extension_contract",
+    "outcome": "PASS",
+    "evidence": "Prebuilt candidate loaded; real BlockPlantationField.setPlacedBy registered plantation_weeping_vines with exact field/work tags and 4 derived positions. 240 native ticks and scheduled neighbor/fluid updates preserved required substrate, source water and growth space. Prospective crop states passed native canSurvive without placing plants. Native L5 assignExtension/freeExtension succeeded sequentially; three distinct fields accepted and fourth rejected. Established research and prebuilt L5 Plantation are disclosed fixtures. NO worker planting, growth, harvest/output, navigation, builder completion, rotation or restart certified."
+  },
+  {
+    "caseId": "twistingvine_extension_contract",
+    "outcome": "PASS",
+    "evidence": "Prebuilt candidate loaded; real BlockPlantationField.setPlacedBy registered plantation_twisting_vines with exact field/work tags and 4 derived positions. 240 native ticks and scheduled neighbor/fluid updates preserved required substrate, source water and growth space. Prospective crop states passed native canSurvive without placing plants. Native L5 assignExtension/freeExtension succeeded sequentially; three distinct fields accepted and fourth rejected. Established research and prebuilt L5 Plantation are disclosed fixtures. NO worker planting, growth, harvest/output, navigation, builder completion, rotation or restart certified."
+  },
+  {
+    "caseId": "crimson_extension_contract",
+    "outcome": "PASS",
+    "evidence": "Prebuilt candidate loaded; real BlockPlantationField.setPlacedBy registered plantation_crimson_plants with exact field/work tags and 9 derived positions. 240 native ticks and scheduled neighbor/fluid updates preserved required substrate, source water and growth space. Prospective crop states passed native canSurvive without placing plants. Native L5 assignExtension/freeExtension succeeded sequentially; three distinct fields accepted and fourth rejected. Established research and prebuilt L5 Plantation are disclosed fixtures. NO worker planting, growth, harvest/output, navigation, builder completion, rotation or restart certified."
+  },
+  {
+    "caseId": "warped_extension_contract",
+    "outcome": "PASS",
+    "evidence": "Prebuilt candidate loaded; real BlockPlantationField.setPlacedBy registered plantation_warped_plants with exact field/work tags and 9 derived positions. 240 native ticks and scheduled neighbor/fluid updates preserved required substrate, source water and growth space. Prospective crop states passed native canSurvive without placing plants. Native L5 assignExtension/freeExtension succeeded sequentially; three distinct fields accepted and fourth rejected. Established research and prebuilt L5 Plantation are disclosed fixtures. NO worker planting, growth, harvest/output, navigation, builder completion, rotation or restart certified."
+  }
+]

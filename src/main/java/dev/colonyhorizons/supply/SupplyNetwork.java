@@ -12,13 +12,25 @@ import net.neoforged.neoforge.items.ItemStackHandler;
  */
 public final class SupplyNetwork {
     public static final int SLOTS=9, MAX_DEPOTS=128, MAX_ROUTES=256;
+    /** External implementations must stage mutations until the caller durably commits the handoff. */
+    public interface InventoryAccess {
+        int stock(UUID depot, ItemStack item);
+        ItemStack insert(UUID depot, ItemStack input);
+        ItemStack extract(UUID depot, ItemStack item, int count);
+    }
+    public record DepotView(UUID id, UUID owner, int colony) {}
+    public DepotView depotView(UUID id){var d=depot(id);return new DepotView(id,d.owner,d.colony);}
     public enum Reason { IDLE, TRAVELLING, TARGET_MET, SOURCE_RESERVE, SOURCE_UNAVAILABLE,
-        DESTINATION_UNAVAILABLE, DESTINATION_FULL, RETURN_FULL, PAUSED, RETURNING, DISABLED }
+        DESTINATION_UNAVAILABLE, DESTINATION_FULL, RETURN_FULL, PAUSED, RETURNING, DISABLED, BUDGET_EXHAUSTED }
     public record RouteView(UUID id, UUID source, UUID destination, ItemStack cargo,
                             int remainingTicks, Reason reason, long delivered) {
         public RouteView { cargo=cargo.copy(); }
         @Override public ItemStack cargo(){return cargo.copy();}
     }
+    public record RouteSettings(ItemStack item,int target,int reserve,int batch,boolean paused,boolean disabled){
+        public RouteSettings{item=item.copy();} @Override public ItemStack item(){return item.copy();}
+    }
+    public RouteSettings settings(UUID id){var r=routeData(id);return new RouteSettings(r.item,r.target,r.reserve,r.batch,r.paused,r.disabled);}
     private static final class Depot {
         final UUID id,owner; final int colony; final ItemStackHandler inventory=new ItemStackHandler(SLOTS);
         Depot(UUID id,UUID owner,int colony){this.id=id;this.owner=owner;this.colony=colony;}
@@ -28,6 +40,7 @@ public final class SupplyNetwork {
         final int target,reserve,batch,travel;
         ItemStack cargo=ItemStack.EMPTY; int remaining; long delivered;
         boolean paused,disabled,returning; Reason reason=Reason.IDLE;
+        int allowance=-1,dispatched;
         Route(UUID id,UUID source,UUID destination,ItemStack item,int target,int reserve,int batch,int travel){
             this.id=id;this.source=source;this.destination=destination;this.item=item.copyWithCount(1);
             this.target=target;this.reserve=reserve;this.batch=batch;this.travel=travel;
@@ -49,6 +62,14 @@ public final class SupplyNetwork {
         require(routes.size()<MAX_ROUTES,"Route limit");
         UUID id=UUID.randomUUID();routes.put(id,new Route(id,source,destination,item,target,reserve,batch,travel));dirty.run();return id;
     }
+    /** Stable managed-purpose route. Its lifetime withdrawal cap is enforced inside staged custody. */
+    public UUID addBudgetedRoute(UUID id,UUID actor,UUID source,UUID destination,ItemStack item,int target,int reserve,int batch,int travel,int allowance){
+        Objects.requireNonNull(id);var from=owned(actor,source);var to=owned(actor,destination);validatePolicy(from,to,item,target,reserve,batch,travel);require(allowance>0&&allowance<=1_000_000,"Invalid dispatch allowance");
+        var existing=routes.get(id);
+        if(existing!=null){require(existing.source.equals(source)&&existing.destination.equals(destination)&&ItemStack.isSameItemSameComponents(existing.item,item)&&existing.target==target&&existing.reserve==reserve&&existing.batch==batch&&existing.travel==travel&&existing.allowance==allowance,"Managed route identity conflicts with existing policy");return id;}
+        require(routes.size()<MAX_ROUTES,"Route limit");var route=new Route(id,source,destination,item,target,reserve,batch,travel);route.allowance=allowance;routes.put(id,route);dirty.run();return id;
+    }
+    public int allowanceRemaining(UUID id){var r=routeData(id);return r.allowance<0?Integer.MAX_VALUE:r.allowance-r.dispatched;}
     private static void validatePolicy(Depot from,Depot to,ItemStack item,int target,int reserve,int batch,int travel){
         require(from!=to && from.colony==to.colony && from.owner.equals(to.owner),"Different colony/owner or identical endpoints");
         require(!item.isEmpty() && target>0 && target<=4096 && reserve>=0 && reserve<=4096 && batch>0 && batch<=64 && travel>0 && travel<=72000,"Invalid stock/travel policy");
@@ -78,21 +99,34 @@ public final class SupplyNetwork {
     }
     /** Advance actual server ticks only. Availability is supplied by the future validated endpoint adapter. */
     public void tick(int ticks,Set<UUID> available){
+        tick(ticks,available,new InventoryAccess(){
+            public int stock(UUID id,ItemStack item){return SupplyNetwork.this.stock(id,item);}
+            public ItemStack insert(UUID id,ItemStack item){return SupplyNetwork.insert(depot(id),item);}
+            public ItemStack extract(UUID id,ItemStack item,int count){return SupplyNetwork.extract(depot(id),item,count);}
+        });
+    }
+    public void tick(int ticks,Set<UUID> available,InventoryAccess inventory){
+        tick(ticks,available,inventory,id->true);
+    }
+    public void tick(int ticks,Set<UUID> available,InventoryAccess inventory,java.util.function.Predicate<UUID> permitted){
         require(ticks>0 && ticks<=1200,"Invalid tick budget");Objects.requireNonNull(available);
+        Objects.requireNonNull(inventory);
         for(var r:routes.values()){
+            if(!permitted.test(r.id)){r.reason=Reason.PAUSED;continue;}
             if(r.paused){r.reason=Reason.PAUSED;continue;}
             if(!r.cargo.isEmpty()){
                 r.remaining=Math.max(0,r.remaining-ticks);
                 if(r.remaining>0){r.reason=r.returning?Reason.RETURNING:Reason.TRAVELLING;continue;}
                 UUID target=r.returning?r.source:r.destination;
                 if(!available.contains(target)){r.reason=r.returning?Reason.SOURCE_UNAVAILABLE:Reason.DESTINATION_UNAVAILABLE;continue;}
-                int before=r.cargo.getCount();r.cargo=insert(depot(target),r.cargo);
+                int before=r.cargo.getCount();r.cargo=inventory.insert(target,r.cargo);
                 if(!r.returning)r.delivered=Math.addExact(r.delivered,before-r.cargo.getCount());
                 if(r.cargo.isEmpty()){r.returning=false;r.reason=r.disabled?Reason.DISABLED:Reason.IDLE;}
                 else r.reason=r.returning?Reason.RETURN_FULL:Reason.DESTINATION_FULL;
                 continue;
             }
             if(r.disabled){r.reason=Reason.DISABLED;continue;}
+            if(r.allowance>=0&&r.dispatched>=r.allowance){r.reason=Reason.BUDGET_EXHAUSTED;continue;}
             if(!available.contains(r.source)){r.reason=Reason.SOURCE_UNAVAILABLE;continue;}
             if(!available.contains(r.destination)){r.reason=Reason.DESTINATION_UNAVAILABLE;continue;}
             int incoming=0,reserve=r.reserve;
@@ -100,12 +134,13 @@ public final class SupplyNetwork {
                 if((other.returning?other.source:other.destination).equals(r.destination) && ItemStack.isSameItemSameComponents(other.item,r.item))incoming+=other.cargo.getCount();
                 if(other.source.equals(r.source) && !other.disabled && ItemStack.isSameItemSameComponents(other.item,r.item))reserve=Math.max(reserve,other.reserve);
             }
-            int wanted=r.target-stock(r.destination,r.item)-incoming;
+            int wanted=r.target-inventory.stock(r.destination,r.item)-incoming;
             if(wanted<=0){r.reason=Reason.TARGET_MET;continue;}
-            int surplus=stock(r.source,r.item)-reserve;
+            int surplus=inventory.stock(r.source,r.item)-reserve;
             if(surplus<=0){r.reason=Reason.SOURCE_RESERVE;continue;}
             int amount=Math.min(Math.min(r.batch,r.item.getMaxStackSize()),Math.min(wanted,surplus));
-            r.cargo=extract(depot(r.source),r.item,amount);r.remaining=r.travel;r.reason=Reason.TRAVELLING;
+            amount=Math.min(amount,allowanceRemaining(r.id));
+            r.cargo=inventory.extract(r.source,r.item,amount);if(r.allowance>=0)r.dispatched=Math.addExact(r.dispatched,r.cargo.getCount());r.remaining=r.cargo.isEmpty()?0:r.travel;r.reason=r.cargo.isEmpty()?Reason.SOURCE_RESERVE:Reason.TRAVELLING;
         }
         if(!routes.isEmpty())dirty.run();
     }
@@ -137,6 +172,7 @@ public final class SupplyNetwork {
             var t=new CompoundTag();t.putUUID("id",r.id);t.putUUID("source",r.source);t.putUUID("destination",r.destination);
             t.put("item",stackTag(r.item,registries));t.put("cargo",stackTag(r.cargo,registries));
             t.putInt("target",r.target);t.putInt("reserve",r.reserve);t.putInt("batch",r.batch);t.putInt("travel",r.travel);t.putInt("remaining",r.remaining);
+            if(r.allowance>=0){t.putInt("allowance",r.allowance);t.putInt("dispatched",r.dispatched);}
             t.putLong("delivered",r.delivered);t.putBoolean("paused",r.paused);t.putBoolean("disabled",r.disabled);t.putBoolean("returning",r.returning);t.putString("reason",r.reason.name());rs.add(t);
         }
         tag.put("routes",rs);return tag;
@@ -162,6 +198,7 @@ public final class SupplyNetwork {
             r.remaining=integer(t,"remaining");r.paused=bool(t,"paused");r.disabled=bool(t,"disabled");r.returning=bool(t,"returning");
             require(t.contains("delivered",Tag.TAG_LONG) && t.contains("reason",Tag.TAG_STRING),"Missing route accounting");
             r.delivered=t.getLong("delivered");r.reason=Reason.valueOf(t.getString("reason"));
+            if(t.contains("allowance")||t.contains("dispatched")){r.allowance=integer(t,"allowance");r.dispatched=integer(t,"dispatched");require(r.allowance>0&&r.allowance<=1_000_000&&r.dispatched>=0&&r.dispatched<=r.allowance&&r.delivered<=r.dispatched&&r.cargo.getCount()<=r.dispatched-r.delivered,"Invalid budgeted route accounting");}
             require(r.delivered>=0 && r.delivered<=Long.MAX_VALUE-64 && r.remaining>=0 && r.remaining<=r.travel,"Invalid progress");
             require(r.cargo.isEmpty() || (r.cargo.getCount()<=r.batch && ItemStack.isSameItemSameComponents(r.item,r.cargo)),"Invalid cargo");
             require(!r.cargo.isEmpty() || (r.remaining==0 && !r.returning),"Empty cargo with progress");

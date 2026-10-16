@@ -1,0 +1,17 @@
+[
+  {
+    "caseId": "miner_shaft",
+    "outcome": "PASS",
+    "evidence": "Native miner reached shaft, removed 20 natural stone blocks below the blueprint and wore pickaxe. Construction inputs supplied; ore-branch production is not certified by this case."
+  },
+  {
+    "caseId": "nether_expedition",
+    "outcome": "PASS",
+    "evidence": "Worker lit tagged portal, entered native travelling system, returned visibly to the hut, recorded a completed trip and deposited expedition loot; gear, food and recipe inputs supplied. Loot items\u003d[minecraft:quartz, minecraft:warped_stem, minecraft:rotten_flesh, minecraft:soul_sand, minecraft:blackstone, minecraft:gravel, minecraft:gold_nugget]"
+  },
+  {
+    "caseId": "behavior_failure",
+    "outcome": "FAIL",
+    "evidence": "java.lang.IllegalStateException: Behavior timeout; see behavior-diagnostics.txt"
+  }
+]

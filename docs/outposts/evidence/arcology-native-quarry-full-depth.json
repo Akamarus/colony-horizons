@@ -1,0 +1,37 @@
+[
+  {
+    "caseId": "simplequarry_assignment",
+    "outcome": "PASS",
+    "evidence": "Native level1 quarry and separate prebuilt level5 Mine; real Mine-employed JobQuarrier is assigned to the external QuarryModule. Sole origin shaft tag resolves infrastructure/mineshafts/simplequarryshaft1.blueprint. Disclosed dry stone/coal terrain and tools supplied; shaft bottom remains above world minimum. Native isInBuilding hut result\u003dtrue; footprint extension semantics are measured in diagnostics, not certified by this assignment check."
+  },
+  {
+    "caseId": "mediumquarry_assignment",
+    "outcome": "PASS",
+    "evidence": "Native level1 quarry and separate prebuilt level5 Mine; real Mine-employed JobQuarrier is assigned to the external QuarryModule. Sole origin shaft tag resolves infrastructure/mineshafts/mediumquarryshaft1.blueprint. Disclosed dry stone/coal terrain and tools supplied; shaft bottom remains above world minimum. Native isInBuilding hut result\u003dtrue; footprint extension semantics are measured in diagnostics, not certified by this assignment check."
+  },
+  {
+    "caseId": "simplequarry_excavation",
+    "outcome": "PASS",
+    "evidence": "Native Mine-owned shaft WorkOrderMiner verified; observed 12 originally solid cells become air (ore\u003d3, second sampled layer\u003d0). Pick damage\u003d12, Mine coal-obtained statistic\u003d3, physically collected nonsupplied coal\u003d3; colony ore/block counters increased. Newly matched shaft liner/ladder cells\u003d0, minimum workerY\u003d16.0. Same worker/dual assignment, recovery disabled. Early excavation only: no full32/64-depth, completed layer, lower-half traversal, final floor, output deposit, bounds protection, restart or surface construction claim."
+  },
+  {
+    "caseId": "mediumquarry_excavation",
+    "outcome": "PASS",
+    "evidence": "Native Mine-owned shaft WorkOrderMiner verified; observed 20 originally solid cells become air (ore\u003d1, second sampled layer\u003d0). Pick damage\u003d20, Mine coal-obtained statistic\u003d1, physically collected nonsupplied coal\u003d1; colony ore/block counters increased. Newly matched shaft liner/ladder cells\u003d0, minimum workerY\u003d16.0. Same worker/dual assignment, recovery disabled. Early excavation only: no full32/64-depth, completed layer, lower-half traversal, final floor, output deposit, bounds protection, restart or surface construction claim."
+  },
+  {
+    "caseId": "simplequarry_full_depth",
+    "outcome": "PASS",
+    "evidence": "Native finished flag with complete32/64-block-depth blueprint matched: air\u003d1917, solid\u003d1220, ladders\u003d31, minimum workerY\u003d-15.0 bottomY\u003d-16. Same native quarrier, no target clearing or shaft paste; requested materials, replacement tools and food supplied. Dry uniform test terrain; not fluids, hazards or restart. ticks\u003d164940"
+  },
+  {
+    "caseId": "mediumquarry_full_depth",
+    "outcome": "PASS",
+    "evidence": "Native finished flag with complete32/64-block-depth blueprint matched: air\u003d20276, solid\u003d5197, ladders\u003d63, minimum workerY\u003d-47.0 bottomY\u003d-48. Same native quarrier, no target clearing or shaft paste; requested materials, replacement tools and food supplied. Dry uniform test terrain; not fluids, hazards or restart. ticks\u003d1807480"
+  },
+  {
+    "caseId": "quarry_courier_hauling",
+    "outcome": "PASS",
+    "evidence": "Native linked courier physically carried nonsupplied mined coal and deposited 64 into warehouse while quarries completed; native pickup requests, same courier, recovery disabled. Not exact throughput or separate source attribution."
+  }
+]

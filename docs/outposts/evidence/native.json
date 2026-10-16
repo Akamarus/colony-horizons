@@ -1,0 +1,32 @@
+[
+  {
+    "caseId": "fixture_owns_one_real_colony",
+    "outcome": "PASS",
+    "evidence": "Real native colony and one citizen"
+  },
+  {
+    "caseId": "remote_site_preserves_colony_identity",
+    "outcome": "PASS",
+    "evidence": "Native owner unchanged; tested 352 blocks away"
+  },
+  {
+    "caseId": "remote_workplace_placement",
+    "outcome": "BLOCKED",
+    "evidence": "Native build-tool setup rejected out-of-colony logger hut"
+  },
+  {
+    "caseId": "remote_builder_places_supplied_blocks",
+    "outcome": "BLOCKED",
+    "evidence": "Not executed: no authorized remote native workplace"
+  },
+  {
+    "caseId": "remote_logger_harvests_and_replants",
+    "outcome": "BLOCKED",
+    "evidence": "Not executed: no authorized remote native workplace"
+  },
+  {
+    "caseId": "remote_worker_returns_without_duplicate_identity",
+    "outcome": "BLOCKED",
+    "evidence": "Not executed: no authorized remote native workplace"
+  }
+]

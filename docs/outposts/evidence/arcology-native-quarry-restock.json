@@ -1,0 +1,12 @@
+[
+  {
+    "caseId": "simplequarry_restock",
+    "outcome": "PASS",
+    "evidence": "Live stock withdrawal at tick 8190: native NEEDS_ITEM observed and original barrier retained for200 ticks, then fill supplied to the Mine hut only; both fluid pockets subsequently sealed; same native quarrier then cleared 12 interior cells two layers below it. Native coal statistic\u003d32. Same worker and Mine/quarry assignment, recovery disabled, no fire/lava contact observed. Requested materials/tools and food supplied; no post-start terrain edits or health restoration. Bounded fixture; not an unbounded aquifer, lava lake or autonomous external resupply. ticks\u003d42405"
+  },
+  {
+    "caseId": "mediumquarry_restock",
+    "outcome": "PASS",
+    "evidence": "Live stock withdrawal at tick 25225: native NEEDS_ITEM observed and original barrier retained for200 ticks, then fill supplied to the Mine hut only; both fluid pockets subsequently sealed; same native quarrier then cleared 12 interior cells two layers below it. Native coal statistic\u003d32. Same worker and Mine/quarry assignment, recovery disabled, no fire/lava contact observed. Requested materials/tools and food supplied; no post-start terrain edits or health restoration. Bounded fixture; not an unbounded aquifer, lava lake or autonomous external resupply. ticks\u003d103565"
+  }
+]

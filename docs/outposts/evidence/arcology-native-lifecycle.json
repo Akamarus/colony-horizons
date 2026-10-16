@@ -1,0 +1,118 @@
+{
+  "run_id": "54c14d74512340fd82588b6c86b8c72d",
+  "runner_exit": 0,
+  "phases": {
+    "seed": [
+      {
+        "caseId": "upgrade:agriculture/horticulture/plantation1.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed construction; matching structural blocks=379; same hut/colony/worker; recovery disabled; ticks=23480. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:agriculture/horticulture/plantation2.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed upgrade from 1; matching structural blocks=371; same hut/colony/worker; recovery disabled; ticks=1940. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:agriculture/horticulture/plantation3.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed upgrade from 2; matching structural blocks=195; same hut/colony/worker; recovery disabled; ticks=13280. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:agriculture/horticulture/plantation4.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed upgrade from 3; matching structural blocks=183; same hut/colony/worker; recovery disabled; ticks=2280. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:agriculture/horticulture/plantation5.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed upgrade from 4; matching structural blocks=172; same hut/colony/worker; recovery disabled; ticks=14560. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:fundamentals/miner1.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed construction; matching structural blocks=204; same hut/colony/worker; recovery disabled; ticks=19360. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:fundamentals/miner2.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed upgrade from 1; matching structural blocks=204; same hut/colony/worker; recovery disabled; ticks=960. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:fundamentals/miner3.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed upgrade from 2; matching structural blocks=92; same hut/colony/worker; recovery disabled; ticks=6780. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:fundamentals/miner4.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed upgrade from 3; matching structural blocks=92; same hut/colony/worker; recovery disabled; ticks=940. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:fundamentals/miner5.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed upgrade from 4; matching structural blocks=113; same hut/colony/worker; recovery disabled; ticks=8580. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:mystic/netherworker1.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed construction; matching structural blocks=125; same hut/colony/worker; recovery disabled; ticks=7860. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:mystic/netherworker2.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed upgrade from 1; matching structural blocks=127; same hut/colony/worker; recovery disabled; ticks=1400. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:mystic/netherworker3.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed upgrade from 2; matching structural blocks=55; same hut/colony/worker; recovery disabled; ticks=4400. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:mystic/netherworker4.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed upgrade from 3; matching structural blocks=55; same hut/colony/worker; recovery disabled; ticks=5120. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "upgrade:mystic/netherworker5.blueprint",
+        "outcome": "PASS",
+        "evidence": "Native builder completed upgrade from 4; matching structural blocks=84; same hut/colony/worker; recovery disabled; ticks=5380. Support builder level5 and required research/materials provided as fixtures."
+      },
+      {
+        "caseId": "plantation_crops",
+        "outcome": "PASS",
+        "evidence": "Native planter planted sugarcane/cactus/bamboo from supplied seeds, then harvested and collected each crop. QA matured one worker-planted stem per crop; natural growth timing not tested."
+      },
+      {
+        "caseId": "nether_expedition",
+        "outcome": "PASS",
+        "evidence": "Worker lit tagged portal, entered native travelling system, returned visibly to the hut, recorded a completed trip and deposited expedition loot; gear, food and recipe inputs supplied. Loot items=[minecraft:basalt, minecraft:gold_nugget, minecraft:blackstone, minecraft:rotten_flesh, minecraft:soul_sand, minecraft:soul_soil, minecraft:netherrack]"
+      },
+      {
+        "caseId": "miner_shaft",
+        "outcome": "PASS",
+        "evidence": "Native miner reached shaft, removed 20 natural stone blocks below the blueprint and wore pickaxe. Construction inputs supplied; ore-branch production is not certified by this case."
+      }
+    ],
+    "verify": [
+      {
+        "caseId": "miner_shaft",
+        "outcome": "PASS",
+        "evidence": "Native miner reached shaft, removed 20 natural stone blocks below the blueprint and wore pickaxe. Construction inputs supplied; ore-branch production is not certified by this case."
+      },
+      {
+        "caseId": "plantation_crops",
+        "outcome": "PASS",
+        "evidence": "Native planter planted sugarcane/cactus/bamboo from supplied seeds, then harvested and collected each crop. QA matured one worker-planted stem per crop; natural growth timing not tested."
+      },
+      {
+        "caseId": "nether_expedition",
+        "outcome": "PASS",
+        "evidence": "Worker lit tagged portal, entered native travelling system, returned visibly to the hut, recorded a completed trip and deposited expedition loot; gear, food and recipe inputs supplied. Loot items=[minecraft:gold_nugget, minecraft:blackstone, minecraft:quartz, minecraft:gravel, minecraft:soul_sand, minecraft:warped_stem, minecraft:rotten_flesh]"
+      }
+    ]
+  },
+  "readiness": "Original citizen IDs=[5, 6, 7]; native readiness wait=0 ticks; no fixture respawn/reassignment/rebuild.\n",
+  "evidence_clarification": "Raw verify crop wording predates wording-only correction: verify matures existing stems and proves fresh harvesting/collection, not new planting after reload. Worker IDs, assignments, homes and huts are reused without fixture rebuild or reassignment.",
+  "prerequisites": "Tools, construction and recipe inputs, research, food and medical care supplied. Support builder/town hall/residence prebuilt. Natural day/night and native expedition cooldown retained."
+}

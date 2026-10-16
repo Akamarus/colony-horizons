@@ -1,0 +1,17 @@
+[
+  {
+    "caseId": "connected_timber_modules",
+    "outcome": "PASS",
+    "evidence": "Same native citizen walked exterior -\u003e through adjoining Gatehouse -\u003e Stable central aisle -\u003e exterior, exact one-block route targets, recovery disabled; ticks\u003d400. Blueprint envelopes touch without wall edits or bridge blocks. Not job production or cavalry testing."
+  },
+  {
+    "caseId": "connected_stone_modules",
+    "outcome": "PASS",
+    "evidence": "Same native citizen walked exterior -\u003e through adjoining Gatehouse -\u003e Stable central aisle -\u003e exterior, exact one-block route targets, recovery disabled; ticks\u003d350. Blueprint envelopes touch without wall edits or bridge blocks. Not job production or cavalry testing."
+  },
+  {
+    "caseId": "stacked_modules_external_stairs",
+    "outcome": "PASS",
+    "evidence": "Same native citizen walked exterior -\u003e through adjoining Gatehouse -\u003e Stable central aisle -\u003e exterior, exact one-block route targets, recovery disabled; ticks\u003d460. Upper modules six blocks above lower modules; disclosed three-wide external fixture stair. Does not certify automatic stair generation, all rotations or mounted cavalry."
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "cook_service",
+    "outcome": "PASS",
+    "evidence": "Hungry empty-inventory customer independently walked into prebuilt level5 Arcology restaurant. Native cook fetched supplied prepared bread from hut, served customer with native food-served statistics; customer entered native eating state, consumed bread and increased saturation. Same cook/customer identities; recovery disabled; self-service fallback rejected. Prepared bread, menu selection, cook food, initial customer hunger and claim/research fixtures supplied. Raw-food cooking, menu variety, delivery, other levels and restart not certified."
+  }
+]

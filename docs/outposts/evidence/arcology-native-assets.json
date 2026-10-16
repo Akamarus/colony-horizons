@@ -1,0 +1,1417 @@
+[
+  {
+    "caseId": "asset:agriculture/horticulture/composter1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/composter2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/composter3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/composter4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/composter5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/farmer1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/farmer2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/farmer3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/farmer4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/farmer5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/florist1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/florist2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/florist3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/florist4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/florist5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/plantation1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/plantation2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/plantation3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/plantation4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/horticulture/plantation5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/beekeeper1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/beekeeper2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/beekeeper3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/beekeeper4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/beekeeper5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/chickenherder1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/chickenherder2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/chickenherder3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/chickenherder4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/chickenherder5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/cowboy1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/cowboy2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/cowboy3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/cowboy4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/cowboy5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/fisherman1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/fisherman2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/fisherman3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/fisherman4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/fisherman5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/rabbithutch1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/rabbithutch2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/rabbithutch3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/rabbithutch4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/rabbithutch5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/shepherd1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/shepherd2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/shepherd3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/shepherd4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/shepherd5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/swineherder1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/swineherder2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/swineherder3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/swineherder4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:agriculture/husbandry/swineherder5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/carpentry/fletcher1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/carpentry/fletcher2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/carpentry/fletcher3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/carpentry/fletcher4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/carpentry/fletcher5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/carpentry/sawmill1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/carpentry/sawmill2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/carpentry/sawmill3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/carpentry/sawmill4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/carpentry/sawmill5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/alchemist1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/alchemist2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/alchemist3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/alchemist4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/alchemist5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/baker1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/baker2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/baker3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/baker4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/baker5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/concretemixer1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/concretemixer2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/concretemixer3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/concretemixer4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/concretemixer5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/dyer1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/dyer2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/dyer3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/dyer4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/dyer5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/enchanter1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/enchanter2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/enchanter3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/enchanter4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/enchanter5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/foodprep1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/foodprep2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/foodprep3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/foodprep4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/foodprep5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/glassblower1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/glassblower2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/glassblower3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/glassblower4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/luxury/glassblower5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/crusher1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/crusher2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/crusher3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/crusher4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/crusher5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/sifter1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/sifter2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/sifter3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/sifter4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/sifter5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/stonemason1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/stonemason2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/stonemason3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/stonemason4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/stonemason5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/stonesmeltery1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/stonesmeltery2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/stonesmeltery3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/stonesmeltery4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/masonry/stonesmeltery5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/blacksmith1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/blacksmith2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/blacksmith3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/blacksmith4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/blacksmith5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/mechanic1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/mechanic2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/mechanic3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/mechanic4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/mechanic5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/smeltery1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/smeltery2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/smeltery3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/smeltery4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/metallurgy/smeltery5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/storage/deliveryman1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/storage/deliveryman2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/storage/deliveryman3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/storage/deliveryman4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/storage/deliveryman5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/storage/warehouse1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/storage/warehouse2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/storage/warehouse3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/storage/warehouse4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:craftsmanship/storage/warehouse5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:decorations/supplies/supplycamp.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:decorations/supplies/supplyship.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/library1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/library2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/library3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/library4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/library5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/school1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/school2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/school3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/school4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/school5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/university1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/university2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/university3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/university4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:education/university5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/builder1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/builder2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/builder3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/builder4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/builder5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/citizen1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/citizen2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/citizen3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/citizen4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/citizen5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/cook1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/cook2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/cook3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/cook4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/cook5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/hospital1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/hospital2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/hospital3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/hospital4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/hospital5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/lumberjack1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/lumberjack2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/lumberjack3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/lumberjack4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/lumberjack5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/miner1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/miner2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/miner3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/miner4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/miner5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/tavern1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/tavern2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/tavern3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/townhall1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/townhall2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/townhall3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/townhall4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:fundamentals/townhall5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/fields/brick field.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/fields/stone field.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/fields/wooden field.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/pathways/brick/brick pathway.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/pathways/brick/brick stairwell.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/pathways/brick/brick walkway entrance.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/pathways/brick/brick walkway.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/pathways/stone/stone pathway.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/pathways/stone/stone stairwell.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/pathways/stone/stone walkway entrance.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/pathways/stone/stone walkway.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/pathways/wood/wooden pathway.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/pathways/wood/wooden stairwell.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/pathways/wood/wooden walkway entrance.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/pathways/wood/wooden walkway.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/roof/corner roof.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/roof/roof spire top.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/roof/roof top.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/roof/straight roof.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/templates/brick frame.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/templates/large brick frame.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/templates/large stone frame.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/templates/large wood frame.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/templates/massive brick frame.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/templates/massive stone frame.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/templates/massive wood frame.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/templates/medium brick frame.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/templates/medium stone frame.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/templates/medium wood frame.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/templates/stone frame.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/templates/wooden frame.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/walls/brick/brick corner.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/walls/brick/brick entrance.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/walls/brick/brick wall.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/walls/brick/brick window.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/walls/stone/stone corner.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/walls/stone/stone entrance.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/walls/stone/stone wall.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/walls/stone/stone window.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/walls/wooden/wooden entrance.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/walls/wooden/wooden wall corner.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/walls/wooden/wooden wall.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:infrastructure/walls/wooden/wooden window.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/archery1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/archery2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/archery3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/archery4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/archery5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/barracks1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/barracks2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/barracks3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/barracks4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/barracks5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/barrackstower1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/barrackstower2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/barrackstower3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/barrackstower4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/barrackstower5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/combatacademy1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/combatacademy2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/combatacademy3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/combatacademy4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/combatacademy5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/guardtower1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/guardtower2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/guardtower3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/guardtower4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:military/guardtower5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/graveyard1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/graveyard2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/graveyard3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/graveyard4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/graveyard5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/mysticalsite1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/mysticalsite2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/mysticalsite3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/mysticalsite4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/mysticalsite5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/netherworker1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/netherworker2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/netherworker3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/netherworker4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  },
+  {
+    "caseId": "asset:mystic/netherworker5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native palette/properties/mods/decode/block-entities/rotations; hut registry/level/metadata roundtrip where applicable; worker operation not tested"
+  }
+]

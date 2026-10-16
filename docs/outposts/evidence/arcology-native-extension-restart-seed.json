@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "extensions_seed",
+    "outcome": "PASS",
+    "evidence": "Prebuilt Stable5, Gatehouse3, both Quarry1 surfaces and ten native crop fields; first three fields assigned to Plantation5. Native stablemaster and knight paused, housed and identified by citizen ID/entity UUID. Saved exact tags, beds, stall locations, field ownership/working positions and gate terminal records for independent restart verification. Construction/production tested separately."
+  }
+]

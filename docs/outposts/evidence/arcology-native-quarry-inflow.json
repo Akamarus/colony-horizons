@@ -1,0 +1,12 @@
+[
+  {
+    "caseId": "simplequarry_external_water",
+    "outcome": "PASS",
+    "evidence": "Natural fluid spread from9 initial external source blocks entered the shaft through a3-wide cave breach. Native worker restored all3 cobblestone liner cells, shaft interior stayed dry for 25710 ticks and12 fresh cells two layers below were excavated after containment. All9 external sources remain. Same worker/dual assignment, recovery disabled, no observed burning/lava contact. Supplies/tools/food provided; no terrain/fluid edits after setup. Bounded retained reservoir, not every aquifer or full-depth wet excavation. ticks\u003d37980"
+  },
+  {
+    "caseId": "mediumquarry_external_lava",
+    "outcome": "PASS",
+    "evidence": "Natural fluid spread from9 initial external source blocks entered the shaft through a3-wide cave breach. Native worker restored all3 cobblestone liner cells, shaft interior stayed dry for 70700 ticks and12 fresh cells two layers below were excavated after containment. All9 external sources remain. Same worker/dual assignment, recovery disabled, no observed burning/lava contact. Supplies/tools/food provided; no terrain/fluid edits after setup. Bounded retained reservoir, not every aquifer or full-depth wet excavation. ticks\u003d143060"
+  }
+]

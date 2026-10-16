@@ -1,0 +1,361 @@
+{
+  "date": "2026-10-11",
+  "source_commit": "542f273",
+  "purpose": "Automated regression pass replacing manual colony progression",
+  "total_passed_cases": 48,
+  "manual_testing": false,
+  "implementation_changes": false,
+  "limitations": [
+    "Existing regression tests rerun; no new coverage added",
+    "Builder level 5, research and required materials supplied as test setup",
+    "Connected upper modules use explicit external fixture stairs; no automatic stairs or visual-fit claim",
+    "Supply tests cover the protected depot network, not physical courier survival",
+    "Clean shutdown/restart only; no crash-recovery claim"
+  ],
+  "runs": [
+    {
+      "suite": "ArcologyLifecycle",
+      "run_id": "dc226ba9a0824bf2b3472ec106a56585",
+      "runner_exit": 0,
+      "passed_cases": 21.0,
+      "pack_snapshot": "305/305 blueprints and pack.json match current candidate",
+      "phases": [
+        {
+          "phase": "seed",
+          "cases": [
+            {
+              "caseId": "upgrade:agriculture/horticulture/plantation1.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed construction; matching structural blocks=379; same hut/colony/worker; recovery disabled; ticks=25260. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:agriculture/horticulture/plantation2.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 1; matching structural blocks=371; same hut/colony/worker; recovery disabled; ticks=1860. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:agriculture/horticulture/plantation3.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 2; matching structural blocks=367; same hut/colony/worker; recovery disabled; ticks=12940. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:agriculture/horticulture/plantation4.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 3; matching structural blocks=355; same hut/colony/worker; recovery disabled; ticks=2220. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:agriculture/horticulture/plantation5.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 4; matching structural blocks=172; same hut/colony/worker; recovery disabled; ticks=14020. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:fundamentals/miner1.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed construction; matching structural blocks=204; same hut/colony/worker; recovery disabled; ticks=16820. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:fundamentals/miner2.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 1; matching structural blocks=204; same hut/colony/worker; recovery disabled; ticks=980. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:fundamentals/miner3.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 2; matching structural blocks=204; same hut/colony/worker; recovery disabled; ticks=7060. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:fundamentals/miner4.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 3; matching structural blocks=204; same hut/colony/worker; recovery disabled; ticks=940. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:fundamentals/miner5.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 4; matching structural blocks=113; same hut/colony/worker; recovery disabled; ticks=7420. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:mystic/netherworker1.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed construction; matching structural blocks=125; same hut/colony/worker; recovery disabled; ticks=7180. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:mystic/netherworker2.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 1; matching structural blocks=127; same hut/colony/worker; recovery disabled; ticks=1400. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:mystic/netherworker3.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 2; matching structural blocks=127; same hut/colony/worker; recovery disabled; ticks=4880. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:mystic/netherworker4.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 3; matching structural blocks=127; same hut/colony/worker; recovery disabled; ticks=1460. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:mystic/netherworker5.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 4; matching structural blocks=84; same hut/colony/worker; recovery disabled; ticks=5240. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "plantation_crops",
+              "outcome": "PASS",
+              "evidence": "Native planter planted sugarcane/cactus/bamboo from supplied seeds, then harvested and collected each crop. QA matured one worker-planted stem per crop; natural growth timing not tested."
+            },
+            {
+              "caseId": "nether_expedition",
+              "outcome": "PASS",
+              "evidence": "Worker lit tagged portal, entered native travelling system, returned visibly to the hut, recorded a completed trip and deposited expedition loot; gear, food and recipe inputs supplied. Loot items=[minecraft:gold_nugget, minecraft:blackstone, minecraft:soul_sand, minecraft:soul_soil, minecraft:basalt, minecraft:netherrack, minecraft:rotten_flesh]"
+            },
+            {
+              "caseId": "miner_shaft",
+              "outcome": "PASS",
+              "evidence": "Native miner reached shaft, removed 20 natural stone blocks below the blueprint and wore pickaxe. Construction inputs supplied; ore-branch production is not certified by this case."
+            }
+          ]
+        },
+        {
+          "phase": "verify",
+          "cases": [
+            {
+              "caseId": "miner_shaft",
+              "outcome": "PASS",
+              "evidence": "Native miner reached shaft, removed 20 natural stone blocks below the blueprint and wore pickaxe. Construction inputs supplied; ore-branch production is not certified by this case."
+            },
+            {
+              "caseId": "plantation_crops",
+              "outcome": "PASS",
+              "evidence": "Same saved planter resumed harvesting and collecting sugarcane/cactus/bamboo with fresh inventory/stat gains. QA matured an existing stem per crop; fresh planting and natural growth timing after reload not tested."
+            },
+            {
+              "caseId": "nether_expedition",
+              "outcome": "PASS",
+              "evidence": "Worker lit tagged portal, entered native travelling system, returned visibly to the hut, recorded a completed trip and deposited expedition loot; gear, food and recipe inputs supplied. Loot items=[minecraft:soul_sand, minecraft:gravel, minecraft:warped_stem, minecraft:gold_nugget, minecraft:blackstone, minecraft:rotten_flesh, minecraft:quartz]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "suite": "ArcologyStableBuild",
+      "run_id": "cd8ada6ab16a443d97ca540cd493aeed",
+      "runner_exit": 0,
+      "passed_cases": 5.0,
+      "pack_snapshot": "305/305 blueprints and pack.json match current candidate",
+      "phases": [
+        {
+          "phase": "seed",
+          "cases": [
+            {
+              "caseId": "upgrade:military/stable1.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed construction; matching structural blocks=671; same hut/colony/worker; recovery disabled; ticks=34220. Support builder level5 and required research/materials provided as fixtures. Stablemaster assigned after L1 and paused through upgrades; same UUID and hut/module membership retained. Exactly 17 matching sentinel shards conserved across worker and own stable/racks; native pause may deposit them into storage. Native deposit observed=false. This does not certify worker-carried inventory or stablemaster operation during construction."
+            },
+            {
+              "caseId": "upgrade:military/stable2.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 1; matching structural blocks=671; same hut/colony/worker; recovery disabled; ticks=1600. Support builder level5 and required research/materials provided as fixtures. Stablemaster assigned after L1 and paused through upgrades; same UUID and hut/module membership retained. Exactly 17 matching sentinel shards conserved across worker and own stable/racks; native pause may deposit them into storage. Native deposit observed=true. This does not certify worker-carried inventory or stablemaster operation during construction."
+            },
+            {
+              "caseId": "upgrade:military/stable3.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 2; matching structural blocks=671; same hut/colony/worker; recovery disabled; ticks=23240. Support builder level5 and required research/materials provided as fixtures. Stablemaster assigned after L1 and paused through upgrades; same UUID and hut/module membership retained. Exactly 17 matching sentinel shards conserved across worker and own stable/racks; native pause may deposit them into storage. Native deposit observed=true. This does not certify worker-carried inventory or stablemaster operation during construction."
+            },
+            {
+              "caseId": "upgrade:military/stable4.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 3; matching structural blocks=671; same hut/colony/worker; recovery disabled; ticks=1600. Support builder level5 and required research/materials provided as fixtures. Stablemaster assigned after L1 and paused through upgrades; same UUID and hut/module membership retained. Exactly 17 matching sentinel shards conserved across worker and own stable/racks; native pause may deposit them into storage. Native deposit observed=true. This does not certify worker-carried inventory or stablemaster operation during construction."
+            },
+            {
+              "caseId": "upgrade:military/stable5.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 4; matching structural blocks=506; same hut/colony/worker; recovery disabled; ticks=23780. Support builder level5 and required research/materials provided as fixtures. Stablemaster assigned after L1 and paused through upgrades; same UUID and hut/module membership retained. Exactly 17 matching sentinel shards conserved across worker and own stable/racks; native pause may deposit them into storage. Native deposit observed=true. This does not certify worker-carried inventory or stablemaster operation during construction."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "suite": "ArcologyGatehouseBuild",
+      "run_id": "ace82f58f1c9401e9cd71291d73351a7",
+      "runner_exit": 0,
+      "passed_cases": 3.0,
+      "pack_snapshot": "305/305 blueprints and pack.json match current candidate",
+      "phases": [
+        {
+          "phase": "seed",
+          "cases": [
+            {
+              "caseId": "upgrade:military/gatehouse1.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed construction; matching structural blocks=353; same hut/colony/worker; recovery disabled; ticks=18060. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:military/gatehouse2.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 1; matching structural blocks=353; same hut/colony/worker; recovery disabled; ticks=11700. Support builder level5 and required research/materials provided as fixtures."
+            },
+            {
+              "caseId": "upgrade:military/gatehouse3.blueprint",
+              "outcome": "PASS",
+              "evidence": "Native builder completed upgrade from 2; matching structural blocks=276; same hut/colony/worker; recovery disabled; ticks=11480. Support builder level5 and required research/materials provided as fixtures."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "suite": "ArcologyConnectedLayout",
+      "run_id": "a4cdfcad8e9b41468441d44e86a5b4ad",
+      "runner_exit": 0,
+      "passed_cases": 3.0,
+      "pack_snapshot": "305/305 blueprints and pack.json match current candidate",
+      "phases": [
+        {
+          "phase": "seed",
+          "cases": [
+            {
+              "caseId": "connected_timber_modules",
+              "outcome": "PASS",
+              "evidence": "Same native citizen walked exterior -> through adjoining Gatehouse -> Stable central aisle -> exterior, exact one-block route targets, recovery disabled; ticks=400. Blueprint envelopes touch without wall edits or bridge blocks. Not job production or cavalry testing."
+            },
+            {
+              "caseId": "connected_stone_modules",
+              "outcome": "PASS",
+              "evidence": "Same native citizen walked exterior -> through adjoining Gatehouse -> Stable central aisle -> exterior, exact one-block route targets, recovery disabled; ticks=350. Blueprint envelopes touch without wall edits or bridge blocks. Not job production or cavalry testing."
+            },
+            {
+              "caseId": "stacked_modules_external_stairs",
+              "outcome": "PASS",
+              "evidence": "Same native citizen walked exterior -> through adjoining Gatehouse -> Stable central aisle -> exterior, exact one-block route targets, recovery disabled; ticks=470. Upper modules six blocks above lower modules; disclosed three-wide external fixture stair. Does not certify automatic stair generation, all rotations or mounted cavalry."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "suite": "Supply",
+      "run_id": "5eda0c714a1c429baa245ca2541cb531",
+      "runner_exit": 0,
+      "passed_cases": 12.0,
+      "pack_snapshot": "305/305 blueprints and pack.json match current candidate",
+      "phases": [
+        {
+          "phase": "seed",
+          "cases": [
+            {
+              "caseId": "two_way_delivery",
+              "outcome": "PASS",
+              "evidence": "Assertions passed"
+            },
+            {
+              "caseId": "full_destination",
+              "outcome": "PASS",
+              "evidence": "Assertions passed"
+            },
+            {
+              "caseId": "unavailable_endpoints",
+              "outcome": "PASS",
+              "evidence": "Assertions passed"
+            },
+            {
+              "caseId": "reserves_and_incoming",
+              "outcome": "PASS",
+              "evidence": "Assertions passed"
+            },
+            {
+              "caseId": "pause_and_return",
+              "outcome": "PASS",
+              "evidence": "Assertions passed"
+            },
+            {
+              "caseId": "components_and_copies",
+              "outcome": "PASS",
+              "evidence": "Assertions passed"
+            },
+            {
+              "caseId": "authority_and_bounds",
+              "outcome": "PASS",
+              "evidence": "Assertions passed"
+            },
+            {
+              "caseId": "snapshot_conservation",
+              "outcome": "PASS",
+              "evidence": "Assertions passed"
+            },
+            {
+              "caseId": "returning_stock_counts_as_incoming",
+              "outcome": "PASS",
+              "evidence": "Assertions passed"
+            },
+            {
+              "caseId": "malformed_custody_rejected",
+              "outcome": "PASS",
+              "evidence": "Assertions passed"
+            },
+            {
+              "caseId": "failed_snapshot_write_preserves_custody",
+              "outcome": "PASS",
+              "evidence": "Assertions passed"
+            },
+            {
+              "caseId": "invalid_saved_data",
+              "outcome": "PASS",
+              "evidence": "Assertions passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "suite": "SupplyRestart",
+      "run_id": "5471dfab8a7c443588b090e1edf4ae88",
+      "runner_exit": 0,
+      "passed_cases": 4.0,
+      "pack_snapshot": "305/305 blueprints and pack.json match current candidate",
+      "phases": [
+        {
+          "phase": "seed",
+          "cases": [
+            {
+              "caseId": "supply_seed",
+              "outcome": "PASS",
+              "evidence": "Actual SavedData process phase; 32 logs and 32 named bread conserved; identities/progress/pause verified"
+            }
+          ]
+        },
+        {
+          "phase": "verify",
+          "cases": [
+            {
+              "caseId": "supply_verify",
+              "outcome": "PASS",
+              "evidence": "Actual SavedData process phase; 32 logs and 32 named bread conserved; identities/progress/pause verified"
+            }
+          ]
+        },
+        {
+          "phase": "verify_paused",
+          "cases": [
+            {
+              "caseId": "supply_verify_paused",
+              "outcome": "PASS",
+              "evidence": "Actual SavedData process phase; 32 logs and 32 named bread conserved; identities/progress/pause verified"
+            }
+          ]
+        },
+        {
+          "phase": "verify_final",
+          "cases": [
+            {
+              "caseId": "supply_verify_final",
+              "outcome": "PASS",
+              "evidence": "Actual SavedData process phase; 32 logs and 32 named bread conserved; identities/progress/pause verified"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

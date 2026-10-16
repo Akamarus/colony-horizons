@@ -1,0 +1,384 @@
+[
+  {
+    "ladder": [
+      508,
+      11,
+      43
+    ],
+    "state": {
+      "Name": "minecraft:stone"
+    },
+    "back": {
+      "Name": "minecraft:stone"
+    },
+    "front": {
+      "Name": "minecraft:stone"
+    },
+    "landing": {
+      "Name": "minecraft:stone"
+    }
+  },
+  {
+    "ladder": [
+      508,
+      12,
+      43
+    ],
+    "state": {
+      "Name": "minecraft:stone"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:stone"
+    },
+    "landing": {
+      "Name": "minecraft:cobblestone"
+    }
+  },
+  {
+    "ladder": [
+      508,
+      13,
+      43
+    ],
+    "state": {
+      "Name": "minecraft:air"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:cobblestone"
+    }
+  },
+  {
+    "ladder": [
+      508,
+      14,
+      43
+    ],
+    "state": {
+      "Properties": {
+        "waterlogged": "false",
+        "facing": "east"
+      },
+      "Name": "minecraft:ladder"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:cobblestone"
+    }
+  },
+  {
+    "ladder": [
+      508,
+      15,
+      43
+    ],
+    "state": {
+      "Properties": {
+        "waterlogged": "false",
+        "facing": "east"
+      },
+      "Name": "minecraft:ladder"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:cobblestone"
+    }
+  },
+  {
+    "ladder": [
+      508,
+      16,
+      43
+    ],
+    "state": {
+      "Properties": {
+        "waterlogged": "false",
+        "facing": "east"
+      },
+      "Name": "minecraft:ladder"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:air"
+    }
+  },
+  {
+    "ladder": [
+      508,
+      17,
+      43
+    ],
+    "state": {
+      "Properties": {
+        "waterlogged": "false",
+        "facing": "east"
+      },
+      "Name": "minecraft:ladder"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:air"
+    }
+  },
+  {
+    "ladder": [
+      508,
+      18,
+      43
+    ],
+    "state": {
+      "Properties": {
+        "waterlogged": "false",
+        "facing": "east"
+      },
+      "Name": "minecraft:ladder"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:air"
+    }
+  },
+  {
+    "ladder": [
+      508,
+      19,
+      43
+    ],
+    "state": {
+      "Name": "minecraft:air"
+    },
+    "back": {
+      "Name": "minecraft:air"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:air"
+    }
+  },
+  {
+    "ladder": [
+      567,
+      11,
+      43
+    ],
+    "state": {
+      "Name": "minecraft:stone"
+    },
+    "back": {
+      "Name": "minecraft:stone"
+    },
+    "front": {
+      "Name": "minecraft:stone"
+    },
+    "landing": {
+      "Name": "minecraft:stone"
+    }
+  },
+  {
+    "ladder": [
+      567,
+      12,
+      43
+    ],
+    "state": {
+      "Name": "minecraft:stone"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:stone"
+    },
+    "landing": {
+      "Name": "minecraft:cobblestone"
+    }
+  },
+  {
+    "ladder": [
+      567,
+      13,
+      43
+    ],
+    "state": {
+      "Name": "minecraft:air"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:cobblestone"
+    }
+  },
+  {
+    "ladder": [
+      567,
+      14,
+      43
+    ],
+    "state": {
+      "Properties": {
+        "waterlogged": "false",
+        "facing": "east"
+      },
+      "Name": "minecraft:ladder"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:cobblestone"
+    }
+  },
+  {
+    "ladder": [
+      567,
+      15,
+      43
+    ],
+    "state": {
+      "Properties": {
+        "waterlogged": "false",
+        "facing": "east"
+      },
+      "Name": "minecraft:ladder"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:cobblestone"
+    }
+  },
+  {
+    "ladder": [
+      567,
+      16,
+      43
+    ],
+    "state": {
+      "Properties": {
+        "waterlogged": "false",
+        "facing": "east"
+      },
+      "Name": "minecraft:ladder"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:air"
+    }
+  },
+  {
+    "ladder": [
+      567,
+      17,
+      43
+    ],
+    "state": {
+      "Properties": {
+        "waterlogged": "false",
+        "facing": "east"
+      },
+      "Name": "minecraft:ladder"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:air"
+    }
+  },
+  {
+    "ladder": [
+      567,
+      18,
+      43
+    ],
+    "state": {
+      "Properties": {
+        "waterlogged": "false",
+        "facing": "east"
+      },
+      "Name": "minecraft:ladder"
+    },
+    "back": {
+      "Name": "minecraft:cobblestone"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:air"
+    }
+  },
+  {
+    "ladder": [
+      567,
+      19,
+      43
+    ],
+    "state": {
+      "Name": "minecraft:air"
+    },
+    "back": {
+      "Name": "minecraft:air"
+    },
+    "front": {
+      "Name": "minecraft:air"
+    },
+    "landing": {
+      "Name": "minecraft:air"
+    }
+  }
+]

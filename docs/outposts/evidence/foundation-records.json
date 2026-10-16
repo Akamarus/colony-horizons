@@ -1,0 +1,77 @@
+[
+  {
+    "caseId": "multiple_huts_roundtrip",
+    "outcome": "PASS",
+    "evidence": "Contract verified"
+  },
+  {
+    "caseId": "repeated_roles_distinct",
+    "outcome": "PASS",
+    "evidence": "Contract verified"
+  },
+  {
+    "caseId": "worker_membership_exclusive",
+    "outcome": "PASS",
+    "evidence": "Contract verified"
+  },
+  {
+    "caseId": "different_colonies_same_citizen_id",
+    "outcome": "PASS",
+    "evidence": "Contract verified"
+  },
+  {
+    "caseId": "dimension_mismatch_rejected",
+    "outcome": "PASS",
+    "evidence": "Contract verified"
+  },
+  {
+    "caseId": "stacked_nonoverlap",
+    "outcome": "PASS",
+    "evidence": "Contract verified"
+  },
+  {
+    "caseId": "conflicting_volume_rejected",
+    "outcome": "PASS",
+    "evidence": "Contract verified"
+  },
+  {
+    "caseId": "invalid_record_atomic",
+    "outcome": "PASS",
+    "evidence": "Contract verified"
+  },
+  {
+    "caseId": "unknown_schema_rejected",
+    "outcome": "PASS",
+    "evidence": "Contract verified"
+  },
+  {
+    "caseId": "malformed_data_rejected",
+    "outcome": "PASS",
+    "evidence": "Contract verified"
+  },
+  {
+    "caseId": "native_identity_matches",
+    "outcome": "PASS",
+    "evidence": "Native references verified without reconstruction"
+  },
+  {
+    "caseId": "foreign_colony_rejected",
+    "outcome": "PASS",
+    "evidence": "Native references verified without reconstruction"
+  },
+  {
+    "caseId": "removed_hut_reported",
+    "outcome": "PASS",
+    "evidence": "Native references verified without reconstruction"
+  },
+  {
+    "caseId": "missing_citizen_reported",
+    "outcome": "PASS",
+    "evidence": "Native references verified without reconstruction"
+  },
+  {
+    "caseId": "unloaded_reference_deferred",
+    "outcome": "PASS",
+    "evidence": "Native references verified without reconstruction"
+  }
+]

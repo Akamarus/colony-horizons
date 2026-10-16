@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "shortage_failure",
+    "outcome": "FAIL",
+    "evidence": "java.lang.IllegalStateException: Zero fill stock must enter native NEEDS_ITEM before mining"
+  }
+]

@@ -4,9 +4,24 @@
   "package": "dev.colonyhorizons.compat.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "RemoteClaimRebuildMixin",
+    "FoundingTravelGuardMixin",
+    "FoundingReservationMixin",
+    "RemoteWorkerNavigationMixin",
+    "RemoteWorkOrderMixin",
+    "RemoteHousingMixin",
+    "RemoteDeliveredFoodMixin",
+    "CourierColonyMarkerMixin",
+    "CourierRequestResolverMixin",
+    "WarehouseRequestLocalityMixin",
+    "WarehouseCountLocalityMixin",
+    "CourierJobMixin",
+    "CourierWorkMixin",
+    "CourierNavigationMixin",
     "NetherWorkerResumeMixin",
     "EnchanterStoredEnchantmentsMixin",
     "FoundationTestSaveMixin",
+    "SupplyCheckpointTimingMixin",
     "QuarryFootprintMixin",
     "PlanterSeagrassToolsMixin",
     "SeagrassRecipeToolMixin",
@@ -18,9 +33,13 @@
     "ArcologyQuarryDecorationMixin",
     "ArcologyQuarryAccessMiningMixin",
     "ArcologyQuarryFluidSupplyMixin",
-    "ArcologyMinerFluidSealMixin"
+    "ArcologyMinerFluidSealMixin",
+    "RemoteIllnessMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-  }
+  },
+  "client": [
+    
+  ]
 }

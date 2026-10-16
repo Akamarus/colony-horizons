@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "enchanter_ancient_tome",
+    "outcome": "PASS",
+    "evidence": "Native tome consumed; book\u003dQuick Charge III stored\u003dItemEnchantments{enchantments\u003d{Reference{ResourceKey[minecraft:enchantment / minecraft:quick_charge]\u003dEnchantment Quick Charge}\u003d\u003e3}, showInTooltip\u003dtrue} direct\u003dItemEnchantments{enchantments\u003d{}, showInTooltip\u003dtrue} initialMana\u003d60 finalMana\u003d57 requiredCost\u003d3. Native level5 recipe/loot, enchantment components and statistics verified. Prebuilt level5 hut, mature Mana60 worker, one ancient tome and food supplied as initial fixtures; no skill/output/AI injection after start, recovery disabled. Station/Mana progression, other levels and restart not certified."
+  }
+]

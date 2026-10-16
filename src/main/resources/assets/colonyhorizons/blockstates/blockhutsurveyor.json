@@ -1,0 +1,1 @@
+{"variants":{"facing=north":{"model":"colonyhorizons:block/blockhutsurveyor"},"facing=east":{"model":"colonyhorizons:block/blockhutsurveyor","y":90},"facing=south":{"model":"colonyhorizons:block/blockhutsurveyor","y":180},"facing=west":{"model":"colonyhorizons:block/blockhutsurveyor","y":270}}}

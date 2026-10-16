@@ -1,0 +1,103 @@
+[
+  {
+    "case": "archery_1",
+    "status": "FAIL",
+    "detail": "Archery L1: requires 1 native targets, got 0"
+  },
+  {
+    "case": "archery_2",
+    "status": "FAIL",
+    "detail": "Archery L2: standing positions incomplete"
+  },
+  {
+    "case": "archery_3",
+    "status": "FAIL",
+    "detail": "Archery L3: standing positions incomplete"
+  },
+  {
+    "case": "archery_4",
+    "status": "FAIL",
+    "detail": "Archery L4: standing positions incomplete"
+  },
+  {
+    "case": "archery_5",
+    "status": "FAIL",
+    "detail": "Archery L5: standing positions incomplete"
+  },
+  {
+    "case": "mine_1",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_1",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_1",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_2",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_2",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_2",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_3",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_3",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_3",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_4",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_4",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_4",
+    "status": "PASS"
+  },
+  {
+    "case": "mine_5",
+    "status": "PASS"
+  },
+  {
+    "case": "nether_mine_5",
+    "status": "PASS"
+  },
+  {
+    "case": "plantation_5",
+    "status": "PASS"
+  },
+  {
+    "case": "marker_bounds_all_blueprints",
+    "status": "PASS"
+  },
+  {
+    "case": "survival_materials",
+    "status": "PASS"
+  },
+  {
+    "case": "preserve_existing_crop_capacity",
+    "status": "PASS"
+  },
+  {
+    "case": "source_hashes_nbt_types_untouched_bytes",
+    "status": "PASS"
+  }
+]

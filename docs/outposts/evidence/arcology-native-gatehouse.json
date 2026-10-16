@@ -1,0 +1,27 @@
+[
+  {
+    "caseId": "gatehouse_layout_1",
+    "outcome": "PASS",
+    "evidence": "Prebuilt gatehouse L1 loaded native class/equivalent level, exact world-transformed knight/archer/gate/patrol/ground tags (native guard list order is set-derived), two complete registered beds, supported clear destinations and exactly one native connection-manager terminal record created by building callbacks. No fabricated manager record. This does not establish a connection, actual player arrival, persistence, destruction or native construction."
+  },
+  {
+    "caseId": "gatehouse_layout_2",
+    "outcome": "PASS",
+    "evidence": "Prebuilt gatehouse L2 loaded native class/equivalent level, exact world-transformed knight/archer/gate/patrol/ground tags (native guard list order is set-derived), two complete registered beds, supported clear destinations and exactly one native connection-manager terminal record created by building callbacks. No fabricated manager record. This does not establish a connection, actual player arrival, persistence, destruction or native construction."
+  },
+  {
+    "caseId": "gatehouse_layout_3",
+    "outcome": "PASS",
+    "evidence": "Prebuilt gatehouse L3 loaded native class/equivalent level, exact world-transformed knight/archer/gate/patrol/ground tags (native guard list order is set-derived), two complete registered beds, supported clear destinations and exactly one native connection-manager terminal record created by building callbacks. No fabricated manager record. This does not establish a connection, actual player arrival, persistence, destruction or native construction."
+  },
+  {
+    "caseId": "gatehouse_archer_post",
+    "outcome": "PASS",
+    "evidence": "Same native archer assigned to the shared two-guard L3 gatehouse; normal navigation selected its exact native tagged guard destination, moved more than six blocks from outside, and was observed guarding inside native building bounds within native five-block post range, with an unobstructed body-height collision ray to the post, for 100 sampled ticks. Recovery disabled; no AI/path/position mutation after initial spawn. Equipment, food, claim/research and daytime supplied. Native guards allow a post radius; this does not assert standing on the marker, combat, cavalry passage or player travel."
+  },
+  {
+    "caseId": "gatehouse_knight_post",
+    "outcome": "PASS",
+    "evidence": "Same native knight assigned to the shared two-guard L3 gatehouse; normal navigation selected its exact native tagged guard destination, moved more than six blocks from outside, and was observed guarding inside native building bounds within native five-block post range, with an unobstructed body-height collision ray to the post, for 100 sampled ticks. Recovery disabled; no AI/path/position mutation after initial spawn. Equipment, food, claim/research and daytime supplied. Native guards allow a post radius; this does not assert standing on the marker, combat, cavalry passage or player travel."
+  }
+]

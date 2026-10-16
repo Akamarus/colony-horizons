@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "quarry_bounds_failure",
+    "outcome": "FAIL",
+    "evidence": "net.minecraft.gametest.framework.GameTestAssertException: Quarry lower-corner extension must point downward: simplequarry actual\u003dBlockPos{x\u003d0, y\u003d32, z\u003d0}"
+  }
+]

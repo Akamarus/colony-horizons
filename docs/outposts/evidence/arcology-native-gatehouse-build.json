@@ -1,0 +1,17 @@
+[
+  {
+    "caseId": "upgrade:military/gatehouse1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed construction; matching structural blocks\u003d353; same hut/colony/worker; recovery disabled; ticks\u003d18860. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:military/gatehouse2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 1; matching structural blocks\u003d353; same hut/colony/worker; recovery disabled; ticks\u003d12620. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:military/gatehouse3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 2; matching structural blocks\u003d276; same hut/colony/worker; recovery disabled; ticks\u003d12700. Support builder level5 and required research/materials provided as fixtures."
+  }
+]

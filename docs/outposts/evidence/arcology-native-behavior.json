@@ -1,0 +1,17 @@
+[
+  {
+    "caseId": "plantation_crops",
+    "outcome": "PASS",
+    "evidence": "Native planter planted sugarcane/cactus/bamboo from supplied seeds, then harvested and collected each crop. QA matured one worker-planted stem per crop; natural growth timing not tested."
+  },
+  {
+    "caseId": "nether_expedition",
+    "outcome": "PASS",
+    "evidence": "Worker lit tagged portal, entered native travelling system, returned visibly to the hut, recorded a completed trip and deposited expedition loot; gear, food and recipe inputs supplied. Loot items=[minecraft:basalt, minecraft:gold_nugget, minecraft:blackstone, minecraft:rotten_flesh, minecraft:soul_sand, minecraft:soul_soil, minecraft:netherrack]"
+  },
+  {
+    "caseId": "miner_shaft",
+    "outcome": "PASS",
+    "evidence": "Native miner reached shaft, removed 20 natural stone blocks below the blueprint and wore pickaxe. Construction inputs supplied; ore-branch production is not certified by this case."
+  }
+]

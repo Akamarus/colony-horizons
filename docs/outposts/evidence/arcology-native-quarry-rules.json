@@ -1,0 +1,12 @@
+[
+  {
+    "caseId": "simplequarry_rules",
+    "outcome": "PASS",
+    "evidence": "Native decoration skips blueprint air so excavation retains ore drops; layer stages complete liner, current-layer decorations, then excavation for every32/64 layers; world-minimum stop, other-pack stage sequence, bedrock and unsupported solid predicates preserved. Native walkToConstructionSite discards a floating stale work position and retains supported footing. Focused rule calls, not full excavation or travel acceptance."
+  },
+  {
+    "caseId": "mediumquarry_rules",
+    "outcome": "PASS",
+    "evidence": "Native decoration skips blueprint air so excavation retains ore drops; layer stages complete liner, current-layer decorations, then excavation for every32/64 layers; world-minimum stop, other-pack stage sequence, bedrock and unsupported solid predicates preserved. Native walkToConstructionSite discards a floating stale work position and retains supported footing. Focused rule calls, not full excavation or travel acceptance."
+  }
+]

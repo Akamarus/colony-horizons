@@ -1,0 +1,77 @@
+[
+  {
+    "caseId": "upgrade:agriculture/horticulture/plantation1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed construction; matching structural blocks=379; same hut/colony/worker; recovery disabled; ticks=23480. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:agriculture/horticulture/plantation2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 1; matching structural blocks=371; same hut/colony/worker; recovery disabled; ticks=1940. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:agriculture/horticulture/plantation3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 2; matching structural blocks=195; same hut/colony/worker; recovery disabled; ticks=13280. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:agriculture/horticulture/plantation4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 3; matching structural blocks=183; same hut/colony/worker; recovery disabled; ticks=2280. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:agriculture/horticulture/plantation5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 4; matching structural blocks=172; same hut/colony/worker; recovery disabled; ticks=14560. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:fundamentals/miner1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed construction; matching structural blocks=204; same hut/colony/worker; recovery disabled; ticks=19360. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:fundamentals/miner2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 1; matching structural blocks=204; same hut/colony/worker; recovery disabled; ticks=960. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:fundamentals/miner3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 2; matching structural blocks=92; same hut/colony/worker; recovery disabled; ticks=6780. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:fundamentals/miner4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 3; matching structural blocks=92; same hut/colony/worker; recovery disabled; ticks=940. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:fundamentals/miner5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 4; matching structural blocks=113; same hut/colony/worker; recovery disabled; ticks=8580. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:mystic/netherworker1.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed construction; matching structural blocks=125; same hut/colony/worker; recovery disabled; ticks=7860. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:mystic/netherworker2.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 1; matching structural blocks=127; same hut/colony/worker; recovery disabled; ticks=1400. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:mystic/netherworker3.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 2; matching structural blocks=55; same hut/colony/worker; recovery disabled; ticks=4400. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:mystic/netherworker4.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 3; matching structural blocks=55; same hut/colony/worker; recovery disabled; ticks=5120. Support builder level5 and required research/materials provided as fixtures."
+  },
+  {
+    "caseId": "upgrade:mystic/netherworker5.blueprint",
+    "outcome": "PASS",
+    "evidence": "Native builder completed upgrade from 4; matching structural blocks=84; same hut/colony/worker; recovery disabled; ticks=5380. Support builder level5 and required research/materials provided as fixtures."
+  }
+]

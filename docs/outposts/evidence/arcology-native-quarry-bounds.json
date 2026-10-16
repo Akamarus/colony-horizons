@@ -1,0 +1,12 @@
+[
+  {
+    "caseId": "simplequarry_bounds",
+    "outcome": "PASS",
+    "evidence": "Native hut and descending shaft are inside the volume; below-depth, above-roof and outside-side points are rejected with native one-block margin. Lower extension\u003dBlockPos{x\u003d0, y\u003d-32, z\u003d0}. No claim of protection permissions or excavation completion."
+  },
+  {
+    "caseId": "mediumquarry_bounds",
+    "outcome": "PASS",
+    "evidence": "Native hut and descending shaft are inside the volume; below-depth, above-roof and outside-side points are rejected with native one-block margin. Lower extension\u003dBlockPos{x\u003d0, y\u003d-64, z\u003d0}. No claim of protection permissions or excavation completion."
+  }
+]

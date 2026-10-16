@@ -18,19 +18,21 @@ public final class ArcologyCatalog {
  public record Inspection(String packName,List<Entry> entries,List<String> diagnostics) {
   public Inspection { entries=List.copyOf(entries);diagnostics=List.copyOf(diagnostics); }
  }
- public static Inspection inspect(Path root,HolderLookup.Provider registries) {
+ public static Inspection inspect(Path root,HolderLookup.Provider registries) {return inspect(root,registries,null);}
+ public static Inspection inspect(Path root,HolderLookup.Provider registries,dev.colonyhorizons.remote.ProductionProfile profile) {
   var entries=new ArrayList<Entry>();var diagnostics=new ArrayList<String>();
   String name="";
   try {
    root=root.toRealPath();
    name=JsonParser.parseString(Files.readString(root.resolve("pack.json"))).getAsJsonObject().get("name").getAsString();
-   if(!name.equals("Arcology"))throw new IllegalArgumentException("Expected Arcology pack");
+   if(!name.equals("Arcology") && !name.equals("Arcology Horizons"))throw new IllegalArgumentException("Expected Arcology or Arcology Horizons pack");
   }catch(Exception e){return new Inspection(name,entries,List.of("Cannot read Arcology pack: "+e.getMessage()));}
-  var roles=Map.of("fundamentals/builder","minecolonies:blockhutbuilder",
+  var roles=new HashMap<>(Map.of("fundamentals/builder","minecolonies:blockhutbuilder",
    "fundamentals/lumberjack","minecolonies:blockhutlumberjack",
    "fundamentals/citizen","minecolonies:blockhutcitizen",
    "craftsmanship/storage/warehouse","minecolonies:blockhutwarehouse",
-   "craftsmanship/storage/deliveryman","minecolonies:blockhutdeliveryman");
+   "craftsmanship/storage/deliveryman","minecolonies:blockhutdeliveryman"));
+  if(profile!=null)roles.put(profile.blueprintPrefix(),"minecolonies:blockhut"+profile.hutRole());
   for(var role:new TreeMap<>(roles).entrySet())for(int level=1;level<=5;level++){
    String relative=role.getKey()+level+".blueprint";
    try {

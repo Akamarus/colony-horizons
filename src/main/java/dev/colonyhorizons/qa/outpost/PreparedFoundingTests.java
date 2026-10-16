@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: GPL-3.0-only
+package dev.colonyhorizons.qa.outpost;
+import dev.colonyhorizons.remote.*;
+import dev.colonyhorizons.remote.RemoteModels.*;
+import net.minecraft.gametest.framework.*;
+import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
+import java.util.*;
+import java.nio.file.Path;
+@PrefixGameTestTemplate(false)
+public final class PreparedFoundingTests {
+ @GameTest(template="empty",templateNamespace="colonyhorizons",timeoutTicks=1800)
+ public static void review(GameTestHelper h){h.runAfterDelay(40,()->{
+  var rows=new ArrayList<ProbeResult>();var env=new RemoteTestEnvironment(h.getLevel(),1024,new Budget(Map.of(),Map.of()),0);var q=env.draft.request();var pos=env.draft.buildings().getFirst().upgradeVolume();var obstruction=new net.minecraft.core.BlockPos(pos.minX()+2,pos.minY(),pos.minZ()+2);h.getLevel().setBlock(obstruction,Blocks.DIRT.defaultBlockState(),3);
+  SupplyTests.run(rows,"legacy_still_rejects_obstruction",()->SupplyTests.check(!RemoteSitePlanner.review(env.owner,q).blockers().isEmpty()));
+  SupplyTests.run(rows,"prepared_site_accepts_builder_work",()->{var draft=prepared(env);SupplyTests.check(draft.blockers().isEmpty());SupplyTests.check(PreparedFounding.bill(draft).getOrDefault(new ItemKey(new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.BARREL)),0)==1);SupplyTests.check(h.getLevel().getBlockState(obstruction).is(Blocks.DIRT));var reduced=new HashSet<>(draft.chunks());reduced.remove(new net.minecraft.world.level.ChunkPos(obstruction));SupplyTests.reject(()->new SiteDraft(draft.id(),draft.request(),reduced,draft.buildings(),draft.fingerprint(),draft.blockers(),draft.preparation()));});
+  SupplyTests.run(rows,"prepared_draft_survives_save",()->{var draft=prepared(env);var data=RemoteDevelopmentData.get(h.getLevel());data.create(new Development(draft.id(),env.owner.getUUID(),draft,Mode.APPROVAL,Phase.PROPOSED,0));var copy=RemoteDevelopmentData.load(data.save(new net.minecraft.nbt.CompoundTag(),h.getLevel().registryAccess()),h.getLevel().registryAccess(),h.getLevel().dimension());var restored=copy.find(draft.id()).orElseThrow().draft();SupplyTests.check(restored.fingerprint().equals(draft.fingerprint()));try{SupplyTests.check(((Optional<?>)restored.getClass().getMethod("preparation").invoke(restored)).isPresent());}catch(ReflectiveOperationException e){throw new AssertionError("Preparation authority was lost",e);}});
+  SupplyTests.run(rows,"legacy_camp_without_barrels",()->{var value=prepared(env).preparation().orElseThrow().save();value.putInt("version",1);value.remove("storage");SupplyTests.check(PreparedSite.load(value).storage().isEmpty());});
+  SupplyTests.run(rows,"shared_approach_clears_full_hill",()->{var base=q.center().offset(-30,0,-20);try{for(int y=0;y<5;y++)h.getLevel().setBlock(base.above(y),Blocks.DIRT.defaultBlockState(),2);var draft=prepared(env);SupplyTests.check(draft.blockers().isEmpty()&&draft.preparation().orElseThrow().terrain().operations().stream().filter(o->o.pos().getX()==base.getX()&&o.pos().getZ()==base.getZ()).count()==5);}finally{for(int y=0;y<5;y++)h.getLevel().setBlock(base.above(y),Blocks.AIR.defaultBlockState(),2);}});
+  SupplyTests.run(rows,"shared_approach_rejects_excess_cut",()->{var base=q.center().offset(-30,0,-20);try{for(int y=0;y<9;y++)h.getLevel().setBlock(base.above(y),Blocks.DIRT.defaultBlockState(),2);SupplyTests.check(!prepared(env).blockers().isEmpty());}finally{for(int y=0;y<9;y++)h.getLevel().setBlock(base.above(y),Blocks.AIR.defaultBlockState(),2);}});
+  SupplyTests.run(rows,"scaled_camp_storage",()->{for(int dx=-25;dx<=-11;dx++)for(int dz=0;dz<20;dz++)h.getLevel().setBlock(q.center().offset(dx,0,dz),Blocks.DIRT.defaultBlockState(),2);var draft=prepared(env);SupplyTests.check(draft.blockers().isEmpty());var p=draft.preparation().orElseThrow();SupplyTests.check(p.terrain().clearRequired()>256&&PreparedFounding.bill(draft).getOrDefault(new ItemKey(new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.STONE_SHOVEL)),0)==3&&p.storage().size()==2&&new HashSet<>(p.storage()).size()==2);SupplyTests.check(PreparedSite.load(p.save()).storage().equals(p.storage()));SupplyTests.check(PreparedFounding.bill(draft).get(new ItemKey(new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.BARREL)))==2);});
+  try{ProbeReport.write(Path.of(System.getProperty("colonyhorizons.probeOutput")),"PreparedFounding",rows);}catch(Exception e){throw new RuntimeException(e);}h.assertTrue(rows.stream().allMatch(r->r.outcome()==ProbeResult.Outcome.PASS),rows.toString());h.succeed();
+ });}
+ private static SiteDraft prepared(RemoteTestEnvironment e){try{return (SiteDraft)RemoteSitePlanner.class.getMethod("reviewPrepared",net.minecraft.server.level.ServerLevel.class,UUID.class,SiteRequest.class).invoke(null,e.level,e.owner.getUUID(),e.draft.request());}catch(ReflectiveOperationException ex){throw new AssertionError("Prepared founding review missing",ex);}}
+}

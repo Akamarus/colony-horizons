@@ -1,0 +1,1251 @@
+{
+  "target": "Minecraft1.21.1 / MineColonies1.1.1403 / Structurize1.0.832",
+  "build": "PASS exit0 .setup/arcology-inflow-build-final.log; build; test NO-SOURCE; native/Python suites supply evidence",
+  "repair_contracts": 97,
+  "suites": [
+    {
+      "suite": "ArcologyFull",
+      "run_id": "d93f92f3b42d479eb28c319d924c5a57",
+      "passed_cases": 283,
+      "runner_exit": 0,
+      "pack_snapshot": "All283 current blueprint hashes match",
+      "scope": "Includes native Academy dummy registration/capacity at all5levels",
+      "blueprints_changed_since_run": []
+    },
+    {
+      "suite": "ArcologyNavigation",
+      "run_id": "78cecf05d2734c69bd7ed3cafce6bbf1",
+      "passed_cases": 238,
+      "runner_exit": 0,
+      "pack_snapshot": "All283 current blueprint hashes match",
+      "blueprints_changed_since_run": []
+    },
+    {
+      "suite": "ArcologyLifecycle",
+      "run_id": "54c14d74512340fd82588b6c86b8c72d",
+      "passed_cases": 21,
+      "runner_exit": 0,
+      "pack_snapshot": "268/283 current blueprint hashes match",
+      "phases": {
+        "seed": 18,
+        "verify": 3
+      },
+      "blueprints_changed_since_run": [
+        "military/combatacademy1.blueprint",
+        "military/combatacademy2.blueprint",
+        "military/combatacademy3.blueprint",
+        "military/combatacademy4.blueprint",
+        "military/combatacademy5.blueprint",
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint",
+        "craftsmanship/luxury/concretemixer1.blueprint",
+        "craftsmanship/luxury/concretemixer2.blueprint",
+        "craftsmanship/luxury/concretemixer3.blueprint",
+        "craftsmanship/luxury/concretemixer4.blueprint",
+        "craftsmanship/luxury/concretemixer5.blueprint"
+      ]
+    },
+    {
+      "suite": "Operations",
+      "run_id": "3da710d232e24c6e9773a5b771cbbae5",
+      "passed_cases": 5,
+      "runner_exit": 0,
+      "pack_snapshot": "266/283 current blueprint hashes match",
+      "blueprints_changed_since_run": [
+        "military/combatacademy1.blueprint",
+        "military/combatacademy2.blueprint",
+        "military/combatacademy3.blueprint",
+        "military/combatacademy4.blueprint",
+        "military/combatacademy5.blueprint",
+        "agriculture/horticulture/plantation4.blueprint",
+        "agriculture/horticulture/plantation5.blueprint",
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint",
+        "craftsmanship/luxury/concretemixer1.blueprint",
+        "craftsmanship/luxury/concretemixer2.blueprint",
+        "craftsmanship/luxury/concretemixer3.blueprint",
+        "craftsmanship/luxury/concretemixer4.blueprint",
+        "craftsmanship/luxury/concretemixer5.blueprint"
+      ]
+    },
+    {
+      "suite": "NativeRestart",
+      "run_id": "06ff9090252945f9955ad1f49b8c7456",
+      "passed_cases": 3,
+      "runner_exit": 0,
+      "scope": "Historical six-hut assignment/inventory/pause persistence; priority production restart covered separately by current Lifecycle suite",
+      "pack_snapshot": "266/283 current blueprint hashes match",
+      "blueprints_changed_since_run": [
+        "military/combatacademy1.blueprint",
+        "military/combatacademy2.blueprint",
+        "military/combatacademy3.blueprint",
+        "military/combatacademy4.blueprint",
+        "military/combatacademy5.blueprint",
+        "agriculture/horticulture/plantation4.blueprint",
+        "agriculture/horticulture/plantation5.blueprint",
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint",
+        "craftsmanship/luxury/concretemixer1.blueprint",
+        "craftsmanship/luxury/concretemixer2.blueprint",
+        "craftsmanship/luxury/concretemixer3.blueprint",
+        "craftsmanship/luxury/concretemixer4.blueprint",
+        "craftsmanship/luxury/concretemixer5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyCrafting",
+      "run_id": "f36ed47f8a824e5d9cbc8f467fa9733e",
+      "passed_cases": 4,
+      "runner_exit": 0,
+      "pack_snapshot": "268/283 current blueprint hashes match",
+      "scope": "Level5 Sawmill oak slabs, Stonemason stone bricks, Fletcher arrows: native requests, exact ingredient consumption, native crafting statistics. Same courier carries all products to requesting Town Hall; exact quantities and empty source/courier/warehouse checks. Prepared terrain, prebuilt huts, recipes and food supplied; no recovery teleports.",
+      "blueprints_changed_since_run": [
+        "military/combatacademy1.blueprint",
+        "military/combatacademy2.blueprint",
+        "military/combatacademy3.blueprint",
+        "military/combatacademy4.blueprint",
+        "military/combatacademy5.blueprint",
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint",
+        "craftsmanship/luxury/concretemixer1.blueprint",
+        "craftsmanship/luxury/concretemixer2.blueprint",
+        "craftsmanship/luxury/concretemixer3.blueprint",
+        "craftsmanship/luxury/concretemixer4.blueprint",
+        "craftsmanship/luxury/concretemixer5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologySmelting",
+      "run_id": "46dee40c0e0c40978a78de59cfc48a8f",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack_snapshot": "268/283 current blueprint hashes match",
+      "scope": "Level5 Glassblower glass and Stone Smeltery stone: empty/cold furnace start, worker supplies inputs/fuel, observed lit furnace, input/fuel consumed, all four outputs collected and no furnace leftovers.",
+      "blueprints_changed_since_run": [
+        "military/combatacademy1.blueprint",
+        "military/combatacademy2.blueprint",
+        "military/combatacademy3.blueprint",
+        "military/combatacademy4.blueprint",
+        "military/combatacademy5.blueprint",
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint",
+        "craftsmanship/luxury/concretemixer1.blueprint",
+        "craftsmanship/luxury/concretemixer2.blueprint",
+        "craftsmanship/luxury/concretemixer3.blueprint",
+        "craftsmanship/luxury/concretemixer4.blueprint",
+        "craftsmanship/luxury/concretemixer5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyArtisans",
+      "run_id": "ee39939e04e448aa80a06a93e474e6bd",
+      "passed_cases": 4,
+      "runner_exit": 0,
+      "pack_snapshot": "268/283 current blueprint hashes match",
+      "scope": "Level5 Blacksmith iron pickaxe, Mechanic minecart, Dyer red wool; validated vanilla recipes, native requests and crafting statistics, exact ingredient consumption. Same courier carries/delivers all products without loss/duplication; sampled identity/movement with recovery disabled.",
+      "blueprints_changed_since_run": [
+        "military/combatacademy1.blueprint",
+        "military/combatacademy2.blueprint",
+        "military/combatacademy3.blueprint",
+        "military/combatacademy4.blueprint",
+        "military/combatacademy5.blueprint",
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint",
+        "craftsmanship/luxury/concretemixer1.blueprint",
+        "craftsmanship/luxury/concretemixer2.blueprint",
+        "craftsmanship/luxury/concretemixer3.blueprint",
+        "craftsmanship/luxury/concretemixer4.blueprint",
+        "craftsmanship/luxury/concretemixer5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyFood",
+      "run_id": "6748983c3aa347f8bef1435971e45c04",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack_snapshot": "268/283 current blueprint hashes match",
+      "scope": "Level5 Bakery dough-to-bread and Kitchen beef-to-steak. Empty/cold furnaces, observed burning, full ingredient consumption, fuel consumption and output collection; native bakery recipe initialization retained. Supplied dough/raw beef, coal and separate worker food.",
+      "blueprints_changed_since_run": [
+        "military/combatacademy1.blueprint",
+        "military/combatacademy2.blueprint",
+        "military/combatacademy3.blueprint",
+        "military/combatacademy4.blueprint",
+        "military/combatacademy5.blueprint",
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint",
+        "craftsmanship/luxury/concretemixer1.blueprint",
+        "craftsmanship/luxury/concretemixer2.blueprint",
+        "craftsmanship/luxury/concretemixer3.blueprint",
+        "craftsmanship/luxury/concretemixer4.blueprint",
+        "craftsmanship/luxury/concretemixer5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyCompost",
+      "run_id": "7418d8f4824347d7a9168a35760e1377",
+      "passed_cases": 1,
+      "runner_exit": 0,
+      "pack_snapshot": "268/283 current blueprint hashes match",
+      "scope": "Level5 Composter: empty registered barrels, native allowed-wheat configuration, real ingredient pickup/filling, processing and six compost harvested; no timer or barrel-content injection. Native statistics, citizen identity and sampled movement checked; recovery disabled.",
+      "blueprints_changed_since_run": [
+        "military/combatacademy1.blueprint",
+        "military/combatacademy2.blueprint",
+        "military/combatacademy3.blueprint",
+        "military/combatacademy4.blueprint",
+        "military/combatacademy5.blueprint",
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint",
+        "craftsmanship/luxury/concretemixer1.blueprint",
+        "craftsmanship/luxury/concretemixer2.blueprint",
+        "craftsmanship/luxury/concretemixer3.blueprint",
+        "craftsmanship/luxury/concretemixer4.blueprint",
+        "craftsmanship/luxury/concretemixer5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyMixerWater",
+      "run_id": "add94bdc31e247adab14609ba9d50749",
+      "passed_cases": 5,
+      "runner_exit": 0,
+      "pack_snapshot": "273/283 current blueprint hashes match",
+      "scope": "Actual levels1-5 water settlement and replenishment; prebuilt fixture",
+      "blueprints_changed_since_run": [
+        "military/combatacademy1.blueprint",
+        "military/combatacademy2.blueprint",
+        "military/combatacademy3.blueprint",
+        "military/combatacademy4.blueprint",
+        "military/combatacademy5.blueprint",
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyCivic",
+      "run_id": "e17f67b04b564bc9bfbc62cdc4d65a76",
+      "passed_cases": 6,
+      "runner_exit": 0,
+      "pack_snapshot": "273/283 current blueprint hashes match",
+      "scope": "Study, teaching, measles treatment, research progress only, timed visitor, native happiness factor. Mostly level5, Tavern actuallevel3.",
+      "blueprints_changed_since_run": [
+        "military/combatacademy1.blueprint",
+        "military/combatacademy2.blueprint",
+        "military/combatacademy3.blueprint",
+        "military/combatacademy4.blueprint",
+        "military/combatacademy5.blueprint",
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologySifter",
+      "run_id": "a83c389cf0784eafa75be448a533397a",
+      "passed_cases": 1,
+      "runner_exit": 0,
+      "pack_snapshot": "273/283 current blueprint hashes match",
+      "scope": "Level5 string mesh/gravel native consumption, mesh wear, random loot and statistics.",
+      "blueprints_changed_since_run": [
+        "military/combatacademy1.blueprint",
+        "military/combatacademy2.blueprint",
+        "military/combatacademy3.blueprint",
+        "military/combatacademy4.blueprint",
+        "military/combatacademy5.blueprint",
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyGathering",
+      "run_id": "23fe2d060bfd46e5bfe06b72f675437e",
+      "passed_cases": 4,
+      "runner_exit": 0,
+      "pack_snapshot": "273/283 current blueprint hashes match",
+      "blueprints_changed_since_run": [
+        "military/combatacademy1.blueprint",
+        "military/combatacademy2.blueprint",
+        "military/combatacademy3.blueprint",
+        "military/combatacademy4.blueprint",
+        "military/combatacademy5.blueprint",
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyProcessors",
+      "run_id": "4bce6e02161b4435a5db8aaeb33e527d",
+      "passed_cases": 3,
+      "runner_exit": 0,
+      "pack_snapshot": "273/283 current blueprint hashes match",
+      "blueprints_changed_since_run": [
+        "military/combatacademy1.blueprint",
+        "military/combatacademy2.blueprint",
+        "military/combatacademy3.blueprint",
+        "military/combatacademy4.blueprint",
+        "military/combatacademy5.blueprint",
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyAnimals",
+      "run_id": "264848da9669460c97804b777c48f76e",
+      "passed_cases": 8,
+      "runner_exit": 0,
+      "pack_snapshot": "278/283 current blueprint hashes match",
+      "scope": "Level5 five breeding cases, natural egg pickup, milk and wool; focused strict chicken soak separately resolves the bounded level5 escape reproduction.",
+      "known_limitations": [
+        "Permanent containment and other-level chicken worker behavior remain uncertified."
+      ],
+      "blueprints_changed_since_run": [
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyDefense",
+      "run_id": "1bdbf5fa855842a889d3a3c48ea7d6d6",
+      "passed_cases": 3,
+      "runner_exit": 0,
+      "pack_snapshot": "278/283 current blueprint hashes match",
+      "blueprints_changed_since_run": [
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyMagic",
+      "run_id": "1b5d430fdc224062a008737faf3859ea",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack_snapshot": "278/283 current blueprint hashes match",
+      "blueprints_changed_since_run": [
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyRestaurant",
+      "run_id": "4c2cf86b4fe242998462c9fa37cffc60",
+      "passed_cases": 1,
+      "runner_exit": 0,
+      "pack_snapshot": "278/283 current blueprint hashes match",
+      "blueprints_changed_since_run": [
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyBarracks",
+      "run_id": "1a30872ea856440f9f09da76eb060c9b",
+      "passed_cases": 3,
+      "runner_exit": 0,
+      "pack_snapshot": "278/283 current blueprint hashes match",
+      "blueprints_changed_since_run": [
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyBeeProducts",
+      "run_id": "5cfa3141a6a6474e9299fa721ba76ff9",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack_snapshot": "278/283 current blueprint hashes match",
+      "scope": "Level5 natural nectar/hive accumulation and native honey bottle/honeycomb harvest.",
+      "blueprints_changed_since_run": [
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyCivicGrave",
+      "run_id": "2ca7a292a36e43549a8cc1aeb2f17933",
+      "passed_cases": 1,
+      "runner_exit": 0,
+      "pack_snapshot": "278/283 current blueprint hashes match",
+      "scope": "Actual fixture death through spaced native capped damage; native grave verified to hold exactly seven emeralds, undertaker recovery and native dig/resurrection statistics. Named burial and resurrection probability excluded.",
+      "blueprints_changed_since_run": [
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyEnchanting",
+      "run_id": "b386e780799645f29aea33408c1d67ef",
+      "passed_cases": 1,
+      "runner_exit": 0,
+      "scope": "Level5 native ancient-tome Quick Charge III stored-enchantment book production; supplied Mana60 debited to57 (cost3). Requires addon stored-component cost repair. Other enchantments, levels, upgrades and restart excluded.",
+      "pack_snapshot": "278/283 current blueprint hashes match",
+      "blueprints_changed_since_run": [
+        "agriculture/husbandry/chickenherder1.blueprint",
+        "agriculture/husbandry/chickenherder2.blueprint",
+        "agriculture/husbandry/chickenherder3.blueprint",
+        "agriculture/husbandry/chickenherder4.blueprint",
+        "agriculture/husbandry/chickenherder5.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyChickenContainment",
+      "run_id": "d890fbbaebee4d65837c8ab92350ac4b",
+      "passed_cases": 1,
+      "runner_exit": 0,
+      "scope": "Actual level5 native breeding and egg collection during24000ticks; at least two living adults, loaded tracked birds, no bird outside native hut bounds for over200ticks. Slaughter exemption requires fatal damage-source worker attribution, last-attacker identity and inside-pen location; no deaths occurred in the accepted strict run, so this branch was unused. Six-cell ladder barrier repair across levels1-5; no worker acceptance for other levels, permanent containment, upgrades or restart.",
+      "pack_snapshot": "283/283 current blueprint hashes match",
+      "blueprints_changed_since_run": []
+    }
+  ],
+  "limitations": [
+    "Representative profession operations and constructions are accepted only as described in the per-role matrix, not every recipe, level, upgrade retention or lifecycle state.",
+    "Three connected/stacked routes and160 transformed interaction routes passed; broader visual fit, transformed interior work/mounted routes/excavation and player-facing placement/preview UI remain untested.",
+    "All10 crop production cases passed in supplied playerless fixtures; normal-speed unattended yields and fresh production after reload remain untested.",
+    "Quarry32/64-depth excavation and68coal courier hauling passed on dry uniform terrain; ordinary Miner branch production is separate and not certified by those cases.",
+    "Requested materials, tools, food and sometimes medical fixtures are supplied; unattended survival and material-shortage recovery remain uncertified.",
+    "Clean restart evidence is scoped to documented fixtures; crash durability and all mid-operation lifecycle combinations remain uncertified.",
+    "Crafting and smelting use documented sample recipes and levels; all recipes, input courier restocking and warehouse throughput remain untested.",
+    "Graveyard native inventory recovery passed; named burial placement and resurrection probability remain uncertified.",
+    "Chicken level5 bounded breeding/egg containment passed; permanent containment, other levels and restart remain uncertified.",
+    "Native cavalry mount/patrol/return passed; combat, breeding and every stable stall remain uncertified.",
+    "Quarry hazard evidence covers enclosed sources, connected3x3 pools and live supply depletion/hut restocking; unbounded aquifers/lava lakes and full-depth wet excavation remain untested.",
+    "Native server pack browsing passed; client menu grouping, previews and placement clicks were not exercised."
+  ],
+  "test_save_mode": "Explicit foundation GameTestServer only: batched per-write IO, normal final flush; ordinary worlds unchanged.",
+  "current_increment_status": "External inflow PASS2, runner exit0. Native client smoke: candidate selected, Stable levels1 and5 previewed, level5 rotated once, level1 schematic pasted and remained after preview cancellation. Client exit0. No new gameplay or pack changes.",
+  "outstanding_checks": [
+    "Broader player build-tool matrix: mirror, connected placement, survival work orders and upgrade previews",
+    "Broader connected layout visual fit",
+    "Unbounded quarry aquifers/lava lakes and wet full-depth completion",
+    "Crash recovery",
+    "Transformed mounted/interior work and excavation",
+    "Stable breeding/all-stall behavior",
+    "Additional per-role recipes, levels and lifecycle combinations"
+  ],
+  "candidate_pack_status": "Current repair pack accepted for scoped asset/navigation and worker checks:35 repaired,248 untouched,74 contracts,303 repeat-identical files and301 original files preserved. Separate288-blueprint Stable candidate not included.",
+  "isolated_extensions": [
+    {
+      "suite": "ArcologyStable",
+      "run_id": "d60e136cfa8c4b468891725462c66baa",
+      "passed_cases": 7,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-stable-testpack",
+      "blueprints": 288,
+      "pack_snapshot": "283/305 current blueprint hashes match immutable run snapshot",
+      "static_contract_tests": 5,
+      "static_log": ".setup/stable-static-tests.log",
+      "scope": "Actual levels1-5 native stall tags, bed heads and patrol registration; level5 ordinary vanilla-horse conversion with native home/statistics/XP and worker-leashed stall delivery with roundup statistics.",
+      "remaining": "Builder construction/upgrades separately passed in ArcologyStableBuild. Breeding, maintenance, cavalry assignment/mounted patrol/return, rotation, restart and every-stall operation not certified. Separate from main283-blueprint repair pack.",
+      "blueprints_changed_since_run": [
+        "fundamentals/mediumquarry1.blueprint",
+        "fundamentals/simplequarry1.blueprint",
+        "military/gatehouse1.blueprint",
+        "military/gatehouse2.blueprint",
+        "military/gatehouse3.blueprint",
+        "military/stable1.blueprint",
+        "military/stable2.blueprint",
+        "military/stable3.blueprint",
+        "military/stable4.blueprint",
+        "military/stable5.blueprint",
+        "infrastructure/mineshafts/mediumquarryshaft1.blueprint",
+        "infrastructure/mineshafts/simplequarryshaft1.blueprint",
+        "infrastructure/plantationfields/cocoa1.blueprint",
+        "infrastructure/plantationfields/crimson1.blueprint",
+        "infrastructure/plantationfields/glowberry1.blueprint",
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint",
+        "infrastructure/plantationfields/twistingvine1.blueprint",
+        "infrastructure/plantationfields/vine1.blueprint",
+        "infrastructure/plantationfields/warped1.blueprint",
+        "infrastructure/plantationfields/weepingvine1.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyStableBuild",
+      "run_id": "2a9865dc5405465390bb315f960cd72b",
+      "passed_cases": 5,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-additions-testpack",
+      "blueprints": 291,
+      "pack_snapshot": "283/305 current blueprint hashes match immutable run snapshot",
+      "scope": "Actual native builder L1 construction then L2-5 upgrades. Same stablemaster assigned after L1 and paused through upgrades; UUID/hut/module retained. Exactly17 sentinel shards conserved across worker plus own stable/racks, including legitimate native pause deposits.",
+      "remaining": "Does not certify worker-carried inventory, active stablemaster work during construction, restart or other additions in the291-asset pack.",
+      "diagnosis": "arcology-stable-paused-deposit.json documents prior fixed-slot failure as legitimate native storage transfer; fixture assertion corrected, no gameplay fix.",
+      "blueprints_changed_since_run": [
+        "fundamentals/mediumquarry1.blueprint",
+        "fundamentals/simplequarry1.blueprint",
+        "military/gatehouse1.blueprint",
+        "military/gatehouse2.blueprint",
+        "military/gatehouse3.blueprint",
+        "military/stable1.blueprint",
+        "military/stable2.blueprint",
+        "military/stable3.blueprint",
+        "military/stable4.blueprint",
+        "military/stable5.blueprint",
+        "infrastructure/mineshafts/mediumquarryshaft1.blueprint",
+        "infrastructure/mineshafts/simplequarryshaft1.blueprint",
+        "infrastructure/plantationfields/cocoa1.blueprint",
+        "infrastructure/plantationfields/crimson1.blueprint",
+        "infrastructure/plantationfields/glowberry1.blueprint",
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint",
+        "infrastructure/plantationfields/twistingvine1.blueprint",
+        "infrastructure/plantationfields/vine1.blueprint",
+        "infrastructure/plantationfields/warped1.blueprint",
+        "infrastructure/plantationfields/weepingvine1.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyQuarry",
+      "run_id": "09b022bf67054b2b9c5e4ead0e10e2f8",
+      "passed_cases": 4,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-quarries-testpack",
+      "blueprints": 295,
+      "pack_snapshot": "287/305 current blueprint hashes match immutable run snapshot",
+      "scope": "Mine-employed workers accepted external quarry assignment and performed early excavation with physical coal, tool wear and native statistics. Full shaft depth, completed layers, ladder descent, hauling and restart remain unverified.",
+      "blueprints_changed_since_run": [
+        "military/gatehouse1.blueprint",
+        "military/gatehouse2.blueprint",
+        "military/gatehouse3.blueprint",
+        "military/stable1.blueprint",
+        "military/stable2.blueprint",
+        "military/stable3.blueprint",
+        "military/stable4.blueprint",
+        "military/stable5.blueprint",
+        "infrastructure/plantationfields/cocoa1.blueprint",
+        "infrastructure/plantationfields/crimson1.blueprint",
+        "infrastructure/plantationfields/glowberry1.blueprint",
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint",
+        "infrastructure/plantationfields/twistingvine1.blueprint",
+        "infrastructure/plantationfields/vine1.blueprint",
+        "infrastructure/plantationfields/warped1.blueprint",
+        "infrastructure/plantationfields/weepingvine1.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyCropExtensions",
+      "run_id": "dc7c246afbe44c83bbfa8f78b76f27d6",
+      "passed_cases": 10,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-complete-testpack",
+      "blueprints": 305,
+      "pack_snapshot": "287/305 current blueprint hashes match immutable run snapshot",
+      "scope": "All ten field anchors registered through native placement; substrate/water survived settling and researched assignment plus distinct-crop limit passed. Worker production, builder completion and restart not certified.",
+      "blueprints_changed_since_run": [
+        "military/gatehouse1.blueprint",
+        "military/gatehouse2.blueprint",
+        "military/gatehouse3.blueprint",
+        "military/stable1.blueprint",
+        "military/stable2.blueprint",
+        "military/stable3.blueprint",
+        "military/stable4.blueprint",
+        "military/stable5.blueprint",
+        "infrastructure/plantationfields/cocoa1.blueprint",
+        "infrastructure/plantationfields/crimson1.blueprint",
+        "infrastructure/plantationfields/glowberry1.blueprint",
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint",
+        "infrastructure/plantationfields/twistingvine1.blueprint",
+        "infrastructure/plantationfields/vine1.blueprint",
+        "infrastructure/plantationfields/warped1.blueprint",
+        "infrastructure/plantationfields/weepingvine1.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyFull",
+      "run_id": "c1191aea6d8e4d2ebbcc8dee73367da8",
+      "passed_cases": 305,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-complete-testpack",
+      "blueprints": 305,
+      "pack_snapshot": "287/305 current blueprint hashes match immutable run snapshot",
+      "scope": "Native decoding, registered palette states and existing asset contracts across all305 candidate blueprints. Not worker behavior or all-added-building navigation.",
+      "blueprints_changed_since_run": [
+        "military/gatehouse1.blueprint",
+        "military/gatehouse2.blueprint",
+        "military/gatehouse3.blueprint",
+        "military/stable1.blueprint",
+        "military/stable2.blueprint",
+        "military/stable3.blueprint",
+        "military/stable4.blueprint",
+        "military/stable5.blueprint",
+        "infrastructure/plantationfields/cocoa1.blueprint",
+        "infrastructure/plantationfields/crimson1.blueprint",
+        "infrastructure/plantationfields/glowberry1.blueprint",
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint",
+        "infrastructure/plantationfields/twistingvine1.blueprint",
+        "infrastructure/plantationfields/vine1.blueprint",
+        "infrastructure/plantationfields/warped1.blueprint",
+        "infrastructure/plantationfields/weepingvine1.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyGatehouse",
+      "run_id": "bc49023d44f3441fb43ac6673def4605",
+      "passed_cases": 5,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-complete-testpack",
+      "blueprints": 305,
+      "pack_snapshot": "287/305 current blueprint hashes match immutable run snapshot",
+      "scope": "Three levels registered exact posts, two beds and native connection terminals; assigned knight and archer reached/guarded their posts inside native bounds with unobstructed post access and recovery disabled. Native three-level builder run pending; travel, combat and restart not certified.",
+      "blueprints_changed_since_run": [
+        "military/gatehouse1.blueprint",
+        "military/gatehouse2.blueprint",
+        "military/gatehouse3.blueprint",
+        "military/stable1.blueprint",
+        "military/stable2.blueprint",
+        "military/stable3.blueprint",
+        "military/stable4.blueprint",
+        "military/stable5.blueprint",
+        "infrastructure/plantationfields/cocoa1.blueprint",
+        "infrastructure/plantationfields/crimson1.blueprint",
+        "infrastructure/plantationfields/glowberry1.blueprint",
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint",
+        "infrastructure/plantationfields/twistingvine1.blueprint",
+        "infrastructure/plantationfields/vine1.blueprint",
+        "infrastructure/plantationfields/warped1.blueprint",
+        "infrastructure/plantationfields/weepingvine1.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyGatehouseBuild",
+      "run_id": "6a4a9c0010d34c30bf9db85ab7925b33",
+      "passed_cases": 3,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-complete-testpack",
+      "blueprints": 305,
+      "scope": "Real builder construction L1 and upgrades L2/3; matching structure, exact guard tags, beds and one native connection terminal retained. No active guard retention or restart claim.",
+      "blueprints_changed_since_run": [
+        "military/gatehouse1.blueprint",
+        "military/gatehouse2.blueprint",
+        "military/gatehouse3.blueprint",
+        "military/stable1.blueprint",
+        "military/stable2.blueprint",
+        "military/stable3.blueprint",
+        "military/stable4.blueprint",
+        "military/stable5.blueprint",
+        "infrastructure/plantationfields/cocoa1.blueprint",
+        "infrastructure/plantationfields/crimson1.blueprint",
+        "infrastructure/plantationfields/glowberry1.blueprint",
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint",
+        "infrastructure/plantationfields/twistingvine1.blueprint",
+        "infrastructure/plantationfields/vine1.blueprint",
+        "infrastructure/plantationfields/warped1.blueprint",
+        "infrastructure/plantationfields/weepingvine1.blueprint"
+      ],
+      "pack_snapshot": "287/305 current blueprint hashes match immutable run snapshot"
+    },
+    {
+      "suite": "ArcologyExtensionNavigation",
+      "run_id": "ea37de956a20426780a4bda660da6c72",
+      "passed_cases": 20,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-complete-testpack",
+      "blueprints": 305,
+      "pack_snapshot": "294/305 current blueprint hashes match immutable run snapshot",
+      "scope": "All20 explicitly listed new hut/field levels: native citizen outside-to-interaction-range-to-outside, recovery disabled. Includes repaired aquatic dock entrances; not work-target/horse navigation.",
+      "blueprints_changed_since_run": [
+        "military/gatehouse1.blueprint",
+        "military/gatehouse2.blueprint",
+        "military/gatehouse3.blueprint",
+        "military/stable1.blueprint",
+        "military/stable2.blueprint",
+        "military/stable3.blueprint",
+        "military/stable4.blueprint",
+        "military/stable5.blueprint",
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyCropExtensions",
+      "run_id": "0a935cddfca84ffd83e2bffed2a8c452",
+      "passed_cases": 10,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-complete-testpack",
+      "blueprints": 305,
+      "pack_snapshot": "294/305 current blueprint hashes match immutable run snapshot",
+      "scope": "Repaired aquatic designs, native anchor-at-ground placement: all10 native registration, water/substrate settling and researched assignment/cap checks.",
+      "blueprints_changed_since_run": [
+        "military/gatehouse1.blueprint",
+        "military/gatehouse2.blueprint",
+        "military/gatehouse3.blueprint",
+        "military/stable1.blueprint",
+        "military/stable2.blueprint",
+        "military/stable3.blueprint",
+        "military/stable4.blueprint",
+        "military/stable5.blueprint",
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyQuarryBuild",
+      "run_id": "02f5c37318bc4a2d80b58ea565380a3a",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-complete-testpack",
+      "blueprints": 305,
+      "pack_snapshot": "294/305 current blueprint hashes match immutable run snapshot",
+      "scope": "Real native builder completed Simple and Medium level1 surface structures, preserving shaft-selector tag and valid inside-hut volume. Support builder/materials/research supplied; not full shaft excavation.",
+      "blueprints_changed_since_run": [
+        "military/gatehouse1.blueprint",
+        "military/gatehouse2.blueprint",
+        "military/gatehouse3.blueprint",
+        "military/stable1.blueprint",
+        "military/stable2.blueprint",
+        "military/stable3.blueprint",
+        "military/stable4.blueprint",
+        "military/stable5.blueprint",
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint"
+      ]
+    },
+    {
+      "suite": "ArcologyQuarry",
+      "run_id": "6ca7e8b3e7664d71add86cca8ffeccbf",
+      "passed_cases": 4,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "294/305 current blueprint hashes match immutable run snapshot",
+      "blueprints_changed_since_run": [
+        "military/gatehouse1.blueprint",
+        "military/gatehouse2.blueprint",
+        "military/gatehouse3.blueprint",
+        "military/stable1.blueprint",
+        "military/stable2.blueprint",
+        "military/stable3.blueprint",
+        "military/stable4.blueprint",
+        "military/stable5.blueprint",
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint"
+      ],
+      "scope": "Early excavation/output with corrected native volume; not full-depth excavation."
+    },
+    {
+      "suite": "ArcologyPlantationTools",
+      "run_id": "48fb4c70b7514275a55fe1814527a0ba",
+      "passed_cases": 1,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "302/305 current blueprint hashes match immutable run snapshot",
+      "blueprints_changed_since_run": [
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint"
+      ],
+      "scope": "Native short/tall seagrass tool selection and recipe display agree with vanilla loot requirements."
+    },
+    {
+      "suite": "ArcologySeagrassProduction",
+      "run_id": "c1110bdf3b48448ebb28f8816c67f02f",
+      "passed_cases": 1,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "302/305 current blueprint hashes match immutable run snapshot",
+      "blueprints_changed_since_run": [
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint"
+      ],
+      "scope": "Real planter growth/harvest/output with disclosed native chunk growth fixture; focused crop only."
+    },
+    {
+      "suite": "ArcologyQuarryBounds",
+      "run_id": "f9a76062490147ccbd7e1572ffbabaa5",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "302/305 current blueprint hashes match immutable run snapshot",
+      "blueprints_changed_since_run": [
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint"
+      ],
+      "scope": "Both native quarry volumes include descending shafts and reject outside points."
+    },
+    {
+      "suite": "ArcologyFull",
+      "run_id": "0ba950235a1c47678e1425611a449b2a",
+      "passed_cases": 305,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "302/305 current blueprint hashes match immutable run snapshot",
+      "blueprints_changed_since_run": [
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint"
+      ],
+      "scope": "All305 native blueprint contracts on reproducibly assembled complete candidate."
+    },
+    {
+      "suite": "ArcologyNavigation",
+      "run_id": "958c7a6bb6f74a07a6d9730eee3ebe6f",
+      "passed_cases": 238,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "302/305 current blueprint hashes match immutable run snapshot",
+      "blueprints_changed_since_run": [
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint"
+      ],
+      "scope": "Original238 hut entrance/exit paths with recovery disabled, complete candidate."
+    },
+    {
+      "suite": "ArcologyExtensionRestart",
+      "run_id": "7a393642340049edb6851d235b569958",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "phases": [
+        "seed",
+        "verify"
+      ],
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "scope": "Clean two-process restart of Stable5,Gatehouse3,bothQuarry surfaces,ten field types and three field assignments. Same paused stablemaster/knight identities, homes and native worker module memberships. No active production/crash recovery claim.",
+      "blueprints_changed_since_run": [
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint"
+      ],
+      "pack_snapshot": "302/305 current blueprint hashes match immutable run snapshot"
+    },
+    {
+      "suite": "ArcologyConnectedLayout",
+      "run_id": "fe78748eee924aa5aedb3662173df556",
+      "passed_cases": 3,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "scope": "Three paths passed: touching timber/stone Gatehouse+Stable and six-block upper storey via disclosed external stair. Physical gate crossing both directions, recovery disabled.",
+      "blueprints_changed_since_run": [
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint"
+      ],
+      "pack_snapshot": "302/305 current blueprint hashes match immutable run snapshot"
+    },
+    {
+      "suite": "ArcologyExtensionNavigation",
+      "run_id": "6c653ddd49f440fb8f48cec42ebe88cb",
+      "passed_cases": 20,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "scope": "20 paths passed before raised-pond change; three aquatic variants require rerun.",
+      "blueprints_changed_since_run": [
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint"
+      ],
+      "pack_snapshot": "302/305 current blueprint hashes match immutable run snapshot"
+    },
+    {
+      "suite": "ArcologyFull",
+      "run_id": "3eb786ae2b5b4ae198d852df95049720",
+      "passed_cases": 305,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "scope": "305 native contracts passed before raised-pond change; three aquatic variants require rerun.",
+      "blueprints_changed_since_run": [
+        "infrastructure/plantationfields/kelp1.blueprint",
+        "infrastructure/plantationfields/seagrass1.blueprint",
+        "infrastructure/plantationfields/seapickle1.blueprint"
+      ],
+      "pack_snapshot": "302/305 current blueprint hashes match immutable run snapshot"
+    },
+    {
+      "suite": "ArcologyCoralConstruction",
+      "run_id": "839ca5cac5e34593862ddca97e8f14e7",
+      "passed_cases": 1,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "blueprints_changed_since_run": [],
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "Pending Arcology pond order delays drying; outside coral dries, cancellation restores drying, wet coral survives."
+    },
+    {
+      "suite": "ArcologyCropExtensions",
+      "run_id": "c89ac8ae55c246c5854d51c9c187bd09",
+      "passed_cases": 10,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "blueprints_changed_since_run": [],
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "All10 native field registration, substrate/fluid settling and researched assignment/cap checks on raised ponds."
+    },
+    {
+      "suite": "ArcologyExtensionNavigation",
+      "run_id": "7fae344c128843dba549a520eae1f2d2",
+      "passed_cases": 20,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "blueprints_changed_since_run": [],
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "All20 new hut/field entrance/exit routes on current raised-pond candidate, recovery disabled."
+    },
+    {
+      "suite": "ArcologyFull",
+      "run_id": "eab79fbe8570483f967136020ac15916",
+      "passed_cases": 305,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "blueprints_changed_since_run": [],
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "All305 native blueprint contracts on current raised-pond candidate."
+    },
+    {
+      "suite": "ArcologyQuarryAccess",
+      "run_id": "7196b05432794214a26eefd27d784722",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "blueprints_changed_since_run": [],
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "Two same native quarriers descend and return on completed32/64-depth ladders, recovery disabled; prebuilt shafts, not excavation."
+    },
+    {
+      "suite": "ArcologyCropBuild",
+      "run_id": "cfe9485909bb4efba28dee9f77feb666",
+      "passed_cases": 10,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "blueprints_changed_since_run": [],
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "Same native builder constructs all10 fields from bare terrain, exact blocks/source water/native work positions verified; no target paste. Initial supplies, food, clear weather and flat ground fixture."
+    },
+    {
+      "suite": "ArcologySeaPickleProduction",
+      "run_id": "0c2ed754995743268decdc76bff9fe38",
+      "passed_cases": 1,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "scope": "Same native planter seeds empty8 plots, fertilizes and harvests4 real sea pickles on day14; no crop/output injection, recovery disabled. 331660ticks; daily schedule preserved."
+    },
+    {
+      "suite": "ArcologyExtensionRestart",
+      "run_id": "758b7443372648be84a9b07fa25efce9",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "phases": [
+        "seed",
+        "verify"
+      ],
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "Current raised-pond pack: clean restart preserves exact10 field markers/ownership, Stable5/Gatehouse3/two Quarry1 metadata and same paused staff; active production not certified."
+    },
+    {
+      "suite": "ArcologyFungusProduction",
+      "run_id": "e514d6bcab7a436199ace3d9c08b2204",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "scope": "Strict focused native crimson and warped fungus production; both actual fungus statistics and inventory gains required. Initial fertilizer only, no output injection."
+    },
+    {
+      "suite": "ArcologyQuarryRules",
+      "run_id": "e6a5708be34e46398a4f5aef83fec57d",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "scope": "Native32/64-layer stage transitions, blueprint-air exclusion from decoration, bedrock/world-minimum/other-pack guards and stale-vs-supported footing. Focused method calls, not full excavation."
+    },
+    {
+      "suite": "ArcologyQuarryDepth",
+      "run_id": "422b6ed791604d50be49c6f14d5ee37b",
+      "passed_cases": 7,
+      "runner_exit": 0,
+      "pack": ".setup\\arcology-horizons-complete",
+      "blueprints": 305,
+      "blueprints_changed_since_run": [],
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "Both native quarriers complete32/64-depth shafts, all31/63 ladders and final floors match, same workers descend to Y-15/-47 with recovery disabled; real linked courier deposits64 nonsupplied coal. Dry uniform stone/coal fixture, tools/materials/food replenished; not hazards or active restart."
+    },
+    {
+      "suite": "ArcologyCropProduction",
+      "run_id": "a5ced9cf532848c19e9df82d33b64072",
+      "passed_cases": 10,
+      "runner_exit": 0,
+      "pack": ".setup\\arcology-horizons-complete",
+      "blueprints": 305,
+      "blueprints_changed_since_run": [],
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "Same native planter produces documented output at all10 initially empty fields, physical visit/growth/harvest statistic and worker-plus-hut count gains, recovery disabled. Fungi fields accept native roots/sprouts; independent strict fungus suite proves actual fungi. Native daily cadence;28-day per-field cap and accelerated native playerless random ticks, not normal-speed yield."
+    },
+    {
+      "suite": "ArcologyQuarryDepth",
+      "run_id": "e4ce84dc471f464cb56441d55783b5a2",
+      "passed_cases": 7,
+      "runner_exit": 0,
+      "pack": ".setup\\arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "Both native shafts complete32/64 depths, full blueprint/floor/31/63ladders match,34coal mined per shaft including ore beneath ladder and wall torch; same native courier carries and deposits all68coal. Recovery disabled; dry supplied fixture; no hazard/restart claim."
+    },
+    {
+      "suite": "ArcologyCavalry",
+      "run_id": "017144ef70d648949aa649659ab1d5c1",
+      "passed_cases": 3,
+      "runner_exit": 0,
+      "pack": ".setup\\arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "305/305 current blueprints match; final pack metadata now declares colonyhorizons",
+      "scope": "Native stablemaster converts tethered starter horse; waits for readiness before fixture unties it and assigns cavalry. Same mounted guard/horse exits to manual patrol point and returns into stable aisle; recovery disabled. Initial equipment/feed/leather/horse armor supplied; not combat or every stall."
+    },
+    {
+      "suite": "ArcologyQuarryRules",
+      "run_id": "d0ab84324838439da5b49fe3b41f6de9",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack": ".setup\\arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "305/305 current blueprints match; final pack metadata now declares colonyhorizons",
+      "scope": "Native32/64 stage sequence, access-cell ore mining, matching-ladder preservation, wall-torch mining, other-pack/solid-stage exclusions, blueprint-air exclusion and stale/supported footing checks."
+    },
+    {
+      "suite": "ArcologyQuarryRestart",
+      "run_id": "bb099cb0fe3e435a96c51ca8624827bc",
+      "phases": [
+        "seed",
+        "verify"
+      ],
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack": ".setup\\arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "Both actual active quarriers and exact Mine-owned order IDs survive a second server process, each excavates at least100 new cells after verification starts; no rebuilding/reassignment/respawn/progress injection. Dry supplied fixture; not crash recovery."
+    },
+    {
+      "suite": "ArcologyTransformedNavigation",
+      "run_id": "1e2094c253b2418d8767f8dcaf3e6479",
+      "phases": [
+        "seed"
+      ],
+      "passed_cases": 160,
+      "runner_exit": 0,
+      "pack": ".setup\\arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "All20 added surface/field levels in all8 native rotations/mirrors:160 real native citizen round trips to building interaction range, recovery disabled. Not mounted/interior work routes or transformed excavation."
+    },
+    {
+      "suite": "ArcologyQuarryHazards",
+      "run_id": "d98c2ee916094068a2e8612e14514c6c",
+      "passed_cases": 4,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "305/305 current blueprints and pack metadata match",
+      "scope": "Both native quarry variants seal enclosed single-source water/lava pockets with cobblestone; only cells still solid after both seals count toward at least12 subsequent air cells two layers below. Same workers/assignments, recovery disabled, no observed burning/lava contact. Tools/requested materials/food supplied. Not open aquifers, lava lakes, material shortages or full-depth wet excavation.",
+      "report": "arcology-native-quarry-hazards.json"
+    },
+    {
+      "suite": "ArcologyDiscovery",
+      "run_id": "d3e6466bc50a454abf26cb170a28ee38",
+      "passed_cases": 3,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "305/305 current blueprints and pack metadata match",
+      "scope": "Native automatic server discovery enables the correct isolated pack; category enumeration reaches all305 distinct blueprint files and new entries. Required dependencies installed. Not client menus, previews or placement clicks.",
+      "report": "arcology-native-pack-discovery.json"
+    },
+    {
+      "suite": "ArcologyQuarryShortage",
+      "run_id": "c2d960d8b5f7498c99bd4fe7b519e5ee",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "Focused native doMining calls: zero/one fill waits without changing the ore barrier; two fill blocks seal adjacent water/lava with exact consumption. Native matching fill request, unrelated-pack and dry-target controls. Not end-to-end AI or courier delivery.",
+      "report": "arcology-native-quarry-shortage.json"
+    },
+    {
+      "suite": "ArcologyQuarryPools",
+      "run_id": "542c2be8346d439c9475018faa861955",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "Live Simple water and Medium lava3x3 connected source pools with initial open headspace: all9 sources observed as fill, then12 fresh cells excavated two layers below. Same workers, recovery disabled, no burning/lava contact; supplied fixture. Not unbounded fluids.",
+      "report": "arcology-native-quarry-pools.json"
+    },
+    {
+      "suite": "ArcologyQuarryHazards",
+      "run_id": "8eace9d6cd30445f91a739b81340eada",
+      "passed_cases": 4,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "Existing enclosed water/lava cases rerun with supply guard active; both sources sealed then12 fresh lower cells excavated per shaft.",
+      "report": "arcology-native-quarry-hazards-with-supply-guard.json"
+    },
+    {
+      "suite": "ArcologyQuarryRestock",
+      "run_id": "8eb6ea5fce5f4c26a2a183bb8a9e6bb4",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "Live same-worker shortage/wait/resume for both variants: withdraw fill from worker/Mine just before fluid encounter, observe native NEEDS_ITEM and unchanged barrier for200ticks; resupply Mine hut only, native AI seals pockets and then excavates12 fresh lower cells. No teleport/recovery or post-start terrain edits. Not autonomous courier deliveries.",
+      "report": "arcology-native-quarry-restock.json"
+    },
+    {
+      "suite": "ArcologyQuarryInflow",
+      "run_id": "e1c6a217b7b54f2594712b265b9ead3a",
+      "passed_cases": 2,
+      "runner_exit": 0,
+      "pack": ".setup/arcology-horizons-complete",
+      "blueprints": 305,
+      "pack_snapshot": "305/305 current blueprints match",
+      "scope": "Retained external 3x3 reservoir with a three-wide breach: native inflow observed at Y13, three liner cells restored, monitored Y13 interior stayed dry, and 12 initially solid Y11 cells subsequently excavated. All nine external sources remain; same worker, recovery disabled. Bounded reservoir; not full-depth wet excavation.",
+      "report": "arcology-native-quarry-inflow.json"
+    }
+  ],
+  "assembly_contracts": 4,
+  "client_smoke": {
+    "world": "runs/arcology-client-20261011/saves/New World",
+    "mode": "creative superflat, fresh isolated directory",
+    "observed": [
+      "Arcology Horizons selected in native pack browser",
+      "Military category exposes Stable and Gatehouse",
+      "Stable level list1-5 visible; levels1 and5 render",
+      "Stable5 clockwise rotation changes rendered preview",
+      "Stable1 Schematic Paste leaves world blocks after cancelling preview"
+    ],
+    "limits": "Creative schematic placement only; not survival build orders, operational colony registration, mirror or connected fit. Screenshots are limited ground-level views.",
+    "screenshots": [
+      "arcology-client-stable5-rotated.png",
+      "arcology-client-stable1-pasted.png"
+    ],
+    "exit_code": 0
+  },
+  "client_mirror_survival_followup": {
+    "world": "runs/arcology-client-20261011/saves/New World",
+    "mode": "Reopened isolated creative superflat; switched to survival for Town Hall Build Options. Peaceful difficulty after a slime killed the test player.",
+    "observed": [
+      "Previously placed Stable1 still visible after client restart",
+      "Stable1 mirror toggle flips footprint and entrance across the same hut anchor; unmirrored comparison captured",
+      "Mirrored Stable1 Schematic Paste remains after cancelling preview",
+      "Town Hall Assign to Builder places hut block; native covenant creates colony; Town Hall level 0 menu opens",
+      "Survival Build Options selects Arcology Horizons and displays its material list",
+      "Build Building rejects request with native requirement for a level-1-or-higher Builder hut"
+    ],
+    "limits": "One Stable level mirror comparison and creative placement only. Town Hall request was rejected: no queued work order or completed survival construction claimed. No connected-module fit or upgrade-preview acceptance. Town Hall was placed in creative before switching to survival. No new gameplay or pack changes.",
+    "screenshots": [
+      "arcology-client-stable1-mirrored-pasted.png",
+      "arcology-client-stable1-mirrored-preview.png",
+      "arcology-client-stable1-unmirrored-preview.png",
+      "arcology-client-townhall-builder-prerequisite.png",
+      "arcology-client-townhall-survival-materials.png"
+    ],
+    "client_state": "Left running after inspection; no clean-exit claim for this follow-up"
+  },
+  "automated_regression_followup": {
+    "date": "2026-10-11",
+    "report": "arcology-automated-regression-2026-10-11.json",
+    "passed_cases": 48,
+    "suites": 6,
+    "runner_exit": 0,
+    "pack_snapshot": "All six snapshots match 305 current blueprints and pack.json",
+    "scope": "Existing native regression suites rerun; detailed limits in report",
+    "manual_testing": false,
+    "implementation_changes": false
+  }
+}

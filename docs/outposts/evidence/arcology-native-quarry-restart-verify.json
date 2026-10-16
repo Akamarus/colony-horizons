@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "quarry_verify",
+    "outcome": "PASS",
+    "evidence": "Second server restored the same two workers/entity UUIDs and exact Mine-owned work-order IDs; both continued clearing at least100 additional interior cells after verification began, without rebuild, reassignment, respawn or progress injection. Recovery disabled; requested materials/replacement tools/food supplied; dry terrain. Clean restart, not crash recovery or full-depth completion."
+  }
+]

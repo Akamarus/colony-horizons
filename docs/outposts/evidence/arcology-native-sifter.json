@@ -1,0 +1,7 @@
+[
+  {
+    "caseId": "sifter_cycle",
+    "outcome": "PASS",
+    "evidence": "Native sifter used loaded automatic string-mesh/gravel recipe, consumed gravel, damaged the hut mesh, incremented daily quantity and native input/output statistics, and produced 1 random-loot items in worker/hut inventory. No recipe/loot/output/AI injection. Prebuilt level5 Arcology hut, 64 gravel, fresh mesh, food and prerequisite fixture supplied; identity/movement checked with recovery disabled. Other meshes/inputs/levels, daily caps, delivery and restart not certified."
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "caseId": "simplequarry_water",
+    "outcome": "PASS",
+    "evidence": "Enclosed source pocket at BlockPos{x\u003d508, y\u003d13, z\u003d44} became native cobblestone fill at tick 7770; same native quarrier then cleared 12 interior cells two layers below it. Native coal statistic\u003d32. Same worker and Mine/quarry assignment, recovery disabled, no fire/lava contact observed. Requested materials/tools and food supplied; no post-start terrain edits or health restoration. Enclosed single-source pocket, not an open aquifer or lava lake. ticks\u003d40310"
+  },
+  {
+    "caseId": "simplequarry_lava",
+    "outcome": "PASS",
+    "evidence": "Enclosed source pocket at BlockPos{x\u003d508, y\u003d13, z\u003d49} became native cobblestone fill at tick 13155; same native quarrier then cleared 12 interior cells two layers below it. Native coal statistic\u003d32. Same worker and Mine/quarry assignment, recovery disabled, no fire/lava contact observed. Requested materials/tools and food supplied; no post-start terrain edits or health restoration. Enclosed single-source pocket, not an open aquifer or lava lake. ticks\u003d40310"
+  },
+  {
+    "caseId": "mediumquarry_water",
+    "outcome": "PASS",
+    "evidence": "Enclosed source pocket at BlockPos{x\u003d567, y\u003d13, z\u003d44} became native cobblestone fill at tick 38485; same native quarrier then cleared 12 interior cells two layers below it. Native coal statistic\u003d32. Same worker and Mine/quarry assignment, recovery disabled, no fire/lava contact observed. Requested materials/tools and food supplied; no post-start terrain edits or health restoration. Enclosed single-source pocket, not an open aquifer or lava lake. ticks\u003d138315"
+  },
+  {
+    "caseId": "mediumquarry_lava",
+    "outcome": "PASS",
+    "evidence": "Enclosed source pocket at BlockPos{x\u003d567, y\u003d13, z\u003d49} became native cobblestone fill at tick 50610; same native quarrier then cleared 12 interior cells two layers below it. Native coal statistic\u003d32. Same worker and Mine/quarry assignment, recovery disabled, no fire/lava contact observed. Requested materials/tools and food supplied; no post-start terrain edits or health restoration. Enclosed single-source pocket, not an open aquifer or lava lake. ticks\u003d138315"
+  }
+]
